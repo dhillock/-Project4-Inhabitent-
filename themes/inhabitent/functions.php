@@ -23,20 +23,31 @@ function inhabitant_features() {
 
 add_action('after_setup_theme', 'inhabitant_features');
 
+// We registered a sidebar into the WP backend....so we could put widgets into it.
 function inhabitent_widget() {
 register_sidebar(array(
-'name' => 'Sidebar Info',
+'name' => 'Sidebar InfoXXX',
 'id' => 'sidebar-info',
 'description' => 'Add a text block with your business hours',
 'before_widget' => '<aside id="%1$s">',
-'before_widget' => '<aside>',
+// 'before_widget' => '<aside>',
 'after_widget' => '</aside>',
-'before_title' => '<h2 class="widget-hours">',
+'before_title' => '<h2 class="widget-title">',
 'after_title' => '</h2>'
 
 ));
 }
 
-add_action('widgets_init', 'inhabitent_widget');
+add_action('widgets_init', 'inhabitent_widget'); // this adds the 
+
+
+// So that we can use fontasesome icons in our text
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+function enqueue_load_fa() {
+wp_enqueue_script( 'load-fa', 'https://kit.fontawesome.com/e785bdc78c.js' );
+}
+
+
+
 
 ?>

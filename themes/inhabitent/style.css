@@ -110,6 +110,13 @@ table {
   font-weight: bold;
   font-style: normal; }
 
+.sidebar {
+  background-color: green; }
+  .sidebar aside p {
+    border: thick solid cornflowerblue; }
+  .sidebar #nav_menu-2 :nth-child(1) {
+    background-color: yellow; }
+
 body {
   background: white;
   font-size: 2em; }

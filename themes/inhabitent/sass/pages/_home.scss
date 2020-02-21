@@ -1,4 +1,21 @@
 body {
   background: white;
   font-size: 2em;
+  color: #404040;
+  font-family: Merriweather Web, serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.hero-banner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(/images/home-hero.jpg);
+  background-size: cover, cover;
+}
+.main-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }

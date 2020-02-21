@@ -29,8 +29,8 @@ register_sidebar(array(
 'name' => 'Sidebar InfoXXX',
 'id' => 'sidebar-info',
 'description' => 'Add a text block with your business hours',
-'before_widget' => '<aside id="%1$s">',
-// 'before_widget' => '<aside>',
+// 'before_widget' => '<aside id="%1$s">',
+'before_widget' => '<aside>',
 'after_widget' => '</aside>',
 'before_title' => '<h2 class="widget-title">',
 'after_title' => '</h2>'

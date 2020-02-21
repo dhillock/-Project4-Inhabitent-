@@ -1,0 +1,46 @@
+//
+// Set SASS Variables
+//
+$main-color: black;
+$font-main: 'Open Sans';
+$font-weight: 300;
+$font-style: normal;
+$base-margin: 0 auto;
+$width-desktop: 1240px;
+$width-tablet: 600px;
+
+body,
+html {
+  background-color: black;
+  // background-color: green;
+  max-width: 1250px;
+  margin: $base-margin;
+  color: white;
+  font-family: $font-main;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+// explore how this works
+%active {
+  border: 3px solid red;
+  // background: yellowgreen;
+  color: red;
+}
+
+// The mixin name can be anything you want. Then use that name when you calll with mixin with the @include
+
+@mixin primary-links {
+  text-decoration: underline;
+}
+
+@mixin tablet {
+  @media (min-width: $width-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $width-desktop) {
+    @content;
+  }
+}

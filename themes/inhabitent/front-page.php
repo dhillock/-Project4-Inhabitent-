@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
@@ -14,6 +15,7 @@
     <?php endwhile;?>
 
     <?php the_posts_navigation();?>
+    
 
 <?php else : ?>
         <p>No posts found</p>

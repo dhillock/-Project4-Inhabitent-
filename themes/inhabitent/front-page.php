@@ -1,25 +1,31 @@
-<?php get_header(); ?>
+<?php get_header();?>
 
 
-<?php if( have_posts() ) :
+<?php if (have_posts()):
 
-//The WordPress Loop: loads post content 
-    while( have_posts() ) :
-        the_post(); ?>
-    
-    <h2><?php the_title(); ?></h2>
-    <h3><?php the_permalink();?></h3>
-    <?php the_content(); ?>
-    
-    <!-- Loop ends -->
-    <?php endwhile;?>
+//The WordPress Loop: loads post content
+    while (have_posts()):
+        the_post();?>
 
-    <?php the_posts_navigation();?>
-    
+    <section class="banner">
+        <?php the_post_thumbnail('large');?>
+        <img class="main-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg;?>" alt="Inhabitents logo">
+    </section>
 
-<?php else : ?>
+
+	<h2><?php the_title();?></h2>
+	<h3><?php the_permalink();?></h3>
+	<?php the_content();?>
+
+	<!-- Loop ends -->
+	<?php endwhile;?>
+
+			    <?php the_posts_navigation();?>
+
+
+			<?php else: ?>
         <p>No posts found</p>
 <?php endif;?>
 
-    
+
 <?php get_footer();?>

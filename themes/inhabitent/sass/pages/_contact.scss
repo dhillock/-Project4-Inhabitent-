@@ -1,0 +1,64 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-area: form;
+}
+
+.info h2 {
+  font-family: Novecento-Sans-Web-Bold;
+  margin-bottom: 30px;
+}
+
+.info h3 {
+  font-family: Novecento-Sans-Web-Bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.info label {
+  font-family: Novecento-Sans-Web;
+}
+
+section.contact {
+  border: 1px solid #a1a1a1;
+}
+
+.input-field {
+  background-color: #a1a1a1;
+  width: 350px;
+  height: 40px;
+  border: none;
+  filter: brightness(150%);
+}
+
+.input-message {
+  background-color: #a1a1a1;
+  width: 600px;
+  height: 300px;
+  border: none;
+  margin-top: 15px;
+  filter: brightness(150%);
+}
+
+.contact-button {
+  background-color: #248a83;
+  color: white;
+  font-family: Novecento-Sans-Web;
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+}
+
+input {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.red {
+  color: #d99054;
+}
+
+.info {
+  padding: 70px;
+}

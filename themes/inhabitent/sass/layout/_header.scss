@@ -1,18 +1,36 @@
-.main-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: rgb(99, 98, 98);
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  li {
-    display: inline;
-  }
+// .menu-main {
+//   // display: flex;
+//   // flex-direction: row;
+//   // justify-content: space-between;
+//   // justify-content: start;
+//   // align-items: center;
+//   color: rgb(99, 98, 98);
+//   padding: 0 130px 0 130px;
 
-  img  logo {
-    width: 50px;
-  }
-  padding: 0 130px 0 130px;
-} // end of main-menu code
+//   a {
+//     text-decoration: none;
+//     color: white;
+//   }
+//   li {
+//     display: inline;
+//   }
+
+//   img  logo {
+//     width: 50px;
+//   }
+// } // end of main-menu code
+
+
+.menu-main {
+
+display: flex;
+
+
+
+a {
+  text-decoration: hotpink;
+  color: chartreuse;
+}
+
+
+}

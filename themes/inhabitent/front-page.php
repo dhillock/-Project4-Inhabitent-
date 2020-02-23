@@ -7,25 +7,30 @@
     while (have_posts()):
         the_post();?>
 
-    <section class="banner">
-        <?php the_post_thumbnail('large');?>
-        <img class="main-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg;?>" alt="Inhabitents logo">
-    </section>
+		<!-- <section class="banner">
+			<?php the_post_thumbnail('large');?>
+			<img class="logo-main1" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg;?>" alt="Inhabitents logo">
+		</section> -->
 
+		<section class="banner-hero">
+			<?php the_post_thumbnail('large');?>
+			<img class="logo-main2" src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-hero.jpg;?>" alt="Woman Camping, backgroun image">
 
-	<h2><?php the_title();?></h2>
-	<h3><?php the_permalink();?></h3>
-	<?php the_content();?>
+		</section>
 
-	<!-- Loop ends -->
-	<?php endwhile;?>
+		<h2><?php the_title();?></h2>
+		<h3><?php the_permalink();?></h3>
+		<?php the_content();?>
 
-			    <?php the_posts_navigation();?>
+		<!-- Loop ends -->
+		<?php endwhile;?>
 
+		<?php the_posts_navigation();?>
 
-			<?php else: ?>
+	<?php else: ?>
+
         <p>No posts found</p>
-<?php endif;?>
 
+    <?php endif;?>
 
 <?php get_footer();?>

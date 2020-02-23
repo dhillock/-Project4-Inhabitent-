@@ -12,7 +12,7 @@
 }
 
 @font-face {
-  font-family: 'Merriweather Web';
+  font-family: 'Merriweather-Web';
   src: url('fonts/Merriweather/merriweather-lightitalic-webfont.eot');
   src: url('fonts/Merriweather/merriweather-lightitalic-webfont.eot?#iefix')
       format('embedded-opentype'),
@@ -76,7 +76,7 @@
   font-style: normal;
 }
 
-.menu {
+.menu-main {
   font-size: 16px;
 }
 
@@ -97,27 +97,27 @@ p {
   color: white;
 }
 
-.green-brand {
+.brand-green {
   color: #248a83;
 }
 
-.purple-brand {
+.brand-purple {
   color: #2f1339;
 }
 
-.orange-brand {
+.brand-orange {
   color: #d99054;
 }
 
-.yellow-brand {
+.brand-yellow {
   color: #f0e4d1;
 }
 
-.light-grey-brand {
+.brand-light-grey {
   color: #a1a1a1;
 }
 
-.medium-grey-brand {
+.brand-medium-grey {
   color: #808080;
 }
 

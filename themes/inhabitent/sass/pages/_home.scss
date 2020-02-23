@@ -2,20 +2,27 @@ body {
   background: white;
   font-size: 2em;
   color: #404040;
-  font-family: Merriweather Web, serif;
+  font-family: Merriweather-Web;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.75;
 }
 
-.hero-banner {
+.banner-hero {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)),
     #969696 url(/images/home-hero.jpg);
   background-size: cover, cover;
+  // background-size: contain;
 }
-.main-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
+// .logo-main {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100%;
+// }
+
+.logo-main2{
+  position: relative;
+  // bottom: 400px;
+  // left: 490px;
+} 

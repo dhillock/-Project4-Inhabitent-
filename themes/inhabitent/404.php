@@ -12,7 +12,7 @@
 $args = array('numberposts' => 3, 'order' => "ASC", 'orderby' => 'title');
 $postslist = get_posts($args);
 foreach($postslist as $post) : setup_postdata($post); ?>
-        <p><a class="green-brand merriweather" style="text-decoration: none;" href="<?php echo get_permalink() ;?>"><?php the_title(); ?></a></p><br>
+        <p><a class="brand-green merriweather" style="text-decoration: none;" href="<?php echo get_permalink() ;?>"><?php the_title(); ?></a></p><br>
     </div>
 
 <?php endforeach;?>
@@ -25,7 +25,7 @@ foreach($postslist as $post) : setup_postdata($post); ?>
 
 foreach($terms as $term):?>
 
-<a class="green-brand merriweather" style="font-size: 18px; text-decoration: none;" href="<?php echo "product-type/" . $term->slug ;?>"><?php echo $term->name;?></a><br>
+<a class="brand-green merriweather" style="font-size: 18px; text-decoration: none;" href="<?php echo "product-type/" . $term->slug ;?>"><?php echo $term->name;?></a><br>
 
 <?php endforeach;?>
 <br>

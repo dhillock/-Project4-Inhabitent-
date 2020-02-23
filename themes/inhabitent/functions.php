@@ -41,7 +41,7 @@ register_sidebar(array(
 add_action('widgets_init', 'inhabitent_widget'); // this adds the 
 
 
-// So that we can use fontasesome icons in our text
+// So that we can use fontawsome icons in our text
 add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
 function enqueue_load_fa() {
 wp_enqueue_script( 'load-fa', 'https://kit.fontawesome.com/e785bdc78c.js' );

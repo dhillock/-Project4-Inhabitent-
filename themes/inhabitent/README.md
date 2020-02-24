@@ -4,9 +4,7 @@
 
 This is a website that sells camping gear. The purpose of the project is to develop the website, using WordPress. Given that WP is written in PHP, we will be using PHP to customize web page. To style the content, we will be using SASS...to be completed
 
-fully responsive...
-
-The requirement calls for a desktop-only design.
+The requirement calls for a desktop-only design. More specifically, a fixed-width of 1120px.
 
 <H2 style='color:yellow'>Technology Used:</H2>
 

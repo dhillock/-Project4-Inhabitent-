@@ -1,0 +1,87 @@
+html {
+  // This is a project specification
+  --base-spacing: 1.5rem;
+}
+
+body {
+  background: $color-main-background;
+
+  font-family: $font-main;
+  font-weight: $font-weight;
+  font-style: $font-styleTemp;
+  font-size: $font-base;
+
+  margin: $margin-base;
+
+  line-height: $base-line-height;
+
+  color: $font-color;
+  width: $width-max;
+  // max-width: $width-max;
+  // min-width: $width-max;
+}
+
+.menu-main {
+  font-size: $font-base;
+}
+
+p {
+  font-size: $font-base;
+  font-family: $font-main;
+}
+
+.journal-post {
+  background-color: lightblue; // for testing
+}
+
+.journal-post h2 {
+  font-family: $font-accent;
+}
+
+.white-font {
+  color: white;
+}
+
+.brand-green {
+  color: $brand-green;
+}
+
+.brand-purple {
+  color: $brand-purple;
+}
+
+.brand-orange {
+  color: $brand-orange;
+}
+
+.brand-yellow {
+  color: $brand-yellow;
+}
+
+.brand-grey-light {
+  color: $brand-grey-light;
+}
+
+.brand-grey-medium {
+  color: $brand-grey-medium;
+}
+
+.novecento-web {
+  font-family: $font-accent;
+}
+
+.merriweather {
+  font-family: $font-main;
+}
+
+.merriweather-bold {
+  font-family: Merriweather-Web-Bold;
+}
+
+.Novacento-bold {
+  font-family: Novecento-Sans-Web-Bold;
+}
+
+p span {
+  font-weight: bold;
+}

@@ -7,16 +7,15 @@
     while (have_posts()):
         the_post();?>
 
-								    <h2><?php the_title();?></h2>
+		<h2><?php the_title();?></h2>
 
-								    <?php the_content();?>
+		<?php the_content();?>
+						    <!-- Loop ends -->
+	<?php endwhile;?>
 
-								    <!-- Loop ends -->
-								    <?php endwhile;?>
+		<?php the_posts_navigation();?>
 
-				    <?php the_posts_navigation();?>
-
-				    <?php else: ?>
+	<?php else: ?>
         <p>No posts found</p>
     <?php endif;?>
 

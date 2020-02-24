@@ -7,16 +7,6 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: inhabitant
 */
-body,
-html {
-  background-color: black;
-  max-width: 1250px;
-  margin: 0 auto;
-  color: white;
-  font-family: "Open Sans";
-  font-weight: 300;
-  font-style: normal; }
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -187,18 +177,32 @@ table {
   font-weight: bold;
   font-style: normal; }
 
+html {
+  --base-spacing: 1.5rem; }
+
+body {
+  background: #ffffff;
+  font-family: "Merriweather";
+  font-weight: normal;
+  font-style: italics;
+  font-size: 16px;
+  margin: 0 auto;
+  line-height: 1.75rem;
+  color: #404040;
+  width: 1120px; }
+
 .menu-main {
   font-size: 16px; }
 
 p {
   font-size: 16px;
-  font-family: Merriweather; }
+  font-family: "Merriweather"; }
 
 .journal-post {
   background-color: lightblue; }
 
 .journal-post h2 {
-  font-family: Novecento-Sans-Web; }
+  font-family: "Novecento-Sans-Web"; }
 
 .white-font {
   color: white; }
@@ -215,17 +219,17 @@ p {
 .brand-yellow {
   color: #f0e4d1; }
 
-.brand-light-grey {
+.brand-grey-light {
   color: #a1a1a1; }
 
-.brand-medium-grey {
+.brand-grey-medium {
   color: #808080; }
 
 .novecento-web {
-  font-family: Novecento-Sans-Web; }
+  font-family: "Novecento-Sans-Web"; }
 
 .merriweather {
-  font-family: Merriweather; }
+  font-family: "Merriweather"; }
 
 .merriweather-bold {
   font-family: Merriweather-Web-Bold; }

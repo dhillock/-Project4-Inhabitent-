@@ -1,46 +1,33 @@
 //
 // Set SASS Variables
 //
-$main-color: black;
-$font-main: 'Open Sans';
-$font-weight: 300;
-$font-style: normal;
-$base-margin: 0 auto;
-$width-desktop: 1240px;
+$color-main-background: #ffffff;
+
+$font-main: 'Merriweather';
+$font-accent: 'Novecento-Sans-Web';
+$font-weight: normal;
+$font-styleTemp: italics;
+$font-base: 16px;
+$font-color: #404040;
+
+$margin-base: 0 auto;
+$base-line-height: 1.75rem;
+
+$width-desktop: 1120px;
 $width-tablet: 600px;
+$width-max: 1120px;
 
-body,
-html {
-  background-color: black;
-  // background-color: green;
-  max-width: 1250px;
-  margin: $base-margin;
-  color: white;
-  font-family: $font-main;
-  font-weight: $font-weight;
-  font-style: $font-style;
-}
-// explore how this works
-%active {
-  border: 3px solid red;
-  // background: yellowgreen;
-  color: red;
-}
+$border-solid-width: 1px;
+$border-solid-type: solid;
+$border-solid-color: #e1e1e1;
 
-// The mixin name can be anything you want. Then use that name when you calll with mixin with the @include
+$border-dashed-width: 1px;
+$border-dashed-type: dashed;
+$border-dashed-color: #c8c8c8;
 
-@mixin primary-links {
-  text-decoration: underline;
-}
-
-@mixin tablet {
-  @media (min-width: $width-tablet) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: $width-desktop) {
-    @content;
-  }
-}
+$brand-green: #248a83;
+$brand-purple: #2f1339;
+$brand-orange: #d99054;
+$brand-yellow: #f0e4d1;
+$brand-grey-light: #a1a1a1;
+$brand-grey-medium: #808080;

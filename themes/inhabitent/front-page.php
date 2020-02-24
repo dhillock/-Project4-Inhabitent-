@@ -14,12 +14,12 @@
 
 		<section class="banner-hero">
 			<?php the_post_thumbnail('large');?>
-			<img class="logo-main2" src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-hero.jpg;?>" alt="Woman Camping, backgroun image">
+			<!-- <img class="logo-main2" src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-hero.jpg;?>" alt="Woman Camping, backgroun image"> -->
 
 		</section>
 
-		<h2><?php the_title();?></h2>
-		<h3><?php the_permalink();?></h3>
+		<!-- <h2><?php the_title();?></h2>
+		<h3><?php the_permalink();?></h3> -->
 		<?php the_content();?>
 
 		<!-- Loop ends -->

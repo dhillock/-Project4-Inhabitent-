@@ -1,36 +1,36 @@
-// .menu-main {
-//   // display: flex;
-//   // flex-direction: row;
-//   // justify-content: space-between;
-//   // justify-content: start;
-//   // align-items: center;
-//   color: rgb(99, 98, 98);
-//   padding: 0 130px 0 130px;
-
-//   a {
-//     text-decoration: none;
-//     color: white;
-//   }
-//   li {
-//     display: inline;
-//   }
-
-//   img  logo {
-//     width: 50px;
-//   }
-// } // end of main-menu code
-
-
-.menu-main {
-
-display: flex;
-
-
-
-a {
-  text-decoration: hotpink;
-  color: chartreuse;
+body {
+  max-width: 1120;
 }
 
+header {
+  position: fixed;
+}
 
+.mast-head {
+  width: 100%;
+  display: flex;
+}
+
+.menu-main {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.menu-main-menu-container {
+  width: 100%;
+}
+
+.menu {
+  width: 30%;
+  margin-left: 650px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  a {
+    color: white;
+  }
 }

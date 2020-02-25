@@ -240,14 +240,50 @@ p {
 p span {
   font-weight: bold; }
 
-.menu-main {
+body {
+  max-width: 1120; }
+
+header {
+  position: fixed; }
+
+.mast-head {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .menu-main a {
-    -webkit-text-decoration: hotpink;
-            text-decoration: hotpink;
-    color: chartreuse; }
+
+.menu-main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.menu-main-menu-container {
+  width: 100%; }
+
+.menu {
+  width: 30%;
+  margin-left: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .menu a {
+    color: white; }
 
 footer {
   background-color: hotpink;
@@ -281,21 +317,30 @@ footer img {
     background-color: yellow; }
 
 body {
-  background: white;
-  font-size: 2em;
-  color: #404040;
-  font-family: Merriweather-Web;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.75; }
+  font-size: 2em; }
 
-.banner-hero {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(/images/home-hero.jpg);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(/images/home-hero.jpg);
-  background-size: cover, cover; }
+.banner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
-.logo-main2 {
-  position: relative; }
+.logo-main {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 275px;
+  height: 275px; }
+
+.attachment-large size-large wp-post-image {
+  width: 100%; }
+
+.about {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-p0sition: bottom;
+  width: 100%;
+  height: 500px; }
 
 .contactForm {
   display: -webkit-box;

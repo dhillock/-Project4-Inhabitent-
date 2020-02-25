@@ -8,6 +8,9 @@
     
     <h2><?php the_title(); ?></h2>
     <?php the_post_thumbnail();?> 
+    <span class="price">
+        <?php echo '$' . get_field('price');?> 
+    </span>
 	    <?php the_content(); ?>
     
     <!-- Loop ends -->

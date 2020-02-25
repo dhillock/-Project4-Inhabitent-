@@ -101,7 +101,8 @@ function inhabitent_post_types() {
 
 add_action('init', 'inhabitent_post_types');
 
-
+//Flush permalinks
+flush_rewrite_rules();
 
 
 

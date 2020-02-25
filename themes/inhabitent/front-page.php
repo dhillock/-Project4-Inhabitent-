@@ -11,6 +11,7 @@
         <?php the_post_thumbnail('large');?>
         <!-- The rouned white logo -->
         <img class="logo-main" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg;?>" alt="Inhabitents logo">
+
     </section>
     
     <!-- Loop ends -->

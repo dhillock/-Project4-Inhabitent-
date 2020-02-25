@@ -8,6 +8,12 @@
 </head>
 <body <?php body_class();?>>
 
+<?php
+    // $template = get_stylesheet_directory_uri();
+    // $template = get_template_directory_uri();
+    // echo $template;
+?>
+
 <header>
     <div class="mast-head">
 

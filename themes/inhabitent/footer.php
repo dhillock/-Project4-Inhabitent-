@@ -9,7 +9,7 @@
     </div>
 
     <div class="contact-business">
-        <p class="brand-orange Novacento-bold" >BUISINESS HOURS</p>
+        <p class="brand-orange Novacento-bold" >BUSINESS HOURS</p>
         <ul>
             <li> <p class="white-font " ><span class="merriweather-bold">Monday-Friday:</span> 9am to 5pm</p></li>
             <li> <p class="white-font "><span class="merriweather-bold">Saturday: </span>10am to 2pm</p></li>

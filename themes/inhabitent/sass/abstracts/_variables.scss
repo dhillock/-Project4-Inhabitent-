@@ -1,6 +1,8 @@
 //
 // Set SASS Variables
 //
+
+$template-folder: "echo get_stylesheet_directory_uri(); ."
 $color-main-background: #ffffff;
 
 $font-main: 'Merriweather';
@@ -8,10 +10,11 @@ $font-accent: 'Novecento-Sans-Web';
 $font-weight: normal;
 $font-styleTemp: italics;
 $font-base: 16px;
-$font-color: #404040;
+$font-base-color: #404040;
+$base-font-size: 1rem;
 
 $margin-base: 0 auto;
-$base-line-height: 1.75rem;
+$base-line-height: 1.75;
 
 $width-desktop: 1120px;
 $width-tablet: 600px;

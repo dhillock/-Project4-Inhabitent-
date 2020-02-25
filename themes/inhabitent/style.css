@@ -187,7 +187,7 @@ body {
   font-style: italics;
   font-size: 16px;
   margin: 0 auto;
-  line-height: 1.75rem;
+  line-height: 1.75;
   color: #404040;
   width: 1120px; }
 
@@ -241,7 +241,8 @@ p span {
   font-weight: bold; }
 
 body {
-  max-width: 1120; }
+  width: 1120px;
+  max-width: 1120px; }
 
 header {
   position: fixed; }
@@ -317,23 +318,29 @@ footer img {
     background-color: yellow; }
 
 body {
-  font-size: 2em; }
+  background: #ffffff;
+  color: #404040;
+  font-family: "Novecento-Sans-Web";
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
+  width: 1120px; }
 
 .banner {
-  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.4)), to(#969696));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4), #969696);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .banner img {
+    width: 100%; }
 
 .logo-main {
   position: absolute;
-  top: 20%;
-  left: 40%;
+  top: 185px;
+  left: 1px;
   width: 275px;
   height: 275px; }
-
-.attachment-large size-large wp-post-image {
-  width: 100%; }
 
 .about {
   background-size: cover;

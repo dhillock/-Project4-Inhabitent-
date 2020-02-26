@@ -23,10 +23,12 @@ function inhabitant_features() {
 // the first parameter is the WP hook, and the second parameter is the name of our function.
 add_action('after_setup_theme', 'inhabitant_features');
 
-// We registered a sidebar into the WP backend....so we could put widgets into it.
+
 function inhabitent_widget() {
+
+// We registered a sidebar into the WP backend....so we could put widgets into it.	
 register_sidebar(array(
-'name' => 'Sidebar InfoXXX',
+'name' => 'Sidebar Info',
 'id' => 'sidebar-info',
 'description' => 'Add a text block with your business hours',
 // 'before_widget' => '<aside id="%1$s">',
@@ -34,8 +36,19 @@ register_sidebar(array(
 'after_widget' => '</aside>',
 'before_title' => '<h2 class="widget-title">',
 'after_title' => '</h2>'
-
 ));
+
+// We registered a sidebar into the WP backend....so we could put widgets into it.	
+register_sidebar(array(
+	'name' => 'Footer Info',
+	'id' => 'footer-info',
+	'description' => 'Add a text block for your footer',
+	'before_widget' => '<aside class="%1$s">',
+	'after_widget' => '</aside>',
+	'before_title' => '<h2 class="widget-title">',
+	'after_title' => '</h2>'
+	));
+
 }
 
 add_action('widgets_init', 'inhabitent_widget');

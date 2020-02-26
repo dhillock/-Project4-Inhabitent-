@@ -3,30 +3,11 @@ footer {
   background-color: hotpink;
   height: 330px;
   margin-top: 50px;
-  display: flex;
-  align-content: center;
+  @include flex-set();
 }
 
-footer p {
-  padding: 10px;
-}
-
-footer img {
-  margin-left: 120px;
-}
-
-.contact-footer {
-  background-color: red;
-  width: 100% !important;
-  margin: 50px;
-}
-
-.contact-business {
-  width: 350px;
-  margin: 1px;
-}
-
-.copyright {
-  margin-top: 1px;
-  margin-left: 10px;
+.text-5,
+.text-6 {
+  @include flex-set();
+  flex-direction: column;
 }

@@ -2,22 +2,33 @@
 
 <?php if( have_posts() ) :
 
-//The WordPress Loop: loads post content 
+// The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-    
-    <h2><?php the_title(); ?></h2>
-    <h3><?php the_permalink();?></h3>
-    <?php the_content(); ?>
+
+    <section class="banner">
+		<!-- Display the hero image that is stored in wordpress -->
+        <?php the_post_thumbnail('large');?>
+        <!-- The rouned white logo -->
+        <img class="logo-main" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg;?>" alt="Inhabitents logo">
+
+    </section>
     
     <!-- Loop ends -->
     <?php endwhile;?>
 
-    <?php the_posts_navigation();?>
+    <nav class = 'main-menu'>
+        <?php the_posts_navigation();?>
+    </nav>
 
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif;?>
+	<?php else : ?>
+        	<p>No posts found</p>
+	<?php endif;?>
+
+
+<h1 class="landing-title" >SHOP STUFF</h1>
+
+<!-- Load the terms (categories) start-->
 
 <?php 
 $terms = get_terms(array(
@@ -33,8 +44,10 @@ foreach($terms as $term) :
     <img src='<?php echo get_template_directory_uri() . "/images/product-type-icons/$file_name"?>'>
 <?php endforeach;?>
 
+<!-- Load the terms (categories) end -->
 
-<!-- Custom Post Loop Starts -->
+<!-- Load the terms (categories) start-->
+<h1 class="landing-title2" >Inhabitent Journal</h1>
 <?php
    $args = array( 
        'post_type' => 'post', 
@@ -50,5 +63,11 @@ foreach($terms as $term) :
   
 <?php endforeach; wp_reset_postdata(); ?>
 
-    
+
+<!-- Load the terms (categories) start-->
+
+
+
+
+<!-- Load the footer  -->
 <?php get_footer();?>

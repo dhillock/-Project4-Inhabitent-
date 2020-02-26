@@ -293,27 +293,34 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
-footer p {
-  padding: 10px; }
-
-footer img {
-  margin-left: 120px; }
-
-.contact-footer {
-  background-color: red;
-  width: 100% !important;
-  margin: 50px; }
-
-.contact-business {
-  width: 350px;
-  margin: 1px; }
-
-.copyright {
-  margin-top: 1px;
-  margin-left: 10px; }
+.text-5,
+.text-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
 .sidebar {
   background-color: green; }

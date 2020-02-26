@@ -302,13 +302,18 @@ footer p {
 footer img {
   margin-left: 120px; }
 
-.contact-footer,
-.contact-business {
+.contact-footer {
+  background-color: red;
+  width: 100% !important;
   margin: 50px; }
 
+.contact-business {
+  width: 350px;
+  margin: 1px; }
+
 .copyright {
-  margin-top: 90px;
-  margin-left: 50px; }
+  margin-top: 1px;
+  margin-left: 10px; }
 
 .sidebar {
   background-color: green; }
@@ -341,13 +346,6 @@ body {
   left: 1px;
   width: 275px;
   height: 275px; }
-
-.about {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-p0sition: bottom;
-  width: 100%;
-  height: 500px; }
 
 .contactForm {
   display: -webkit-box;

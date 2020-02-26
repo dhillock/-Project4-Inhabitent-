@@ -6,7 +6,7 @@
         the_post(); ?>
     
     <h2><?php the_title(); ?></h2>
-ß    <?php the_content(); ?>
+    <?php the_content(); ?>
     
     <!-- Loop ends -->
     <?php endwhile;?>

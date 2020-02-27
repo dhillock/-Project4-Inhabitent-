@@ -7,21 +7,21 @@ if (have_posts()):
     while (have_posts()):
         the_post();?>
 
-						            <section class="banner">
-						                <!-- Display the hero image that is stored in wordpress -->
-						                <?php the_post_thumbnail('large');?>
-						                <!-- The rouned white logo -->
-						                <img class="logo-main" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg;?>" alt="Inhabitents logo">
-						            </section>
+																																		            <section class="banner">
+																																		                <!-- Display the hero image that is stored in wordpress -->
+																																		                <?php the_post_thumbnail('large');?>
+																																		                <!-- The rouned white logo -->
+																																		                <img class="logo-main" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg;?>" alt="Inhabitents logo">
+																																		            </section>
 
-						        <!-- Loop ends -->
-						        <?php endwhile;?>
+																																		        <!-- Loop ends -->
+																																		        <?php endwhile;?>
 
-			        <nav class = 'main-menu'>
-			            <?php the_posts_navigation();?>
-			        </nav>
+																	        <nav class = 'main-menu'>
+																	            <?php the_posts_navigation();?>
+																	        </nav>
 
-			    <?php else: ?>
+																	    <?php else: ?>
             <p>No posts found</p>
     <?php endif;
 ?>
@@ -30,6 +30,7 @@ if (have_posts()):
 <!-- Load the terms (categories) start-->
 
 <h1 class="landing-title" >SHOP STUFF</h1>
+<section class="shop-page-product-type">
 
 <?php
 $terms = get_terms(array(
@@ -37,16 +38,24 @@ $terms = get_terms(array(
     'hide_empty' => false,
 ));
 
-foreach ($terms as $term):
+foreach ($terms as $term): ?>
 
-    <section class="front-page-product-sections">
-        <img class="product-section-svg" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/product-type-icons/<?php echo $term->slug;?>.svg" alt="">
-         <?php echo category_description($term);?>
-        <a href="<?php echo "product-type/" . $term->slug ;?>"><button type="submit" class="front-page-product-sections-btn"><?php echo $term->name;?></button></a>
-    </section>
-    
-    <?php endforeach;?>
+    <section class="front-page-product-sections"> <?php
 
+$file_name = $term->name . '.svg';
+// echo "<p>";
+// echo $term->name;
+// echo "</p>";
+?>
+            <img src='<?php echo get_template_directory_uri() . "/images/product-type-icons/$file_name" ?>'>
+                <?php echo category_description($term); ?>
+	        <a href="<?php echo "product-type/" . $term->slug; ?>"><button type="submit" class="front-page-product-sections-btn"><?php echo strtoupper($term->name) . ' STUFF'; ?></button></a>
+
+
+        </section>
+	        <?php endforeach;?>
+
+</section>
 <!-- Load the terms (categories) end -->
 
 <!-- Load three blog posts start-->
@@ -61,10 +70,10 @@ $product_posts = get_posts($args); // returns an array of posts
 
 ?>
         <?php foreach ($product_posts as $post): setup_postdata($post);?>
-			        <?php the_title()?>
-			        <?php the_post_thumbnail()?>
+																	        <?php the_title()?>
+																	        <?php the_post_thumbnail()?>
 
-			        <?php endforeach;
+																	        <?php endforeach;
 wp_reset_postdata();?>
 
 <!-- Load three blog posts end-->

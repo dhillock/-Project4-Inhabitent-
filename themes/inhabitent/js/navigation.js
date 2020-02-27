@@ -109,3 +109,13 @@
     }
   })(container);
 })();
+
+$(document).ready(function() {
+  $('.front-page-product-sections')
+    .mouseenter(function() {
+      $(this).css('border', 'black solid 1px');
+    })
+    .mouseleave(function() {
+      $(this).css('border', 'red solid 1px');
+    });
+});

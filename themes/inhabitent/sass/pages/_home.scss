@@ -20,10 +20,9 @@ body {
   img {
     width: 100%;
   }
-
 }
 
-.landing-title{
+.landing-title {
   font-family: $font-accent;
   font-weight: 400;
   color: $base-font-color;
@@ -31,7 +30,6 @@ body {
   text-align: center;
   margin-bottom: 3.75rem;
 }
-
 
 .logo-main {
   position: absolute;
@@ -41,4 +39,40 @@ body {
   left: 1px;
   width: 275px;
   height: 275px;
+}
+
+.shop-page-product-type {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 22vw 22vw 22vw 22vw;
+  // margin-left: 100px;
+  justify-content: center;
+}
+
+.front-page-product-sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30vh;
+  margin-bottom: 20px;
+  border: 1px solid $brand-grey-medium;
+  border-top-width: 5px;
+  border-color: $brand-orange;
+}
+
+.front-page-product-sections p {
+  padding: 20px;
+  text-align: center;
+}
+
+.front-page-product-sections-btn {
+  width: 100px;
+  font-family: $font-accent;
+  color: white;
+  background: $brand-green;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 120px;
+  text-decoration: none;
 }

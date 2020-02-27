@@ -9,24 +9,37 @@ body {
   font-family: $font-main;
   font-weight: $font-weight;
   font-style: $font-styleTemp;
-  font-size: $font-base;
+  font-size: $base-font-size;
 
-  margin: $margin-base;
+  margin: $base-margin;
 
   line-height: $base-line-height;
 
-  color: $font-base-color;
+  color: $base-font-color;
   width: $width-desktop;
   // max-width: $width-max;
   // min-width: $width-max;
 }
 
 .menu-main {
-  font-size: $font-base;
+  font-size: $base-font-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-family: $font-accent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: $brand-purple;
+  font-size: 2.4rem;
+  font-weight: 400;
 }
 
 p {
-  font-size: $font-base;
+  font-size: $base-font-size;
   font-family: $font-main;
 }
 

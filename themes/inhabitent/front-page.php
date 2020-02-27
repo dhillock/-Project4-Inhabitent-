@@ -7,13 +7,12 @@
         while( have_posts() ) :
             the_post(); ?>
 
-        <section class="banner">
-            <!-- Display the hero image that is stored in wordpress -->
-            <?php the_post_thumbnail('large');?>
-            <!-- The rouned white logo -->
-            <img class="logo-main" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg;?>" alt="Inhabitents logo">
-
-        </section>
+            <section class="banner">
+                <!-- Display the hero image that is stored in wordpress -->
+                <?php the_post_thumbnail('large');?>
+                <!-- The rouned white logo -->
+                <img class="logo-main" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg;?>" alt="Inhabitents logo">
+            </section>
         
         <!-- Loop ends -->
         <?php endwhile;?>
@@ -22,9 +21,9 @@
             <?php the_posts_navigation();?>
         </nav>
 
-        <?php else : ?>
-                <p>No posts found</p>
-        <?php endif;
+    <?php else : ?>
+            <p>No posts found</p>
+    <?php endif;
 ?>
 
 
@@ -49,7 +48,7 @@
 <!-- Load the terms (categories) end -->
 
 <!-- Load three blog posts start-->
-        <h1 class="landing-title2" >INHABITENT JOURNAL</h1>
+        <h1 class="landing-title" >INHABITENT JOURNAL</h1>
         <?php
         $args = array( 
             'post_type' => 'post', 
@@ -69,7 +68,7 @@
 
 
 <!-- Load Latest Adventures start-->
-        <h1 class="landing-title2" >LATEST ADVENTURES</h1>
+        <h1 class="landing-title" >LATEST ADVENTURES</h1>
 
 <!-- Load Latest Adventures end-->
 

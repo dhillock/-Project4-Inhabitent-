@@ -1,8 +1,7 @@
 body {
   background: $color-main-background;
-  color: $font-base-color;
+  color: $base-font-color;
   font-family: $font-accent;
-  font-size: $font-base;
   font-size: $base-font-size;
   line-height: $base-line-height;
   width: $width-desktop;
@@ -10,18 +9,29 @@ body {
 
 .banner {
   // width: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.4) 0,
-    rgba(0, 0, 0, 0.4),
-    #969696
-  );
-  display: flex;
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(0, 0, 0, 0.4) 0,
+  //   rgba(0, 0, 0, 0.4),
+  //   #969696
+  // );
+  //display: flex;
 
   img {
     width: 100%;
   }
+
 }
+
+.landing-title{
+  font-family: $font-accent;
+  font-weight: 400;
+  color: $base-font-color;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+
 
 .logo-main {
   position: absolute;
@@ -32,8 +42,3 @@ body {
   width: 275px;
   height: 275px;
 }
-
-//@warn size-large wp-post-image {
-// width: 100%;
-//}
-//

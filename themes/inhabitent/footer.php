@@ -4,12 +4,19 @@
 This needs to go as the last thing before the closing body tag -->
 </body>
 
-<footer>
-
-<?php 
-dynamic_sidebar('footer-info'); 
+<footer style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/dark-wood.png;?>')">
+<?php
+// Display footer widget area
+dynamic_sidebar('footer-info');
 ?>
 
+<div class = 'footer-logo'>
+    <img style="width: 300px; height: 180px;" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg;?>" alt="Inhabitents logo">
+</div>
+
+<div class = 'footer-copyright'>
+<p> COPYRIGHT © 2019 INHABITANT </p>
+</div>
 
 </footer>
 

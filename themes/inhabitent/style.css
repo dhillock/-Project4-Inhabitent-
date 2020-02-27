@@ -298,9 +298,13 @@ header {
     color: white; }
 
 footer {
-  background-color: hotpink;
-  height: 330px;
-  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  font-size: 1rem;
+  padding-top: 50px;
+  line-height: 1.75; }
+
+.text-5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,9 +317,15 @@ footer {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 50px; }
 
-.text-5,
 .text-6 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,8 +340,44 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-direction: column;
-      flex-direction: column; }
+  justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+
+.widget-title {
+  display: none; }
+
+.footer-copyright {
+  margin-bottom: 25px;
+  color: white;
+  grid-column: span 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.orange-brand {
+  color: #d99054;
+  font-family: 'Novecento-Sans-Web-Bold'; }
 
 .sidebar {
   background-color: green; }

@@ -28,7 +28,9 @@ body {
   color: $base-font-color;
   font-size: 2.4rem;
   text-align: center;
-  margin-bottom: 3.75rem;
+  // margin-bottom: 3.75rem;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .logo-main {
@@ -41,11 +43,12 @@ body {
   height: 275px;
 }
 
+////////////////////////////// Shop Stuff //////////////////////
+
 .shop-page-product-type {
   display: grid;
-  grid-gap: 20px;
   grid-template-columns: 22vw 22vw 22vw 22vw;
-  // margin-left: 100px;
+  grid-gap: 20px;
   justify-content: center;
 }
 
@@ -59,6 +62,11 @@ body {
   border: 1px solid $brand-grey-medium;
   border-top-width: 5px;
   border-color: $brand-orange;
+
+  .product-section-svg {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .front-page-product-sections p {
@@ -76,3 +84,50 @@ body {
   width: 120px;
   text-decoration: none;
 }
+
+.landing-blog {
+  height: 350px;
+  font-size: 16px;
+  display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // grid-gap: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid $brand-grey-medium;
+  font-family: Merriweather;
+  margin: 10px;
+}
+
+// .landing-blog .wp-post-image {
+//   height: 200px;
+// }
+
+.post-thumb {
+  max-height: 250px;
+  left: 50%;
+  max-height: 250px;
+  max-width: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -52%);
+  width: auto;
+}
+
+section.journal-excerpts {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.read-entry-button {
+  margin-left: 10px;
+  margin-top: 20px;
+  height: 40px;
+  width: 120px;
+  background: white;
+  border: 1px solid #808080;
+}
+
+///////////////////  Latest Adventures ////////////////////

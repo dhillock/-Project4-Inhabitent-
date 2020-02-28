@@ -85,40 +85,60 @@ body {
   text-decoration: none;
 }
 
-.landing-blog {
-  height: 350px;
-  font-size: 16px;
-  display: grid;
-  // grid-template-columns: 1fr 1fr 1fr;
-  // grid-gap: 20px;
+///////////////////////// Inhabitent Journal /////////////////////////
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  border: 1px solid $brand-grey-medium;
-  font-family: Merriweather;
-  margin: 10px;
+
+.journal-excerpts{
+  margin-left: 35px;
+  margin-right: 35px;
+ display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 20px;
+// justify-content: right;
+
+h1 {
+  color: $brand-green;
+}
+  
 }
 
-// .landing-blog .wp-post-image {
+
+// .landing-blog{
+//   height: 350px;
+//   font-size: 16px;
+
+
+//   // display: flex;
+//   // flex-direction: column;
+//   // justify-content: flex-start;
+
+// display: grid;
+// grid-template-columns: 1fr 1fr 1fr;
+// grid-gap: 20px;
+// justify-content: center;
+
+
+//   border: 1px solid #808080;
+//   height: 200px;
+//   font-family: Merriweather;
+//   margin: 10px;
+// }
+
+// .wp-post-image{
 //   height: 200px;
 // }
 
-.post-thumb {
-  max-height: 250px;
-  left: 50%;
-  max-height: 250px;
-  max-width: none;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -52%);
-  width: auto;
-}
 
-section.journal-excerpts {
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
+
+
+.blog-thumb {
+  // left: 50%;
+  // max-height: 250px;
+  // max-width: none;
+  // position: absolute;
+  // top: 50%;
+  // transform: translate(-50%, -52%);
+  width: auto;
 }
 
 .read-entry-button {

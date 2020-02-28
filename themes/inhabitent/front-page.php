@@ -6,27 +6,27 @@
     while (have_posts()):
         the_post();?>
 
-			<section class="banner">
-				<!-- Display the hero image that is stored in wordpress -->
-				<?php the_post_thumbnail('large');?>
-				<!-- The rouned white logo -->
-				<img class="logo-main" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg;?>" alt="Inhabitents logo">
+					<section class="banner">
+						<!-- Display the hero image that is stored in wordpress -->
+						<?php the_post_thumbnail('large');?>
+						<!-- The rouned white logo -->
+						<img class="logo-main" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg;?>" alt="Inhabitents logo">
 
-			</section>
+					</section>
 
-			<!-- Loop ends -->
-			<?php endwhile;?>
+					<!-- Loop ends -->
+					<?php endwhile;?>
 
-						    <nav class = 'main-menu'>
-						        <?php the_posts_navigation();?>
-						    </nav>
+							    <nav class = 'main-menu'>
+							        <?php the_posts_navigation();?>
+							    </nav>
 
-							<?php else: ?>
+								<?php else: ?>
         	<p>No posts found</p>
 	<?php endif;?>
 
 
-<!-- Load the terms (categories) start-->
+<!-- Load the terms (categories) for Shop Stuff, start-->
 
 <h1 class="landing-title" >SHOP STUFF</h1>
 <section class="shop-page-product-type">
@@ -42,9 +42,7 @@ foreach ($terms as $term): ?>
     <section class="front-page-product-sections"> <?php
 
 $file_name = $term->name . '.svg';
-// echo "<p>";
-// echo $term->name;
-// echo "</p>";
+
 ?>
             <img class="product-section-svg" src='<?php echo get_template_directory_uri() . "/images/product-type-icons/$file_name" ?>'>
                 <?php echo category_description($term); ?>
@@ -55,29 +53,30 @@ $file_name = $term->name . '.svg';
 	        <?php endforeach;?>
 
 </section>
-<!-- Load the terms (categories) end -->
+<!-- Load the terms (categories) for Shop Stuff, end -->
 
 <!-- Load three blog posts start-->
-        <h1 class="landing-title" >INHABITENT JOURNAL</h1>
+<h1 class="landing-title" >INHABITENT JOURNAL</h1>
 
-        <section class="journal-excerpts">
+<section class="journal-excerpts">
+
 <?php
 $args = array('numberposts' => 3, 'order' => "ASC", 'orderby' => 'date');
 $postslist = get_posts($args);
 foreach ($postslist as $post): setup_postdata($post);?>
 
-				<div class="landing-blog">
-					<div class = 'post-thumb'>
-						<!-- <?php the_post_thumbnail('large');?> -->
+	<div class="landing-blog">
+		<div class = 'blog-thumb' >
+			<!-- <?php the_post_thumbnail('large');?> -->
+		</div>
 
-					</div>
-					<?php the_date();?>
-					<br>
-					<h1 class="green-brand Novacento-bold"><?php the_title();?></h1>
-					<a href="<?php echo get_permalink(); ?>"><button class="read-entry-button">READ ENTRY</button></a>
-				</div>
+		<?php the_date();?>
+		<br>
+		<h1 class="green-brand Novacento-bold"><?php the_title();?></h1>
+		<a href="<?php echo get_permalink(); ?>"><button class="read-entry-button">READ ENTRY</button></a>
+	</div>
 
-			<?php endforeach;?>
+				<?php endforeach;?>
 </section>
 
 

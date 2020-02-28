@@ -1,6 +1,8 @@
 html {
-  // This is a project specification
-  --base-spacing: 1.5rem;
+  --base-spacing: $base-spacing;
+  width: $width-max;
+  max-width: $width-max;
+  margin: auto;
 }
 
 body {
@@ -17,15 +19,20 @@ body {
 
   color: $base-font-color;
   width: $width-desktop;
-  // max-width: $width-max;
-  // min-width: $width-max;
+  max-width: $width-max;
+  min-width: $width-max;
 }
 
 .menu-main {
   font-size: $base-font-size;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both;
   font-family: $font-accent;
   letter-spacing: 2px;

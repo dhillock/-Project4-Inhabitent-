@@ -7,7 +7,7 @@
 (function() {
   let container, button, menu, links, i, len;
 
-  // alert('hello');
+  //alert('hello');
 
   container = document.getElementById('site-navigation');
   if (!container) {

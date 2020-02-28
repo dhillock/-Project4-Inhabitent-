@@ -7,7 +7,7 @@ footer {
   // grid-template-rows: 280px;
   font-size: 1rem;
   padding-top: 50px;
-  line-height: 1.75;
+  line-height: $base-line-height;
 }
 
 .text-5 {
@@ -26,8 +26,15 @@ footer {
 .footer-logo {
   // background-color: red;
   display: flex;
-  align-content: flex-end;
-  align-self: flex-end;
+  justify-content: end;
+  align-items: flex-start;
+  // align-content: flex-end;
+  // align-self: flex-end;
+  img {
+    height: 45px;
+    width: auto;
+    margin-right: $base-spacing;
+  }
 }
 .widget-title {
   display: none;
@@ -35,6 +42,7 @@ footer {
 
 .footer-copyright {
   // background-color: green;
+  margin-top: $base-spacing;
   margin-bottom: 25px;
   color: white;
   grid-column: span 3;

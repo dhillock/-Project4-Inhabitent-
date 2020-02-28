@@ -50,6 +50,7 @@ body {
   grid-template-columns: 22vw 22vw 22vw 22vw;
   grid-gap: 20px;
   justify-content: center;
+  border: 1px solid red;
 }
 
 .front-page-product-sections {
@@ -59,9 +60,12 @@ body {
   align-items: center;
   height: 30vh;
   margin-bottom: 20px;
+  &:hover {
+    border-color: $brand-orange;
+  }
   border: 1px solid $brand-grey-medium;
   border-top-width: 5px;
-  border-color: $brand-orange;
+  border-inline-color: $border-solid-color;
 
   .product-section-svg {
     width: 80px;
@@ -87,49 +91,25 @@ body {
 
 ///////////////////////// Inhabitent Journal /////////////////////////
 
-
-.journal-excerpts{
+.journal-excerpts {
   margin-left: 35px;
   margin-right: 35px;
- display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 20px;
-// justify-content: right;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  // border: 1px solid #808080;
+  border: 1px solid red;
+  font-family: Merriweather; //remove this
 
-h1 {
-  color: $brand-green;
+  img {
+    height: 200px;
+    width: auto;
+  }
+
+  h1 {
+    color: $brand-green;
+  }
 }
-  
-}
-
-
-// .landing-blog{
-//   height: 350px;
-//   font-size: 16px;
-
-
-//   // display: flex;
-//   // flex-direction: column;
-//   // justify-content: flex-start;
-
-// display: grid;
-// grid-template-columns: 1fr 1fr 1fr;
-// grid-gap: 20px;
-// justify-content: center;
-
-
-//   border: 1px solid #808080;
-//   height: 200px;
-//   font-family: Merriweather;
-//   margin: 10px;
-// }
-
-// .wp-post-image{
-//   height: 200px;
-// }
-
-
-
 
 .blog-thumb {
   // left: 50%;
@@ -138,7 +118,8 @@ h1 {
   // position: absolute;
   // top: 50%;
   // transform: translate(-50%, -52%);
-  width: auto;
+  // width: auto;
+  color: green;
 }
 
 .read-entry-button {

@@ -11,7 +11,7 @@ dynamic_sidebar('footer-info');
 ?>
 
 <div class = 'footer-logo'>
-    <img style="width: 300px; height: 180px;" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg;?>" alt="Inhabitents logo">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg;?>" alt="Inhabitents logo">
 </div>
 
 <div class = 'footer-copyright'>

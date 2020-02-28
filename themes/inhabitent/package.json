@@ -1,6 +1,20 @@
 {
   "name": "inhabitant",
   "version": "1.1.0",
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11"
+  ],
   "license": "UNLICENSED",
   "description": "WordPress setup",
   "dependencies": {},

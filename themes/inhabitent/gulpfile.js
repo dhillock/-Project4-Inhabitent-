@@ -17,11 +17,7 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(prettyError())
     .pipe(sass())
-    .pipe(
-      autoprefixer({
-        browsers: ['last 2 versions']
-      })
-    )
+    .pipe(autoprefixer())
     .pipe(gulp.dest('./'))
     .pipe(cssnano())
     .pipe(rename('style.min.css'))

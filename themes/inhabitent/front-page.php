@@ -67,7 +67,7 @@ foreach ($postslist as $post): setup_postdata($post);?>
 
 	<div class="landing-blog">
 		<div class = 'blog-thumb' >
-			<!-- <?php the_post_thumbnail('large');?> -->
+			<?php the_post_thumbnail('large');?>
 		</div>
 
 		<?php the_date();?>

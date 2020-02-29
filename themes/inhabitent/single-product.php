@@ -7,7 +7,7 @@
         the_post(); ?>
     
     <h2><?php the_title(); ?></h2>
-    <?php the_post_thumbnail();?> 
+    <!-- <?php the_post_thumbnail();?>  -->
     <span class="price">
         <?php echo '$' . get_field('price');?> 
     </span>
@@ -22,5 +22,4 @@
         <p>No posts found</p>
 <?php endif;?>
 
-    
 <?php get_footer();?>

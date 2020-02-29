@@ -53,8 +53,10 @@ register_sidebar(array(
 
 add_action('widgets_init', 'inhabitent_widget');
 
-// this is a custom post-type...used for our store
+// this is to setup custom post-types.
 function inhabitent_post_types() {
+
+/////////// New post-type: Products: Start
 
     // public = true means that we will have a menu item
             register_post_type('product', array(
@@ -72,9 +74,6 @@ function inhabitent_post_types() {
                 'menu_icon' => 'dashicons-store'
             ));
             
-// Register Custom Taxonomy
-// function custom_taxonomy() {
-
 	$labels = array(
 		'name'                       => _x( 'Product Types', 'Taxonomy General Name', 'Product Type' ),
 		'singular_name'              => _x( 'Product Type', 'Taxonomy Singular Name', 'Product Type' ),
@@ -103,15 +102,69 @@ function inhabitent_post_types() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'product-type', array( 'product' ), $args );
 
-//}
+	register_taxonomy('product-type', array('product'), $args);
 
-// Hook into the 'init' action
-// add_action( 'init', 'custom_taxonomy', 0 );   
-         
-}
+/////////// New post-type: Products: End
 
+
+/////////// New post-type: Adventures: Start
+// public = true means that we will have a menu item
+register_post_type('adventure', array(
+    'has_archive' => true,
+    'show_in_rest' => true,
+    'public' => true,
+    'supports' => array('title', 'editor', 'thumbnail'),
+    'labels' => array(
+        'name' => 'Adventures',
+        'add_new_item' => 'Add Adventure',
+        'edit_item' => 'Edit Adventure',
+        'all_items' => 'All Adventures',
+        'singular_name' => 'Adventure',
+    ),
+    'menu_icon' => 'dashicons-smiley',
+));
+
+$labels = array(
+    'name' => _x('Adventure Types', 'Taxonomy General Name', 'Adventure Type'),
+    'singular_name' => _x('Adventure Type', 'Taxonomy Singular Name', 'Adventure Type'),
+    'menu_name' => __('Adventure Type', 'Adventure Type'),
+    'all_items' => __('All Items', 'Adventure Type'),
+    'parent_item' => __('Parent Item', 'Adventure Type'),
+    'parent_item_colon' => __('Parent Item:', 'Adventure Type'),
+    'new_item_name' => __('New Item Name', 'Adventure Type'),
+    'add_new_item' => __('Add New Item', 'Adventure Type'),
+    'edit_item' => __('Edit Item', 'Adventure Type'),
+    'update_item' => __('Update Item', 'Adventure Type'),
+    'view_item' => __('View Item', 'Adventure Type'),
+    'separate_items_with_commas' => __('Separate items with commas', 'Adventure Type'),
+    'add_or_remove_items' => __('Add or remove items', 'Adventure Type'),
+    'choose_from_most_used' => __('Choose from the most used', 'Adventure Type'),
+    'popular_items' => __('Popular Items', 'Adventure Type'),
+    'search_items' => __('Search Items', 'Adventure Type'),
+    'not_found' => __('Not Found', 'Adventure Type'),
+);
+$args = array(
+    'labels' => $labels,
+    'hierarchical' => true,
+    'public' => true,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'show_in_nav_menus' => true,
+    'show_tagcloud' => true,
+);
+register_taxonomy('adventure-type', array('adventure'), $args);
+
+/////////// New post-type: Adventures: End
+
+
+
+
+} // the end of adding custom post-type function. Above we added two custom post-types: Products, and Adventures.
+
+// Now that the custom post-type has been created, let's initialiize them.
+// Note that this - in fact - is only executed once...over time, because once it's setup in WP, it's setup.
+// If this was "run again" it would - perhaps - blow-away all the Adventure post-types we added into WP
 add_action('init', 'inhabitent_post_types');
 
 //Flush permalinks

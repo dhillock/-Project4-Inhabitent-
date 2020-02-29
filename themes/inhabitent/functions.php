@@ -53,7 +53,7 @@ register_sidebar(array(
 
 add_action('widgets_init', 'inhabitent_widget');
 
-// this is to setup custom post-types.
+// this function is to setup custom post-types.
 function inhabitent_post_types() {
 
 /////////// New post-type: Products: Start

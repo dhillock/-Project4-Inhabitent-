@@ -349,15 +349,29 @@ footer {
   .sidebar #nav_menu-2 :nth-child(1) {
     background-color: yellow; }
 
-.about {
-  text-align: center; }
-
-.about-image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  width: 100%;
-  height: 500px; }
+.container {
+  font-family: "Novecento-Sans-Web";
+  line-height: 1.75;
+  font-size: 16px; }
+  .container h1 {
+    font-family: 'Novecento Sans Web';
+    font-weight: bold;
+    font-size: 3rem; }
+  .container h2 {
+    text-align: center;
+    margin-top: 27px;
+    margin-bottom: 24px; }
+  .container p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 24px; }
+  .container .about-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 600px; }
 
 .contactForm {
   display: flex;

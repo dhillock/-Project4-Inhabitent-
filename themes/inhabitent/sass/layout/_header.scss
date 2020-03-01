@@ -1,37 +1,57 @@
-body {
-  width: 1120px;
-  max-width: 1120px;
-}
-
 header {
   position: fixed;
+  height: 35px;
+  margin-top: 10px;
 }
 
 .mast-head {
-  width: 100%;
+  background-color: red;
+  height: 35px;
+  width: 1120px;
+  font-family: $font-accent;
+  text-transform: uppercase;
+
   display: flex;
+  align-items: center;
 }
 
 .menu-main {
+  height: 35px;
+
   width: 100%;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-
-.menu-main-menu-container {
-  width: 100%;
+  // justify-content: flex-end;
+  // align-items: flex-start;
 }
 
 .menu {
-  width: 30%;
-  margin-left: 650px;
+  height: 35px;
+
+  background-color: green;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  justify-content: space-between;
+  // justify-content: flex-end;
+  // align-items: flex-start;
+  // justify-content: space-between;
 
   a {
     color: white;
   }
 }
+
+.menu-item {
+  height: 35px;
+  width: 80px;
+  background-color: orange;
+  // padding: 15px 10px 10px 10px;
+}
+
+
+//.fas fa-search fa-1x {
+// display: flex;
+// justify-content: flex-start;
+// }
+
+// .tent {
+//   margin-left: $base-spacing;
+//   margin-top: $base-spacing;
+// }

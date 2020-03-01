@@ -27,13 +27,15 @@ Text Domain: inhabitant
 @import 'layout/sidebar';
 @import 'layout/forms';
 
-@import 'pages/home';
-@import 'pages/shop';
-@import 'pages/journal';
-@import 'pages/adventures';
-@import 'pages/about';
-@import 'pages/find-up';
+@import 'pages/about';  
 @import 'pages/contact';
+@import 'pages/home';
+@import 'pages/shop';  
+
+// David added these
+// @import 'pages/journal'; 
+// @import 'pages/adventures'; 
+// @import 'pages/find-us'; 
 
 @import 'themes/theme';
 @import 'themes/admin';

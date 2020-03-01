@@ -261,35 +261,36 @@ p {
 p span {
   font-weight: bold; }
 
-body {
-  width: 1120px;
-  max-width: 1120px; }
-
 header {
-  position: fixed; }
+  position: fixed;
+  height: 35px;
+  margin-top: 10px; }
 
 .mast-head {
+  background-color: red;
+  height: 35px;
+  width: 1120px;
+  font-family: "Novecento-Sans-Web";
+  text-transform: uppercase;
+  display: flex;
+  align-items: center; }
+
+.menu-main {
+  height: 35px;
   width: 100%;
   display: flex; }
 
-.menu-main {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start; }
-
-.menu-main-menu-container {
-  width: 100%; }
-
 .menu {
-  width: 30%;
-  margin-left: 650px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  justify-content: space-between; }
+  height: 35px;
+  background-color: green;
+  display: flex; }
   .menu a {
     color: white; }
+
+.menu-item {
+  height: 35px;
+  width: 80px;
+  background-color: orange; }
 
 footer {
   display: grid;
@@ -347,6 +348,72 @@ footer {
     border: thick solid cornflowerblue; }
   .sidebar #nav_menu-2 :nth-child(1) {
     background-color: yellow; }
+
+.about {
+  text-align: center; }
+
+.about-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  height: 500px; }
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-area: form; }
+
+.info h2 {
+  font-family: Novecento-Sans-Web-Bold;
+  margin-bottom: 30px; }
+
+.info h3 {
+  font-family: Novecento-Sans-Web-Bold;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.info label {
+  font-family: Novecento-Sans-Web; }
+
+section.contact {
+  border: 1px solid #a1a1a1; }
+
+.input-field {
+  background-color: #a1a1a1;
+  width: 350px;
+  height: 40px;
+  border: none;
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%); }
+
+.input-message {
+  background-color: #a1a1a1;
+  width: 600px;
+  height: 300px;
+  border: none;
+  margin-top: 15px;
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%); }
+
+.contact-button {
+  background-color: #248a83;
+  color: white;
+  font-family: Novecento-Sans-Web;
+  width: 100px;
+  height: 40px;
+  font-size: 18px; }
+
+input {
+  margin-top: 15px;
+  margin-bottom: 30px; }
+
+.red {
+  color: #d99054; }
+
+.info {
+  padding: 70px; }
 
 body {
   background: #ffffff;
@@ -436,69 +503,3 @@ body {
   width: 120px;
   background: white;
   border: 1px solid #808080; }
-
-.about {
-  text-align: center; }
-
-.about-image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  width: 100%;
-  height: 500px; }
-
-.contactForm {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  grid-area: form; }
-
-.info h2 {
-  font-family: Novecento-Sans-Web-Bold;
-  margin-bottom: 30px; }
-
-.info h3 {
-  font-family: Novecento-Sans-Web-Bold;
-  margin-top: 30px;
-  margin-bottom: 30px; }
-
-.info label {
-  font-family: Novecento-Sans-Web; }
-
-section.contact {
-  border: 1px solid #a1a1a1; }
-
-.input-field {
-  background-color: #a1a1a1;
-  width: 350px;
-  height: 40px;
-  border: none;
-  -webkit-filter: brightness(150%);
-          filter: brightness(150%); }
-
-.input-message {
-  background-color: #a1a1a1;
-  width: 600px;
-  height: 300px;
-  border: none;
-  margin-top: 15px;
-  -webkit-filter: brightness(150%);
-          filter: brightness(150%); }
-
-.contact-button {
-  background-color: #248a83;
-  color: white;
-  font-family: Novecento-Sans-Web;
-  width: 100px;
-  height: 40px;
-  font-size: 18px; }
-
-input {
-  margin-top: 15px;
-  margin-bottom: 30px; }
-
-.red {
-  color: #d99054; }
-
-.info {
-  padding: 70px; }

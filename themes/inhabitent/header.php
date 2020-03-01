@@ -14,8 +14,8 @@
     // echo $template;
 ?>
 
-<header>
-    <div class="mast-head">
+<header class = 'mast-head'>
+    <!-- <div class="mast-head"> -->
 
         <a href="<?php echo get_home_url();?>">
         <img class = "tent" style="width: 50px; height: 33px;" src="
@@ -26,8 +26,10 @@
             <?php wp_nav_menu(array('theme_location' => 'main')) ;?>
         </nav>
         <i class="fas fa-search fa-1x"></i>
+
         <!-- <?php echo get_search_form();?> -->
-    </div> 
+
+    <!-- </div>  -->
 
 </header>
 

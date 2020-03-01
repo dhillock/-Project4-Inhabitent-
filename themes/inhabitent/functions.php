@@ -67,9 +67,9 @@ function inhabitent_post_types() {
                 'labels' => array(
                     'name' => 'Products',
                     'add_new_item' => 'Add NewYY Product',
-                    'edit_item' => 'Edit ProductYY',
-                    'all_items' => 'All ProductsZZ',
-                    'singular_name' => 'ProductYY'
+                    'edit_item' => 'Edit Product',
+                    'all_items' => 'All Products',
+                    'singular_name' => 'Product'
                 ),
                 'menu_icon' => 'dashicons-store'
             ));

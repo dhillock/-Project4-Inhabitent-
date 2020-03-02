@@ -22,7 +22,6 @@
 
 	        <?php the_posts_navigation();?>
 
-
 	    <?php else: ?>
             <p>No posts found</p>
     <?php endif;?>

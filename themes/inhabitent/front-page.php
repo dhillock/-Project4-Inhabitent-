@@ -12,9 +12,9 @@
 		</section>
 		<!-- Loop ends -->
 		<?php endwhile;?>
-	<nav class='main-menu'>
-	<?php the_posts_navigation();?>
-	</nav>
+
+		<?php the_posts_navigation();?>
+
 	<?php else: ?>
 <p>
 	No posts found

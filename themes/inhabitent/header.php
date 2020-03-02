@@ -9,36 +9,28 @@
 <body <?php body_class();?>>
 
 <?php
-    // $template = get_stylesheet_directory_uri();
-    // $template = get_template_directory_uri();
-    // echo $template;
+// $template = get_stylesheet_directory_uri();
+// $template = get_template_directory_uri();
+// echo $template;
 ?>
 
-<header class = 'mast-head'>
-    <!-- <div class="mast-head"> -->
+<header>
+        <div class ='logo-tent'>
+            <a href="<?php echo get_home_url(); ?>">
+            <img class = "tent" src="
+            <?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg;?>"
+            alt="Inhabitents Tent Logo"></a>
+        </div>
 
-        <a href="<?php echo get_home_url();?>">
-        <img class = "tent" style="width: 50px; height: 33px;" src="
-        <?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg;?>" 
-        alt="Inhabitents Tent Logo"></a>
-
-        <nav class = 'menu-main'> 
-            <?php wp_nav_menu(array('theme_location' => 'main')) ;?>
+        <nav>
+            <?php wp_nav_menu(array('theme_location' => 'main'));?>
         </nav>
-        <i class="fas fa-search fa-1x"></i>
 
-        <!-- <?php echo get_search_form();?> -->
-
-    <!-- </div>  -->
+        <div class = 'icon-search'>
+            <!-- <i style="width: 50px; height: 33px;" class="fas fa-search fa-1x"> </i> -->
+            <i class="fas fa-search fa-1x"> </i>
+        </div>
 
 </header>
-
-
-
-    
-
-
-
-
 
 

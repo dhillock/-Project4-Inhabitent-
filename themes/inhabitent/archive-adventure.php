@@ -1,5 +1,11 @@
 <?php get_header();?>
 
+<h1> dhArchive Adventures </h1>
+<h1> dhArchive Adventures </h1>
+<h1> dhArchive Adventures </h1>
+<h1> dhArchive Adventures </h1>
+<h1> dhArchive Adventures </h1>
+
 <?php if (have_posts()):
 
 //The WordPress Loop: loads post content
@@ -7,12 +13,8 @@
         the_post();?>
 
 	<h2><?php the_title();?></h2>
-	<!-- load the campter van image -->
-	<?php the_post_thumbnail();?>
-	<?php echo '$' . get_field('price'); ?>
-
-	<!-- <h3><?php the_permalink();?></h3> -->
-		<?php the_content();?>
+	<h3><?php the_permalink();?></h3>
+	<?php the_content();?>
 
 	<!-- Loop ends -->
 	<?php endwhile;?>
@@ -20,7 +22,7 @@
 	<?php the_posts_navigation();?>
 
 <?php else: ?>
-      <p>No posts found</p>
+    <p>No posts found</p>
 <?php endif;?>
 
 <?php get_footer();?>

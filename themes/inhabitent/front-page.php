@@ -74,7 +74,6 @@ foreach ($postslist as $post): setup_postdata($post);?>
 				<?php endforeach;?>
 </section>
 
-
 <?php wp_reset_postdata();?>
 <!-- Always good to use the above function to clear our posts -->
 
@@ -82,7 +81,32 @@ foreach ($postslist as $post): setup_postdata($post);?>
 
 
 <!-- Load Latest Adventures start-->
-        <h1 class="landing-title" >LATEST ADVENTURES</h1>
+<h1 class="landing-title" >LATEST ADVENTURES</h1>
+
+<?php 
+	$args = array( 'post_type' => 'adventure', 'posts_per_page' => 4, 'order' => "ASC", 'orderby' => 'date');
+	$the_query = new WP_Query( $args ); 
+?>
+
+<?php if ( $the_query->have_posts() ) : ?>
+
+		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+			<h1><?php the_title(); ?></h1>
+			<?php the_post_thumbnail('large');?>
+			<a href="<?php echo get_permalink(); ?>"><button class="read-entry-button">READ MORE</button></a>
+		
+		<?php endwhile;?>
+
+			<!-- take the hard-codded reference from here -->
+			<a href="http://localhost:3000/Inhabitent2/adventure/"><button class="btn">MORE ADVENTURES</button></a>
+<?php else:  ?>
+
+	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+
+<?php endif; ?>
+
+
 
 <!-- Load Latest Adventures end-->
 

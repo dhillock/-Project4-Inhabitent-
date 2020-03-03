@@ -571,6 +571,11 @@ figure {
   justify-content: center;
   width: 100%;
   height: 100%; }
+  figure img.attachment-large {
+    width: 260px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 figcaption {
   font-family: Merriweather Web, serif;
@@ -583,12 +588,6 @@ figcaption {
   border: 1px solid #a1a1a1;
   border-top-width: 5px;
   border-inline-color: #e1e1e1; }
-
-img.attachment-large {
-  width: 260px;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover; }
 
 .product-type-link {
   font-family: "Novecento-Sans-Web";

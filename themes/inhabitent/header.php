@@ -27,7 +27,6 @@
         </nav>
 
         <div class = 'icon-search'>
-            <!-- <i style="width: 50px; height: 33px;" class="fas fa-search fa-1x"> </i> -->
             <i class="fas fa-search fa-1x" > </i>
         </div>
 

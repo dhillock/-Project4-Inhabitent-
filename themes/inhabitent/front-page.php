@@ -1,4 +1,5 @@
 <?php get_header();?>
+
 <?php if (have_posts()):
 
 // The WordPress Loop: loads post content

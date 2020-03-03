@@ -351,26 +351,27 @@ footer {
   font-family: "Novecento-Sans-Web";
   line-height: 1.75;
   font-size: 16px; }
-  .container h1 {
-    font-family: 'Novecento Sans Web';
-    font-family: 'Novecento Sans Web', sans-serif;
+  .container .about-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 500px; }
+  .container .has-text-align-center.has-large-font-size {
+    font-family: Novecento Sans Web, sans-serif;
     font-weight: bold;
     font-size: 3rem; }
   .container h2 {
     text-align: center;
     margin-top: 27px;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    font-weight: bold; }
   .container p {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 16px;
     margin-bottom: 24px; }
-  .container .about-image {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    height: 600px; }
 
 .contactForm {
   display: flex;
@@ -518,8 +519,7 @@ body {
   border: 1px solid #808080; }
 
 .latest-adventures {
-  background-color: yellow;
-  border: 2px solid red;
+  background-color: gold;
   display: flex;
   grid-gap: 20px;
   justify-content: center;
@@ -527,3 +527,131 @@ body {
   .latest-adventures img {
     width: 200px;
     height: auto; }
+
+.shop-title {
+  background-color: darkcyan;
+  font-family: Novecento-Sans-Web-Bold;
+  font-size: 2.4rem;
+  height: 155px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+.place-holder {
+  height: 75px;
+  width: 100%; }
+
+.product-categories {
+  background-color: yellowgreen;
+  font-family: "Novecento-Sans-Web";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 25px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center; }
+
+.shop-content-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 320px;
+  gap: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 1.5;
+  font-size: 1rem;
+  line-height: 1.75; }
+
+.shop-content-grid a {
+  text-decoration: none; }
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+
+figcaption {
+  font-family: Merriweather Web, serif;
+  font-size: 16px;
+  color: #404040;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  border: 1px solid #a1a1a1;
+  border-top-width: 5px;
+  border-inline-color: #e1e1e1; }
+
+img.attachment-large {
+  width: 260px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.product-type-link {
+  font-family: "Novecento-Sans-Web";
+  color: #248a83;
+  text-decoration: none;
+  font-size: 18px; }
+
+.single-item-section {
+  height: 300px;
+  display: flex;
+  flex-direction: column; }
+
+.single-item-info h2 {
+  font-family: "Novecento-Sans-Web";
+  padding-left: 40px;
+  color: #d99054;
+  font-size: 4rem; }
+
+.single-item-info {
+  text-decoration: none; }
+
+.taxonomy-heading {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-family: Novecento-Sans-Web-Bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.taxonomy-heading h1 {
+  margin-bottom: 80px; }
+
+.item-image img {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%); }
+
+.single-product-page img {
+  margin-bottom: 120px;
+  padding: 40px;
+  width: 650px;
+  height: 500px;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%); }
+
+.single-product-info-div {
+  margin-top: 40px; }
+
+.single-product-info-div h2 {
+  margin-bottom: 30px;
+  font-family: "Novecento-Sans-Web";
+  color: #d99054; }
+
+.single-product-info-div p {
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-family: "Merriweather"; }
+
+.single-product-info-div .price-text {
+  font-size: 32px; }
+
+.single-post-page div .post-image-title-main img {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%); }

@@ -1,75 +1,40 @@
 header {
-  background-color: green;
-  display: flex;
+  // background-color: green;
   position: fixed;
+  display: flex;
   height: 35px;
   width: 1120px;
   margin-top: 10px;
+  margin-right: 10px;
 
   .tent {
     margin-left: 15px;
-    margin-right: 15px;
     height: 33px;
   }
 
   a {
+    font-family: $font-accent;
+    font-size: 1rem;
+    text-transform: uppercase;
     color: white;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .menu-main-menu-container {
+    width: 400px;
+    padding-left: 600px;
   }
 
   .menu {
-    background-color: red;
-    width: 1120;
+    // background-color: red;
+    margin-top: 3px;
     display: flex;
-    justify-content: flex-end;
-
+    justify-content: space-between;
   }
 
-
-
+  .icon-search {
+    margin-top: 4px;
+    margin-left: 20px;
+  }
 }
-
-
-
-// .mast-head {
-//   background-color: red;
-//   height: 35px;
-//   width: 1120px;
-//   font-family: $font-accent;
-//   text-transform: uppercase;
-
-//   display: flex;
-//   align-items: center;
-// }
-
-// .menu-main {
-//   height: 35px;
-
-//   width: 100%;
-//   display: flex;
-//   // justify-content: flex-end;
-//   // align-items: flex-start;
-// }
-
-// .menu {
-//   height: 35px;
-
-//   background-color: green;
-//   display: flex;
-//   // justify-content: flex-end;
-//   // align-items: flex-start;
-//   // justify-content: space-between;
-
-// }
-
-// .menu-item {
-//   height: 35px;
-//   width: 80px;
-//   background-color: orange;
-//   // padding: 15px 10px 10px 10px;
-// }
-
-
-//.fas fa-search fa-1x {
-// display: flex;
-// justify-content: flex-start;
-// }

@@ -90,15 +90,23 @@ foreach ($postslist as $post): setup_postdata($post);?>
 
 <?php if ( $the_query->have_posts() ) : ?>
 
+<section class = 'latest-adventures'
+
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-			<h1><?php the_title(); ?></h1>
-			<?php the_post_thumbnail('large');?>
-			<a href="<?php echo get_permalink(); ?>"><button class="read-entry-button">READ MORE</button></a>
-		
-		<?php endwhile;?>
+			<figure class = 'adventure-figure'
+				<h1><?php the_title(); ?></h1>
+				<div class = '%2$s'>
+				  
+					<?php the_post_thumbnail('large');?>
 
-			<!-- take the hard-codded reference from here -->
+				</div>
+				<a href="<?php echo get_permalink(); ?>"><button class="read-more-button">READ MORE</button></a>
+			</figure>
+
+		<?php endwhile;?>
+</section>
+			<!-- take the hard-codded reference from here. This displayes all the adventures -->
 			<a href="http://localhost:3000/Inhabitent2/adventure/"><button class="btn">MORE ADVENTURES</button></a>
 <?php else:  ?>
 
@@ -106,10 +114,7 @@ foreach ($postslist as $post): setup_postdata($post);?>
 
 <?php endif; ?>
 
-
-
 <!-- Load Latest Adventures end-->
-
 
 <!-- Load the footer  -->
 <?php get_footer();?>

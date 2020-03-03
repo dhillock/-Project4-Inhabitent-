@@ -60,9 +60,11 @@ body {
   align-items: center;
   height: 30vh;
   margin-bottom: 20px;
+
   &:hover {
     border-color: $brand-orange;
   }
+
   border: 1px solid $brand-grey-medium;
   border-top-width: 5px;
   border-inline-color: $border-solid-color;
@@ -132,3 +134,22 @@ body {
 }
 
 ///////////////////  Latest Adventures ////////////////////
+
+.latest-adventures {
+  background-color: yellow;
+  border: 2px solid red;
+
+  img {
+    width: 200px;
+    height: auto;
+  }
+
+  // display: grid;
+  // grid-template-columns: 50% 25% 25%;
+  // grid-template-rows: 550px;
+
+  display: flex;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}

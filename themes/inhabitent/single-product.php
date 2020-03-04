@@ -1,25 +1,40 @@
 <?php get_header(); ?>
 
-<?php if( have_posts() ) :
+<section class="single-post-page">
 
-//The WordPress Loop: loads post content 
-    while( have_posts() ) :
-        the_post(); ?>
-    
-    <h2><?php the_title(); ?></h2>
-    <!-- <?php the_post_thumbnail();?>  -->
-    <span class="price">
-        <?php echo '$' . get_field('price');?> 
-    </span>
-	    <?php the_content(); ?>
-    
-    <!-- Loop ends -->
-    <?php endwhile;?>
+    <div class="journal-entry">
 
-    <?php the_posts_navigation();?>
+         <?php if( have_posts() ) :
 
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif;?>
+            //The WordPress Loop: loads post content 
+
+            while( have_posts() ) :
+            the_post(); ?>
+            
+                <div class="post-image-title-main">
+                    <h2><?php the_title(); ?></h2>
+                </div>
+
+                <?php the_post_thumbnail('large');?>
+
+                <?php the_content(); ?>
+
+            <?php endwhile;?>
+
+            <?php the_posts_navigation();?>
+
+        <?php else : ?>
+            <p>No posts found</p>
+        <?php endif;?>
+
+        <div>
+            <button style="margin-top: 50px;" class="social-button"><i class="fab fa-facebook-f"></i> LIKE </button>
+            <button style="margin-top: 50px;" class="social-button"><i class="fab fa-pinterest"></i> PIN </button>
+            <button style="margin-top: 50px;" class="social-button"><i class="fab fa-twitter"></i> TWEET </button>
+        </div>
+
+    </div>
+   
+</section>
 
 <?php get_footer();?>

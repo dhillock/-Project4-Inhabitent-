@@ -8,9 +8,9 @@
     ));
 ?>
 
-<h1 class="shop-title">SHOP STUFF</h1>
+<h1 class="arc-shop-title">SHOP STUFF</h1>
 
-<section class = "product-categories">
+<section class = "arc-product-categories">
 
     <?php $terms = get_terms( array(
     'taxonomy' => 'product-type',
@@ -19,8 +19,8 @@
 	
     <?php foreach($terms as $term):?>
 
-		<section class="product-categories">
-			<a class="product-type-link" href="<?php echo get_home_url() . "/product-type/" . $term->slug;?>"> <?php echo $term->name ;?></a>
+		<section class="arc-product-categories">
+			<a class="arc-product-type-link" href="<?php echo get_home_url() . "/product-type/" . $term->slug;?>"> <?php echo $term->name ;?></a>
 		</section>
 
 	<?php endforeach;?>
@@ -29,7 +29,7 @@
 
  <hr style="border-top: dashed 1px; color: $brand-grey-light" />
  
-<section class="shop-content-grid">
+<section class="arc-shop-content-grid">
 
 	<?php if( have_posts() ) :
 
@@ -57,7 +57,7 @@
         <p>No posts found</p>
 	<?php endif;?>
    
-<div class = 'place-holder'
+<div class = 'arc-place-holder'
 	<h1> </h1>
 </div>
 

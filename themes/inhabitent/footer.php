@@ -15,7 +15,7 @@ dynamic_sidebar('footer-info');
 </div>
 
 <div class = 'footer-copyright'>
-<p> COPYRIGHT © 2019 INHABITANT </p>
+<p> COPYRIGHT © 2019 INHABITENT </p>
 </div>
 
 </footer>

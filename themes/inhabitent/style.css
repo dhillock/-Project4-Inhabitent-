@@ -528,7 +528,7 @@ body {
     width: 200px;
     height: auto; }
 
-.shop-title {
+.arc-shop-title {
   background-color: darkcyan;
   font-family: Novecento-Sans-Web-Bold;
   font-size: 2.4rem;
@@ -537,11 +537,11 @@ body {
   justify-content: center;
   align-items: flex-end; }
 
-.place-holder {
+.arc-place-holder {
   height: 75px;
   width: 100%; }
 
-.product-categories {
+.arc-product-categories {
   background-color: yellowgreen;
   font-family: "Novecento-Sans-Web";
   font-size: 1.2rem;
@@ -552,7 +552,7 @@ body {
   display: flex;
   justify-content: center; }
 
-.shop-content-grid {
+.arc-shop-content-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 320px;
@@ -562,7 +562,7 @@ body {
   font-size: 1rem;
   line-height: 1.75; }
 
-.shop-content-grid a {
+.arc-shop-content-grid a {
   text-decoration: none; }
 
 figure {
@@ -589,27 +589,28 @@ figcaption {
   border-top-width: 5px;
   border-inline-color: #e1e1e1; }
 
-.product-type-link {
+.arc-product-type-link {
   font-family: "Novecento-Sans-Web";
   color: #248a83;
   text-decoration: none;
   font-size: 18px; }
 
-.single-item-section {
+.tax-single-item-section {
   height: 300px;
   display: flex;
   flex-direction: column; }
 
-.single-item-info h2 {
+.tax-single-item-info h2 {
   font-family: "Novecento-Sans-Web";
   padding-left: 40px;
   color: #d99054;
   font-size: 4rem; }
 
-.single-item-info {
+.tax-single-item-info {
   text-decoration: none; }
 
-.taxonomy-heading {
+.tax-taxonomy-heading {
+  background-color: green;
   margin-top: 80px;
   margin-bottom: 80px;
   font-family: Novecento-Sans-Web-Bold;
@@ -618,10 +619,19 @@ figcaption {
   justify-content: center;
   align-items: center; }
 
-.taxonomy-heading h1 {
+.tax-taxonomy-heading h1 {
   margin-bottom: 80px; }
 
-.item-image img {
+.tax-test-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 1.5;
+  font-size: 1rem;
+  line-height: 1.75; }
+
+.tax-item-image img {
   -webkit-filter: brightness(100%);
           filter: brightness(100%); }
 
@@ -638,7 +648,7 @@ figcaption {
 
 .single-product-info-div h2 {
   margin-bottom: 30px;
-  font-family: "Novecento-Sans-Web";
+  font-family: Novecento-Sans-Web;
   color: #d99054; }
 
 .single-product-info-div p {
@@ -646,10 +656,11 @@ figcaption {
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 16px;
-  font-family: "Merriweather"; }
+  font-family: Merriweather; }
 
 .single-product-info-div .price-text {
-  font-size: 32px; }
+  font-size: 32px;
+  font-family: Novecento-Sans-Web; }
 
 .single-post-page div .post-image-title-main img {
   -webkit-filter: brightness(100%);

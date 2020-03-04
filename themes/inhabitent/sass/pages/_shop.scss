@@ -1,4 +1,8 @@
-.shop-title {
+//
+// styling for archive-product.php
+//
+
+.arc-shop-title {
   background-color: darkcyan;
   font-family: Novecento-Sans-Web-Bold;
   font-size: 2.4rem;
@@ -8,12 +12,12 @@
   align-items: flex-end;
 }
 
-.place-holder {
+.arc-place-holder {
   height: 75px;
   width: 100%;
 }
 
-.product-categories {
+.arc-product-categories {
   background-color: yellowgreen;
   font-family: $font-accent;
   font-size: 1.2rem;
@@ -29,7 +33,7 @@
 //     font-family: $font-accent;
 // }
 
-.shop-content-grid {
+.arc-shop-content-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 320px;
@@ -40,7 +44,7 @@
   line-height: 1.75;
 }
 
-.shop-content-grid a {
+.arc-shop-content-grid a {
   text-decoration: none;
 }
 
@@ -74,33 +78,37 @@ figcaption {
   border-inline-color: $border-solid-color;
 }
 
-// Injected tags
-.product-type-link {
+.arc-product-type-link {
   font-family: $font-accent;
   color: $brand-green;
   text-decoration: none;
   font-size: 18px;
 }
 
-.single-item-section {
+//
+// styling for taxonomy-product.php
+//
+
+.tax-single-item-section {
   height: 300px;
   // border: 1px solid black;
   display: flex;
   flex-direction: column;
 }
 
-.single-item-info h2 {
+.tax-single-item-info h2 {
   font-family: $font-accent;
   padding-left: 40px;
   color: $brand-orange;
   font-size: 4rem;
 }
 
-.single-item-info {
+.tax-single-item-info {
   text-decoration: none;
 }
 
-.taxonomy-heading {
+.tax-taxonomy-heading {
+  background-color: green;
   margin-top: 80px;
   margin-bottom: 80px;
   font-family: Novecento-Sans-Web-Bold;
@@ -110,13 +118,27 @@ figcaption {
   align-items: center;
 }
 
-.taxonomy-heading h1 {
+.tax-taxonomy-heading h1 {
   margin-bottom: 80px;
 }
 
-.item-image img {
+.tax-test-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 1.5;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.tax-item-image img {
   filter: brightness(100%);
 }
+
+//
+// styling for single-product.php
+//
 
 .single-product-page img {
   margin-bottom: 120px;
@@ -132,8 +154,8 @@ figcaption {
 
 .single-product-info-div h2 {
   margin-bottom: 30px;
-  font-family: $font-accent;
-  color: $brand-orange;
+  font-family: Novecento-Sans-Web;
+  color: #d99054;
 }
 
 .single-product-info-div p {
@@ -141,14 +163,12 @@ figcaption {
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 16px;
-  font-family: $font-main;
+  font-family: Merriweather;
 }
 
 .single-product-info-div .price-text {
   font-size: 32px;
-  // text-align: right;
-  // font-family: $font-accent;
-  // font-family: Merriweather Web, serif;
+  font-family: Novecento-Sans-Web;
 }
 
 .single-post-page div .post-image-title-main img {

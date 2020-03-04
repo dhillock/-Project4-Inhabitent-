@@ -59,6 +59,7 @@ $file_name = $term->name . '.svg';
 <?php
 $args = array('numberposts' => 3, 'order' => "ASC", 'orderby' => 'date');
 $postslist = get_posts($args);
+
 foreach ($postslist as $post): setup_postdata($post);?>
 
 	<div class="landing-blog">

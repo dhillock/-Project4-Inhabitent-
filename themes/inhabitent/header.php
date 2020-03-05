@@ -15,30 +15,32 @@
 ?>
 
 <header>
-        <div class= 'tent' "<?php echo is_page(array('HOME', 'ABOUT')) ? 'menu-white' : 'menu-green' ;?>"   >
             
-            <a href="<?php echo get_home_url(); ?>">
+            <a class = 'tent' href="<?php echo get_home_url(); ?>">
 
-                <img class = "tentXXX" 
+                <img class = "tent" 
                 src=
                 "
                 
                 <?php 
 
-                echo is_page(array('HOME', 'ABOUT')) ? 
-                get_stylesheet_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' :  get_stylesheet_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ;          
+                echo is_page(array('Home', 'About')) ? 
+                get_stylesheet_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' :  
+                get_stylesheet_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ;          
                 
                 ?>
+                "
                 >
             
             </a>
 
-        </div>
 
         <nav>
  
-            <?php wp_nav_menu(array('theme_location' => 'main'));?>
-
+            <div class = "<?php echo is_page(array('Home', 'About')) ? 'menu-white' : 'menu-green' ;?>">
+                <?php wp_nav_menu(array('theme_location' => 'main'));?>
+            </div>
+            
             <div class = 'header-search'>
                 <?php get_search_form();?>
             </div>

@@ -279,13 +279,6 @@ header {
     color: white;
     list-style: none;
     text-decoration: none; }
-  header .menu-main-menu-container {
-    width: 400px; }
-  header .menu {
-    background-color: red;
-    margin-top: 3px;
-    display: flex;
-    justify-content: space-between; }
   header .search-toggle {
     margin-top: 4px;
     margin-left: 20px;
@@ -294,7 +287,29 @@ header {
     display: flex;
     flex-direction: row-reverse; }
   header nav {
-    display: flex; }
+    width: 600px;
+    display: flex;
+    justify-content: flex-end; }
+    header nav .menu-main-menu-container {
+      width: 400px;
+      display: flex; }
+      header nav .menu-main-menu-container .menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; }
+    header nav .menu-white,
+    header nav .menu-green {
+      width: 400px;
+      display: flex; }
+    header nav .menu-white {
+      color: white;
+      margin-top: 3px; }
+      header nav .menu-white * {
+        color: white; }
+    header nav .menu-green {
+      margin-top: 3px; }
+      header nav .menu-green * {
+        color: #248a83; }
   header input {
     margin-top: 1px;
     margin-left: 10px; }
@@ -366,7 +381,8 @@ footer {
     background-repeat: no-repeat;
     background-position: bottom;
     width: 100%;
-    height: 500px; }
+    height: 500px;
+    z-index: -1; }
   .container .has-text-align-center.has-large-font-size {
     font-family: Novecento Sans Web, sans-serif;
     font-weight: bold;

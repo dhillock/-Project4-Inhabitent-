@@ -50,7 +50,8 @@
 
 </section>
 
-
+<?php wp_reset_postdata();?>
+<!-- Always good to use the above function to clear our posts -->
 
     
 <?php get_footer();?>

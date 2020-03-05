@@ -99,11 +99,9 @@ foreach ($postslist as $post): setup_postdata($post);?>
 
 			<figure class = 'adventure-figure'>
 				<h1><?php the_title(); ?></h1>
-				<div class = <?php echo '%2$s' ?>>
 				  
 					<?php the_post_thumbnail('large');?>
 
-				</div>
 				<a href="<?php echo get_permalink(); ?>"><button class="read-more-button">READ MORE</button></a>
 			</figure>
 

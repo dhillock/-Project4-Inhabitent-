@@ -2,6 +2,7 @@ header {
   // background-color: green;
   position: fixed;
   display: flex;
+  justify-content: space-between;
   height: 35px;
   width: 1120px;
   margin-top: 10px;
@@ -23,7 +24,7 @@ header {
 
   .menu-main-menu-container {
     width: 400px;
-    padding-left: 600px;
+    // padding-left: 600px;
   }
 
   .menu {
@@ -33,8 +34,21 @@ header {
     justify-content: space-between;
   }
 
-  .icon-search {
+  .search-toggle {
     margin-top: 4px;
     margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  nav {
+    display: flex;
+  }
+  input {
+    margin-top: 1px;
+    margin-left: 10px;
   }
 }

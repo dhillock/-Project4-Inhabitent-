@@ -23,12 +23,15 @@
         </div>
 
         <nav>
-            <?php wp_nav_menu(array('theme_location' => 'main'));?>
-        </nav>
 
-        <div class = 'icon-search'>
-            <i class="fas fa-search fa-1x" > </i>
-        </div>
+            <?php wp_nav_menu(array('theme_location' => 'main'));?>
+
+            <div class = 'header-search'>
+                <?php get_search_form();?>
+            </div>
+            
+        </nav>
+        
 
 </header>
 

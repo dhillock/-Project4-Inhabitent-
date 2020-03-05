@@ -1,9 +1,15 @@
 <?php
 
+show_admin_bar(true);
+
 //Adds script and stylesheets
 function inhabitant_files() {
     wp_enqueue_style('inhabitant_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime());
     wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+wp_enqueue_script('inhabitent-search-toggle', 
+get_template_directory_uri() . '/build/js/search-toggle.min.js', 
+array('jquery'), NULL, true);
 }
 
 add_action('wp_enqueue_scripts', 'inhabitant_files');
@@ -91,7 +97,7 @@ function inhabitent_post_types() {
 		'choose_from_most_used'      => __( 'Choose from the most used', 'Product Type' ),
 		'popular_items'              => __( 'Popular Items', 'Product Type' ),
 		'search_items'               => __( 'Search Items', 'Product Type' ),
-		'not_found'                  => __( 'Not Found', 'Product Type' ),
+        'not_found'                  => __( 'Not Found', 'Product Type' ),
 	);
 	$args = array(
 		'labels'                     => $labels,
@@ -100,7 +106,8 @@ function inhabitent_post_types() {
 		'show_ui'                    => true,
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
-		'show_tagcloud'              => true,
+        'show_tagcloud'              => true,
+        'show_in_rest'               => true,
 	);
 
 	register_taxonomy('product-type', array('product'), $args);
@@ -152,6 +159,8 @@ $args = array(
     'show_admin_column' => true,
     'show_in_nav_menus' => true,
     'show_tagcloud' => true,
+    'show_in_rest'               => true,
+
 );
 register_taxonomy('adventure-type', array('adventure'), $args);
 
@@ -179,4 +188,22 @@ add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
 function enqueue_load_fa() {
 wp_enqueue_script( 'load-fa', 'https://kit.fontawesome.com/e785bdc78c.js' );
 }
+
+function inhabitent_adjust_productXXX($query) {
+    // if(!is_admin() && is_post_type_archive('product')) :
+
+        if(is_post_type_archive( array('product', 'adventure') )) :
+        $query->set('orderby', 'title');
+        $query->set('order', 'ASC');
+        $query->set('posts_per_page', 16);
+
+    endif;
+}
+add_action('pre_get_posts', 'inhabitent_adjust_productXXX');
+
+
+
+
+
+?>
 

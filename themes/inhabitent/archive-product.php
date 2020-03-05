@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<?php query_posts(array(  
+<?php $products = new WP_Query(array(  
 	'post_type' => array( 'product', ),
 	'orderby' => 'title',
 	'order' => 'ASC',
-    'posts_per_page' => 16, 
+    'posts_per_page' => 4, 
     ));
 ?>
 
@@ -34,8 +34,8 @@
 	<?php if( have_posts() ) :
 
 	//The WordPress Loop: loads post content 
-		while( have_posts() ) :
-			the_post(); ?>
+		while( $products -> have_posts() ) :
+			$products -> the_post(); ?>
 			
 			<a href="<?php echo get_permalink() ;?>">
 				<figure>

@@ -86,7 +86,8 @@ foreach ($postslist as $post): setup_postdata($post);?>
 <h1 class="landing-title" >LATEST ADVENTURES</h1>
 
 <?php 
-	$args = array( 'post_type' => 'adventure', 'posts_per_page' => 4, 'order' => "ASC", 'orderby' => 'date');
+	$args = array( 'post_type' => 'adventure', 
+	'posts_per_page' => 4, 'order' => "ASC", 'orderby' => 'date');
 	$the_query = new WP_Query( $args ); 
 ?>
 
@@ -96,9 +97,9 @@ foreach ($postslist as $post): setup_postdata($post);?>
 
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-			<figure class = 'adventure-figure'
+			<figure class = 'adventure-figure'>
 				<h1><?php the_title(); ?></h1>
-				<div class = '%2$s'>
+				<div class = <?php echo '%2$s' ?>>
 				  
 					<?php the_post_thumbnail('large');?>
 

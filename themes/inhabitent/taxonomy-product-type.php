@@ -7,19 +7,6 @@
     <?php echo category_description();?>
 </div>
 
-<!-- Figure this out later ...want to restrict the posts to 4-->
- <!-- <?php
-$args = array(
-    'numberposts' => 2, 
-    'order' => 'ASC', 
-    'post_type' => 'product',
-    'product' => 'eat',
-    'orderby' => 'title');
-
-$postslist = get_posts($args);
-
-?>   -->
-
 <hr style="border-top: dashed 1px; color: #a1a1a1" />
 
 <section class="tax-test-grid">

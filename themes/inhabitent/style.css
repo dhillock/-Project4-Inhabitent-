@@ -282,6 +282,7 @@ header {
   header .menu-main-menu-container {
     width: 400px; }
   header .menu {
+    background-color: red;
     margin-top: 3px;
     display: flex;
     justify-content: space-between; }

@@ -179,10 +179,6 @@ add_action('init', 'inhabitent_post_types');
 //Flush permalinks
 flush_rewrite_rules();
 
-
-
-
-
 // So that we can use fontawsome icons in our text
 add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
 function enqueue_load_fa() {

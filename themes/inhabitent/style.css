@@ -269,7 +269,7 @@ header {
   width: 1120px;
   margin-top: 10px;
   margin-right: 10px;
-  border-bottom: solid;
+  border-bottom: 1px solid #e1e1e1;
   border-width: 1px;
   border-bottom-color: #e1e1e1; }
   header .tent {
@@ -554,14 +554,62 @@ body {
   border: 1px solid #808080; }
 
 .latest-adventures {
-  background-color: gold;
-  display: flex;
-  grid-gap: 20px;
-  justify-content: center;
-  align-items: center; }
-  .latest-adventures img {
-    width: 200px;
-    height: auto; }
+  width: 1042.2;
+  margin-left: 65px;
+  display: grid;
+  grid-template-columns: 450px 240px 240px;
+  grid-template-rows: 240px 240px;
+  grid-gap: 30px; }
+  .latest-adventures .adventure-1 {
+    font-size: 5.5rem;
+    line-height: 1.75; }
+  .latest-adventures figure {
+    font-family: "Merriweather";
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column; }
+    .latest-adventures figure h1 {
+      font-family: "Merriweather";
+      text-transform: none;
+      margin-top: 1rem;
+      margin-left: 0.5rem; }
+    .latest-adventures figure img {
+      position: absolute;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .latest-adventures figure a > * {
+      background-color: transparent;
+      box-sizing: border-box;
+      border: 1px solid #e1e1e1;
+      width: 132px;
+      height: 43px;
+      padding: 12px 14px;
+      color: white;
+      font-family: "Novecento-Sans-Web";
+      font-size: 0.9rem;
+      line-height: 1; }
+      .latest-adventures figure a > *:hover {
+        background-color: #248a83;
+        border-color: #248a83; }
+  .latest-adventures figure:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3; }
+  .latest-adventures figure:nth-child(2) {
+    font-size: 1.9rem;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2; }
+  .latest-adventures figure:nth-child(3) {
+    font-size: 1.9rem;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; }
+  .latest-adventures figure:nth-child(4) {
+    font-size: 1.9rem;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3; }
 
 .arc-shop-title {
   background-color: darkcyan;
@@ -599,36 +647,33 @@ body {
 
 .arc-shop-content-grid a {
   text-decoration: none; }
-
-figure {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%; }
-  figure img.attachment-large {
-    width: 260px;
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover; }
-
-figcaption {
-  font-family: Merriweather Web, serif;
-  font-size: 16px;
-  color: #404040;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 48px;
-  border: 1px solid #a1a1a1;
-  border-top-width: 5px;
-  border-inline-color: #e1e1e1; }
-
-.arc-product-type-link {
-  font-family: "Novecento-Sans-Web";
-  color: #248a83;
-  text-decoration: none;
-  font-size: 18px; }
+  .arc-shop-content-grid a figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%; }
+    .arc-shop-content-grid a figure img.attachment-large {
+      width: 260px;
+      height: 250px;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .arc-shop-content-grid a figcaption {
+    font-family: Merriweather Web, serif;
+    font-size: 16px;
+    color: #404040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    border: 1px solid #a1a1a1;
+    border-top-width: 5px;
+    border-inline-color: #e1e1e1; }
+  .arc-shop-content-grid a .arc-product-type-link {
+    font-family: "Novecento-Sans-Web";
+    color: #248a83;
+    text-decoration: none;
+    font-size: 18px; }
 
 .tax-single-item-section {
   height: 300px;

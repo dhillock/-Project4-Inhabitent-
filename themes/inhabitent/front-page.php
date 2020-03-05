@@ -93,12 +93,15 @@ foreach ($postslist as $post): setup_postdata($post);?>
 
 <?php if ( $the_query->have_posts() ) : ?>
 
-<section class = 'latest-adventures'
+<section class = 'latest-adventures'>
 
-		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+<?php $counter = 0;?>
 
-			<figure class = 'adventure-figure'>
-				<h1><?php the_title(); ?></h1>
+		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
+ 			$counter++;
+			$dynClass = "adventure-". $counter;?>
+			<figure class = 'adventure-figure <?php echo $dynClass?>'>
+				<h1 class="adventure-title"><?php the_title(); ?></h1>
 				  
 					<?php the_post_thumbnail('large');?>
 
@@ -109,7 +112,8 @@ foreach ($postslist as $post): setup_postdata($post);?>
 </section>
 			<!-- take the hard-codded reference from here. This displayes all the adventures -->
 			<a href="http://localhost:3000/Inhabitent2/adventure/"><button class="btn">MORE ADVENTURES</button></a>
-<?php else:  ?>
+
+			<?php else:  ?>
 
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 

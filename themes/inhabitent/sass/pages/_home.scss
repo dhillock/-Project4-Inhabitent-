@@ -136,20 +136,82 @@ body {
 ///////////////////  Latest Adventures ////////////////////
 
 .latest-adventures {
-  background-color: gold;
+  // background-color: gold;
   // border: 2px solid red;
-
-  img {
-    width: 200px;
-    height: auto;
+  width: 1042.2;
+  margin-left: 65px;
+  display: grid;
+  grid-template-columns: 450px 240px 240px;
+  grid-template-rows: 240px 240px;
+  grid-gap: 30px;
+  .adventure-1 {
+    font-size: 5.5rem;
+    line-height: $base-line-height;
   }
 
-  // display: grid;
-  // grid-template-columns: 50% 25% 25%;
-  // grid-template-rows: 550px;
+  figure {
+    font-family: $font-main;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
-  display: flex;
-  grid-gap: 20px;
-  justify-content: center;
-  align-items: center;
+    h1 {
+      // position: absolute;
+      font-family: $font-main;
+      text-transform: none;
+      margin-top: 1rem;
+      margin-left: 0.5rem;
+    }
+    img {
+      position: absolute;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    a > * {
+      background-color: transparent;
+      box-sizing: border-box;
+      border: $border-solid-type;
+      width: 132px;
+      height: 43px;
+      padding: 12px 14px;
+      color: white;
+      font-family: $font-accent;
+      font-size: 0.9rem;
+      line-height: 1;
+
+      &:hover {
+        background-color: $brand-green;
+        border-color: $brand-green;
+      }
+    }
+  }
+
+  figure:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  figure:nth-child(2) {
+    font-size: 1.9rem;
+
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+  }
+
+  figure:nth-child(3) {
+    font-size: 1.9rem;
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  figure:nth-child(4) {
+    font-size: 1.9rem;
+
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
 }

@@ -268,10 +268,19 @@ header {
   height: 35px;
   width: 1120px;
   margin-top: 10px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  border-bottom: solid;
+  border-width: 1px;
+  border-bottom-color: #e1e1e1; }
   header .tent {
+    display: flex;
+    align-items: center;
     margin-left: 15px;
-    height: 33px; }
+    height: 100%; }
+    header .tent img {
+      width: auto;
+      height: 2rem;
+      margin-bottom: 10px; }
   header a {
     font-family: "Novecento-Sans-Web";
     font-size: 1rem;
@@ -286,6 +295,9 @@ header {
   header fieldset {
     display: flex;
     flex-direction: row-reverse; }
+  header input {
+    margin-top: 1px;
+    margin-left: 10px; }
   header nav {
     width: 600px;
     display: flex;
@@ -310,9 +322,6 @@ header {
       margin-top: 3px; }
       header nav .menu-green * {
         color: #248a83; }
-  header input {
-    margin-top: 1px;
-    margin-left: 10px; }
 
 footer {
   display: grid;

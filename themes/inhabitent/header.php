@@ -16,23 +16,23 @@
 
 <header>
             
-            <a class = 'tent' href="<?php echo get_home_url(); ?>">
+        <a class = 'tent' href="<?php echo get_home_url(); ?>">
 
-                <img class = "tent" 
-                src=
-                "
-                
-                <?php 
-
-                echo is_page(array('Home', 'About')) ? 
-                get_stylesheet_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' :  
-                get_stylesheet_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ;          
-                
-                ?>
-                "
-                >
+            <img 
+            src=
+            "
             
-            </a>
+            <?php 
+
+            echo is_page(array('Home', 'About')) ? 
+            get_stylesheet_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' :  
+            get_stylesheet_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ;          
+            
+            ?>
+            "
+            >
+        
+        </a>
 
 
         <nav>
@@ -40,13 +40,12 @@
             <div class = "<?php echo is_page(array('Home', 'About')) ? 'menu-white' : 'menu-green' ;?>">
                 <?php wp_nav_menu(array('theme_location' => 'main'));?>
             </div>
-            
+
             <div class = 'header-search'>
                 <?php get_search_form();?>
             </div>
             
         </nav>
-        
 
 </header>
 

@@ -7,10 +7,21 @@ header {
   width: 1120px;
   margin-top: 10px;
   margin-right: 10px;
+  border-bottom: $border-solid-type;
+  border-width: $border-solid-width;
+  border-bottom-color: $border-solid-color;
 
   .tent {
+    display: flex;
+    align-items: center;
     margin-left: 15px;
-    height: 33px;
+    height: 100%;
+
+    img {
+      width: auto;
+      height: 2rem;
+      margin-bottom: 10px;
+    }
   }
 
   a {
@@ -31,6 +42,12 @@ header {
   fieldset {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  input {
+    // height: 33px;
+    margin-top: 1px;
+    margin-left: 10px;
   }
 
   nav {
@@ -71,11 +88,5 @@ header {
         color: $brand-green;
       }
     }
-  }
-
-  input {
-    // height: 33px;
-    margin-top: 1px;
-    margin-left: 10px;
   }
 }

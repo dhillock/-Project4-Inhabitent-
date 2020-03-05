@@ -2,6 +2,17 @@
 
 <hr>
 
+<!-- Rather than taking this approach, I would use the pre_get_posts in my functions template -->
+<!-- But i like this approach better, because it isolates the "filter." -->
+<?php $products = new WP_Query(array(  
+	'post_type' => array( 'product', ),
+	'orderby' => 'title',
+	'order' => 'ASC',
+    'posts_per_page' => 4, 
+    ));
+?>
+
+
 <div class="tax-taxonomy-heading" >
     <h1><?php echo single_term_title( '', false ) ;?></h1>
     <?php echo category_description();?>
@@ -14,8 +25,7 @@
     <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
-    while( have_posts() ) :
-        the_post(); ?>
+		while( $products -> have_posts() ) : $products -> the_post(); ?>
 
     <section class="tax-single-item-section">
         <a href="<?php echo get_permalink() ;?>">

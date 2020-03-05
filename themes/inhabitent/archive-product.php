@@ -4,12 +4,13 @@
 	'post_type' => array( 'product', ),
 	'orderby' => 'title',
 	'order' => 'ASC',
-    'posts_per_page' => 4, 
+    'posts_per_page' => 16, 
     ));
 ?>
 
 <h1 class="arc-shop-title">SHOP STUFF</h1>
 
+<!-- Add the Product Categories -->
 <section class = "arc-product-categories">
 
     <?php $terms = get_terms( array(
@@ -29,13 +30,13 @@
 
  <hr style="border-top: dashed 1px; color: $brand-grey-light" />
  
+ <!--  Add the shop grid -->
 <section class="arc-shop-content-grid">
 
 	<?php if( have_posts() ) :
 
 	//The WordPress Loop: loads post content 
-		while( $products -> have_posts() ) :
-			$products -> the_post(); ?>
+		while( $products -> have_posts() ) : $products -> the_post(); ?>
 			
 			<a href="<?php echo get_permalink() ;?>">
 				<figure>

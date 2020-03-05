@@ -44,10 +44,13 @@ header {
     display: flex;
     flex-direction: row-reverse;
   }
+
   nav {
     display: flex;
   }
+
   input {
+    // height: 33px;
     margin-top: 1px;
     margin-left: 10px;
   }

@@ -189,20 +189,18 @@ function enqueue_load_fa() {
 wp_enqueue_script( 'load-fa', 'https://kit.fontawesome.com/e785bdc78c.js' );
 }
 
-function inhabitent_adjust_productXXX($query) {
-    // if(!is_admin() && is_post_type_archive('product')) :
+// This function is used to pre-empt the normal WP query. It is executed before the normal WP loops in the template files.
+// function inhabitent_adjust_productXXX($query) {
+//     // if(!is_admin() && is_post_type_archive('product')) :
 
-        if(is_post_type_archive( array('product', 'adventure') )) :
-        $query->set('orderby', 'title');
-        $query->set('order', 'ASC');
-        $query->set('posts_per_page', 16);
+//         if(is_post_type_archive( array('product', 'adventure') )) :
+//         $query->set('orderby', 'title');
+//         $query->set('order', 'ASC');
+//         $query->set('posts_per_page', 16);
 
-    endif;
-}
-add_action('pre_get_posts', 'inhabitent_adjust_productXXX');
-
-
-
+//     endif;
+// }
+// add_action('pre_get_posts', 'inhabitent_adjust_productXXX');
 
 
 ?>

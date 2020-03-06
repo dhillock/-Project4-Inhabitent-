@@ -98,7 +98,7 @@ foreach ($postslist as $post): setup_postdata($post);?>
 <?php $counter = 0;?>
 
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
- 			$counter++;
+			$counter++;
 			$dynClass = "adventure-". $counter;?>
 			<figure class = 'adventure-figure <?php echo $dynClass?>'>
 				<h1 class="adventure-title"><?php the_title(); ?></h1>
@@ -109,13 +109,17 @@ foreach ($postslist as $post): setup_postdata($post);?>
 			</figure>
 
 		<?php endwhile;?>
+			<!-- take the hard-codded reference from here. This displayes all the adventures -->
+			<a href="http://localhost:3000/Inhabitent2/adventure/"><button class="adv-btn">MORE ADVENTURES</button></a>
+
+
 </section>
 			<!-- take the hard-codded reference from here. This displayes all the adventures -->
-			<a href="http://localhost:3000/Inhabitent2/adventure/"><button class="btn">MORE ADVENTURES</button></a>
+			<!-- <a href="http://localhost:3000/Inhabitent2/adventure/"><button class="adv-btn">MORE ADVENTURES</button></a> -->
 
 			<?php else:  ?>
 
-	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+	<p>'Sorry, no posts matched your criteria.' </p>
 
 <?php endif; ?>
 

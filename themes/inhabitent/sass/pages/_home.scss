@@ -35,8 +35,6 @@ body {
 
 .logo-main {
   position: absolute;
-  // width: 50%;
-
   top: 185px;
   left: 1px;
   width: 275px;
@@ -46,11 +44,13 @@ body {
 ////////////////////////////// Shop Stuff //////////////////////
 
 .shop-page-product-type {
+  // border: 1px solid red;
+  // height: 900px;
   display: grid;
-  grid-template-columns: 22vw 22vw 22vw 22vw;
+  grid-template-columns: 22% 22% 22% 22%;
   grid-gap: 20px;
   justify-content: center;
-  border: 1px solid red;
+
 }
 
 .front-page-product-sections {
@@ -58,7 +58,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 30vh;
+  height: 300px;
   margin-bottom: 20px;
 
   &:hover {
@@ -89,27 +89,37 @@ body {
   height: 40px;
   width: 120px;
   text-decoration: none;
+
+  &:hover {
+    color: white;
+    background-image: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 100%);
+
+  }
 }
 
 ///////////////////////// Inhabitent Journal /////////////////////////
 
 .journal-excerpts {
+  // border: 1px solid red;
   margin-left: 35px;
   margin-right: 35px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   // border: 1px solid #808080;
-  border: 1px solid red;
+
   font-family: Merriweather; //remove this
 
   img {
-    height: 200px;
+    height: 225px;
     width: auto;
   }
 
   h1 {
     color: $brand-green;
+    font-size: 1.3rem;
   }
 }
 
@@ -131,6 +141,12 @@ body {
   width: 120px;
   background: white;
   border: 1px solid #808080;
+
+  &:hover {
+    background-color: $brand-green;
+    border: 1px solid $brand-green;
+    color: #fff;
+  }
 }
 
 ///////////////////  Latest Adventures ////////////////////
@@ -144,9 +160,33 @@ body {
   grid-template-columns: 450px 240px 240px;
   grid-template-rows: 240px 240px;
   grid-gap: 30px;
-  .adventure-1 {
-    font-size: 5.5rem;
+
+  .adventure-1 h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
     line-height: $base-line-height;
+    line-height: 1.25;
+  }
+
+  .adventure-2 h1 {
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: $base-line-height;
+    line-height: 1.25;
+  }
+
+  .adventure-3 h1 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: $base-line-height;
+    line-height: 1.25;
+  }
+
+  .adventure-4 h1 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: $base-line-height;
+    line-height: 1.25;
   }
 
   figure {
@@ -161,8 +201,14 @@ body {
       font-family: $font-main;
       text-transform: none;
       margin-top: 1rem;
-      margin-left: 0.5rem;
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      &:hover {
+        color: $brand-yellow;
+      }
     }
+
     img {
       position: absolute;
       z-index: -1;
@@ -170,7 +216,8 @@ body {
       width: 100%;
       object-fit: cover;
     }
-    a > * {
+
+    a>* {
       background-color: transparent;
       box-sizing: border-box;
       border: $border-solid-type;
@@ -181,12 +228,14 @@ body {
       font-family: $font-accent;
       font-size: 0.9rem;
       line-height: 1;
+      margin-left: 1.5rem;
 
       &:hover {
         background-color: $brand-green;
         border-color: $brand-green;
       }
     }
+
   }
 
   figure:first-child {
@@ -195,23 +244,40 @@ body {
   }
 
   figure:nth-child(2) {
-    font-size: 1.9rem;
-
     grid-column: 2 / 4;
     grid-row: 1 / 2;
   }
 
   figure:nth-child(3) {
-    font-size: 1.9rem;
-
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
 
   figure:nth-child(4) {
-    font-size: 1.9rem;
-
     grid-column: 3 / 4;
     grid-row: 2 / 3;
   }
+
+  .adv-btn {
+    background: $brand-green;
+    border: none;
+    border-radius: 0;
+    color: white;
+    cursor: pointer;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 19.2px;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+
+    &:hover {
+      background-color: $brand-green;
+      border: $border-solid-type;
+      color: $brand-purple;
+
+    }
+  }
+
 }

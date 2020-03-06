@@ -1,23 +1,47 @@
 <?php get_header(); ?>
 
-<?php if( have_posts() ) :
+<?php
+$args = array('numberposts' => 2, 'order' => "ASC", 'orderby' => 'date');
+$postslist = get_posts($args);
+?>
 
-//The WordPress Loop: loads post content 
-    while( have_posts() ) :
-        the_post(); ?>
-    
-    <h2><?php the_title(); ?></h2>
-    <h3><?php the_permalink();?></h3>
-	    <?php the_content(); ?>
-    
+<section class="arc-journal">
+
+    <div class="j-content">
+
+        <!-- Loop -->
+        <?php if( have_posts() )  
+            while( have_posts() ) :
+                the_post(); ?>
+
+        <!-- Blog Banner -->
+        <div class="j-container" 
+            style="background-image: url(<?php echo get_the_post_thumbnail_url();?>)">
+            <div class="j-title">
+                <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+            </div>
+            <div class="j-date-author">
+                <p>
+                <?php echo get_the_date() . " /"  ?>  BY <?php the_author(); ?>
+                </p>
+            </div>
+        </div>
+        <!-- Blog Content -->
+        <div class="j-content">
+            <p><?php echo wp_trim_words( get_the_content(), 40, '...' );?></p>
+            <div class="j-btn">
+            <a href="<?php the_permalink();?>">Read more →</a>
+            </div>
+        </div>
+        
     <!-- Loop ends -->
     <?php endwhile;?>
+        <?php the_posts_navigation();?>
+    
+        </div>
 
-    <?php the_posts_navigation();?>
-
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif;?>
+        <?php get_sidebar();?>
+</section>
 
     
 <?php get_footer();?>

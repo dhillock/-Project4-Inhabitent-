@@ -1,5 +1,5 @@
-.arc-journal {
-    width: 1120px;
+journal {
+    width: 1170px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 75% 20%;
@@ -13,20 +13,22 @@
     }
 }
 
-.j-container {
-    margin-top: 10px;
-    margin-bottom: 40px;
-    text-transform: uppercase;
+.blog-banner-container {
+    margin-top: 200px;
+    display: grid;
+    grid-column-start: 1;
     height: 560px;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    margin-top: 10px;
+    margin-bottom: 40påx;
+    text-transform: uppercase;
 }
 
-.j-title {
-    margin-top: 5%;
+.blog-title {
+    margin-top: 50%;
     background-color: #248a83;
     width: 60%;
     padding: 10px 0px 10px 50px;
@@ -52,7 +54,7 @@
     }
 }
 
-.j-date-author {
+.blog-bottom-text {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -69,7 +71,7 @@
     }
 }
 
-.j-content {
+.blog-content {
     display: grid;
     grid-column-start: 1;
     font-family: Merriweather Web, serif;
@@ -93,13 +95,12 @@
     margin-right: 10px;
 }
 
-.j-btn {
+.journal-button {
     font-family: Novecento Sans Web, sans-serif;
     text-transform: uppercase;
     font-size: 0.9em;
     margin-top: 20px;
     margin-bottom: 40px;
-    text-decoration: none;
 
     a {
         color: $brand-grey-medium;
@@ -107,8 +108,6 @@
         border: 1px solid $brand-grey-medium;
         color: $brand-grey-medium;
         padding: 10px 30px;
-        text-decoration: none;
-
 
         &:hover {
             background-color: $brand-green;
@@ -116,10 +115,4 @@
             color: #fff;
         }
     }
-}
-
-.j-content {
-    border-right: $border-solid-type;
-    padding-top: 50px;
-    padding-right: 50px;
 }

@@ -1,0 +1,286 @@
+body {
+  background: $color-main-background;
+  color: $base-font-color;
+  font-family: $font-accent;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  width: $width-desktop;
+}
+
+.banner {
+  // width: 100%;
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(0, 0, 0, 0.4) 0,
+  //   rgba(0, 0, 0, 0.4),
+  //   #969696
+  // );
+  //display: flex;
+
+  img {
+    width: 100%;
+  }
+}
+
+.landing-title {
+  font-family: $font-accent;
+  font-weight: 400;
+  color: $base-font-color;
+  font-size: 2.4rem;
+  text-align: center;
+  // margin-bottom: 3.75rem;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.logo-main {
+  position: absolute;
+  top: 185px;
+  left: 1px;
+  width: 275px;
+  height: 275px;
+}
+
+////////////////////////////// Shop Stuff //////////////////////
+
+.shop-page-product-type {
+  // border: 1px solid red;
+  // height: 900px;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.front-page-product-sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+  margin-bottom: 20px;
+
+  &:hover {
+    border-color: $brand-orange;
+  }
+
+  border: 1px solid $brand-grey-medium;
+  border-top-width: 5px;
+  border-inline-color: $border-solid-color;
+
+  .product-section-svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.front-page-product-sections p {
+  padding: 20px;
+  text-align: center;
+}
+
+.front-page-product-sections-btn {
+  width: 100px;
+  font-family: $font-accent;
+  color: white;
+  background: $brand-green;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 120px;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+    background-image: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 100%);
+  }
+}
+
+///////////////////////// Inhabitent Journal /////////////////////////
+
+.journal-excerpts {
+  // border: 1px solid red;
+  margin-left: 35px;
+  margin-right: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  // border: 1px solid #808080;
+
+  font-family: Merriweather; //remove this
+
+  img {
+    height: 225px;
+    width: auto;
+  }
+
+  h1 {
+    color: $brand-green;
+    font-size: 1.3rem;
+  }
+}
+
+.blog-thumb {
+  // left: 50%;
+  // max-height: 250px;
+  // max-width: none;
+  // position: absolute;
+  // top: 50%;
+  // transform: translate(-50%, -52%);
+  // width: auto;
+  color: green;
+}
+
+.read-entry-button {
+  margin-left: 10px;
+  margin-top: 20px;
+  height: 40px;
+  width: 120px;
+  background: white;
+  border: 1px solid #808080;
+
+  &:hover {
+    background-color: $brand-green;
+    border: 1px solid $brand-green;
+    color: #fff;
+  }
+}
+
+///////////////////  Latest Adventures ////////////////////
+
+.latest-adventures {
+  // background-color: gold;
+  // border: 2px solid red;
+  width: 1042.2;
+  margin-left: 65px;
+  display: grid;
+  grid-template-columns: 450px 240px 240px;
+  grid-template-rows: 240px 240px;
+  grid-gap: 30px;
+
+  .adventure-1 h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: $base-line-height;
+    line-height: 1.25;
+  }
+
+  .adventure-2 h1 {
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: $base-line-height;
+    line-height: 1.25;
+  }
+
+  .adventure-3 h1 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: $base-line-height;
+    line-height: 1.25;
+  }
+
+  .adventure-4 h1 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: $base-line-height;
+    line-height: 1.25;
+  }
+
+  figure {
+    font-family: $font-main;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      // position: absolute;
+      font-family: $font-main;
+      text-transform: none;
+      margin-top: 1rem;
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      &:hover {
+        color: $brand-yellow;
+      }
+    }
+
+    img {
+      position: absolute;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    a>* {
+      background-color: transparent;
+      box-sizing: border-box;
+      border: $border-solid-type;
+      width: 132px;
+      height: 43px;
+      padding: 12px 14px;
+      color: white;
+      font-family: $font-accent;
+      font-size: 0.9rem;
+      line-height: 1;
+      margin-left: 1.5rem;
+
+      &:hover {
+        background-color: $brand-green;
+        border-color: $brand-green;
+      }
+    }
+  }
+
+  figure:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  figure:nth-child(2) {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+  }
+
+  figure:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  figure:nth-child(4) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .adv-btn {
+    background: $brand-green;
+    border: none;
+    border-radius: 0;
+    color: white;
+    cursor: pointer;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 19.2px;
+    font-size: 0.9rem;
+    line-height: 1;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+
+    &:hover {
+      background-color: $brand-green;
+      border: $border-solid-type;
+      color: $brand-purple;
+    }
+  }
+}
+
+////////////////////////////////////////// Adventures2 ///////////////
+
+.latest-adventures2 {
+  background-color: green;
+
+
+}

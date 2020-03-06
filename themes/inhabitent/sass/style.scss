@@ -32,11 +32,15 @@ Text Domain: inhabitant
 @import 'pages/home';
 @import 'pages/shop';
 
+@import 'pages/front-page';
+@import 'pages/single';
+
 // David added these
 // @import 'pages/journal';
 // @import 'pages/archive-adventure';
 // @import 'pages/find-us';
 @import 'pages/single-adventure';
+@import 'pages/single-product';
 
 
 @import 'themes/theme';

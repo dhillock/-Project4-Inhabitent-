@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<section class="single-post-page">
+<section class="sp-container">
 
-    <div class="journal-entry">
+    <!-- <div class="sp-XXX"> -->
 
          <?php if( have_posts() ) :
 
@@ -11,13 +11,17 @@
             while( have_posts() ) :
             the_post(); ?>
             
-                <div class="post-image-title-main">
+                <div class = 'sp-img'>
+                    <?php the_post_thumbnail('large');?>
+                </div>
+
+                <div class="sp-title">
                     <h2><?php the_title(); ?></h2>
                 </div>
 
-                <?php the_post_thumbnail('large');?>
+                <h2 class="sp-price" ><?php echo "$" . get_field('price');?></h2> 
 
-                <?php the_content(); ?>
+                <p><?php the_content(); ?> </p>
 
             <?php endwhile;?>
 
@@ -27,13 +31,14 @@
             <p>No posts found</p>
         <?php endif;?>
 
-        <div>
-            <button style="margin-top: 50px;" class="social-button"><i class="fab fa-facebook-f"></i> LIKE </button>
-            <button style="margin-top: 50px;" class="social-button"><i class="fab fa-pinterest"></i> PIN </button>
-            <button style="margin-top: 50px;" class="social-button"><i class="fab fa-twitter"></i> TWEET </button>
+        <div class = 'social-icons-body'>
+            <button  class="social-button-f"><i class="fab fa-facebook-f"></i> LIKE </button>
+            <button  class="social-button-t"><i class="fab fa-twitter"></i> TWEET </button>
+            <button  class="social-button-p"><i class="fab fa-pinterest"></i> PIN </button>
+
         </div>
 
-    </div>
+    <!-- </div> -->
    
 </section>
 

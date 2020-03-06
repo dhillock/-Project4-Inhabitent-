@@ -1,30 +1,37 @@
-<?php get_header();?>
+<?php get_header(); ?>
 
-<h1> dhSingle Adventure </h1>
-<h1> dhSingle Adventure </h1>
-<h1> dhSingle Adventure </h1>
-<h1> dhSingle Adventure </h1>
-<h1> dhSingle Adventure </h1>
+<section class="single-adventure">
+         <?php if( have_posts() ) :
+        //The WordPress Loop: loads post content 
+        while( have_posts() ) :
+        the_post(); ?>
+		
+		<div class = 'the-image'>
+			<?php the_post_thumbnail('large');?>
+		</div>
+
+			<h1> <?php the_title(); ?> </h1>
 
 
-<?php if (have_posts()):
 
-//The WordPress Loop: loads post content
-    while (have_posts()):
-        the_post();?>
+			<p class ="author"> BY <?php the_author(); ?></p>
 
-	<h2><?php the_title();?></h2>
-	<h3><?php the_permalink();?></h3>
-		<?php the_content();?>
+			<?php the_content(); ?>
 
-	<!-- Loop ends -->
-	<?php endwhile;?>
+        <?php endwhile;?>
 
-	<?php the_posts_navigation();?>
+        <?php the_posts_navigation();?>
 
-<?php else: ?>
-    <p>No posts found</p>
-<?php endif;?>
+        <?php else : ?>
+            <p>No posts found</p>
+        <?php endif;?>
 
+        <div class = social-icons-body>
+            <button class="social-button-f"><i class="fab fa-facebook-f"></i> LIKE </button>
+			<button class="social-button-t"><i class="fab fa-twitter"></i> TWEET </button>
+			<button class="social-button-p"><i class="fab fa-pinterest"></i> PIN </button>
+        </div>
+   
+</section>
 
 <?php get_footer();?>

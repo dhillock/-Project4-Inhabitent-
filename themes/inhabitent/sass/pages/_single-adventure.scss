@@ -1,0 +1,38 @@
+.single-adventure {
+    // background-color: red;
+    font-family: $font-main;
+
+
+    img {
+        width: 1120px;
+        height: auto;
+    }
+
+    h1 {
+        font-family: $font-accent;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-left: 160px;
+    }
+
+    .author {
+        text-transform: uppercase;
+
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 160px;
+    }
+
+    p {
+        width: 800px;
+        margin-left: 160px;
+        line-height: $base-line-height;
+        margin-bottom: base-spacing;
+    }
+
+    p+p {
+        // This allows you to keep paragraphs flush with the top/bottom of your container while still having space between them.
+        margin-top: 1rem;
+    }
+
+}

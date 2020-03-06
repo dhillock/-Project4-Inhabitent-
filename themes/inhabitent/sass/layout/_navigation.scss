@@ -1,0 +1,43 @@
+header {
+
+    nav {
+        width: 600px;
+        display: flex;
+        // justify-content: space-between;
+        justify-content: flex-end;
+
+        .menu-main-menu-container {
+            width: 400px;
+            display: flex;
+
+            .menu {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .menu-white,
+        .menu-green {
+            width: 400px;
+            display: flex;
+        }
+
+        .menu-white {
+            color: white;
+            margin-top: 3px;
+
+            & * {
+                color: white;
+            }
+        }
+
+        .menu-green {
+            margin-top: 3px;
+
+            & * {
+                color: $brand-green;
+            }
+        }
+    }
+}

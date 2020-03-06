@@ -1,5 +1,8 @@
 <!-- Load Latest Adventures start-->
-<h1 class="landing-title" >LATEST ADVENTURESXXXX</h1>
+<h1 class="landing-title2" >LATEST ADVENTURESZZZ</h1>
+<h1 class="landing-title2" >LATEST ADVENTURESZZZ</h1>
+<h1 class="landing-title2" >LATEST ADVENTURESZZZ</h1>
+<h1 class="landing-title2" >LATEST ADVENTURESCZZ</h1>
 
 <?php 
 	$args = array( 'post_type' => 'adventure', 
@@ -21,13 +24,10 @@
 				  
 					<?php the_post_thumbnail('large');?>
 
-				<a href="<?php echo get_permalink(); ?>"><button class="read-more-button">READ MORE</button></a>
+				<a href="<?php echo get_permalink(); ?>"><button class="read-more-button2">READ MORE</button></a>
 			</figure>
 
 		<?php endwhile;?>
-			<!-- take the hard-codded reference from here. This displayes all the adventures -->
-			<a href="http://localhost:3000/Inhabitent2/adventure/"><button class="adv2-btn">MORE ADVENTURES</button></a>
-
 
 </section>
 
@@ -38,6 +38,11 @@
 <?php endif; ?>
 
 <!-- Load Latest Adventures end-->
+
+<!-- Load Latest Adventures2 start-->
+
+<?php wp_reset_postdata();?>
+<!-- Always good to use the above function to clear our posts -->
 
 <!-- Load the footer  -->
 <?php get_footer();?>

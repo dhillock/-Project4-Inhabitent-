@@ -261,6 +261,60 @@ p {
 p span {
   font-weight: bold; }
 
+.social-icons-body {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-left: 10rem;
+  height: 7rem;
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .social-icons-body .social-button-f {
+    background-color: black;
+    width: 6rem;
+    height: 2.5rem;
+    padding: .75rem 1.5rem;
+    border: 1px solid black;
+    background-color: white; }
+  .social-icons-body .social-button-t {
+    width: 6.5rem;
+    height: 2.5rem;
+    padding: .75rem 1.5rem;
+    border: 1px solid black;
+    background-color: white; }
+  .social-icons-body .social-button-p {
+    width: 5.6rem;
+    height: 2.5rem;
+    padding: .75rem 1.5rem;
+    border: 1px solid black;
+    background-color: white; }
+
+header nav {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end; }
+  header nav .menu-main-menu-container {
+    width: 400px;
+    display: flex; }
+    header nav .menu-main-menu-container .menu {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+  header nav .menu-white,
+  header nav .menu-green {
+    width: 400px;
+    display: flex; }
+  header nav .menu-white {
+    color: white;
+    margin-top: 3px; }
+    header nav .menu-white * {
+      color: white; }
+  header nav .menu-green {
+    margin-top: 3px; }
+    header nav .menu-green * {
+      color: #248a83; }
+
 header {
   position: fixed;
   display: flex;
@@ -298,30 +352,6 @@ header {
   header input {
     margin-top: 1px;
     margin-left: 10px; }
-  header nav {
-    width: 600px;
-    display: flex;
-    justify-content: flex-end; }
-    header nav .menu-main-menu-container {
-      width: 400px;
-      display: flex; }
-      header nav .menu-main-menu-container .menu {
-        width: 100%;
-        display: flex;
-        justify-content: space-between; }
-    header nav .menu-white,
-    header nav .menu-green {
-      width: 400px;
-      display: flex; }
-    header nav .menu-white {
-      color: white;
-      margin-top: 3px; }
-      header nav .menu-white * {
-        color: white; }
-    header nav .menu-green {
-      margin-top: 3px; }
-      header nav .menu-green * {
-        color: #248a83; }
 
 footer {
   display: grid;
@@ -642,15 +672,18 @@ body {
     cursor: pointer;
     font-family: Novecento Sans Web, sans-serif;
     font-size: 19.2px;
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 1;
-    padding: .75rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     text-decoration: none;
     margin-bottom: 1.5rem; }
     .latest-adventures .adv-btn:hover {
       background-color: #248a83;
       border: 1px solid #e1e1e1;
       color: #2f1339; }
+
+.latest-adventures2 {
+  background-color: green; }
 
 .arc-shop-title {
   background-color: darkcyan;
@@ -786,3 +819,26 @@ body {
 .single-post-page div .post-image-title-main img {
   -webkit-filter: brightness(100%);
           filter: brightness(100%); }
+
+.single-adventure {
+  font-family: "Merriweather"; }
+  .single-adventure img {
+    width: 1120px;
+    height: auto; }
+  .single-adventure h1 {
+    font-family: "Novecento-Sans-Web";
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 160px; }
+  .single-adventure .author {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 160px; }
+  .single-adventure p {
+    width: 800px;
+    margin-left: 160px;
+    line-height: 1.75;
+    margin-bottom: base-spacing; }
+  .single-adventure p + p {
+    margin-top: 1rem; }

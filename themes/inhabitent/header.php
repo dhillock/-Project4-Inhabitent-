@@ -24,7 +24,7 @@
             
             <?php 
 
-            echo is_page(array('Home', 'About')) ? 
+            echo is_page(array('Home', 'About', 'adventure')) ? 
             get_stylesheet_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' :  
             get_stylesheet_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ;          
             
@@ -37,7 +37,7 @@
 
         <nav>
  
-            <div class = "<?php echo is_page(array('Home', 'About')) ? 'menu-white' : 'menu-green' ;?>">
+            <div class = "<?php echo is_page(array('Home', 'About', 'adventure')) ? 'menu-white' : 'menu-green' ;?>">
                 <?php wp_nav_menu(array('theme_location' => 'main'));?>
             </div>
 

@@ -1,5 +1,5 @@
-journal {
-    width: 1170px;
+.single-journal {
+    width: 1120px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 75% 20%;
@@ -13,22 +13,21 @@ journal {
     }
 }
 
-.blog-banner-container {
-    margin-top: 200px;
-    display: grid;
-    grid-column-start: 1;
-    height: 560px;
+.single-journal-container {
+
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    height: 550px;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 40påx;
-    text-transform: uppercase;
+
 }
 
-.blog-title {
-    margin-top: 50%;
+.single-journal-title {
+    margin-top: 2.25rem;
     background-color: #248a83;
     width: 60%;
     padding: 10px 0px 10px 50px;
@@ -54,7 +53,7 @@ journal {
     }
 }
 
-.blog-bottom-text {
+.single-date-author {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -71,48 +70,38 @@ journal {
     }
 }
 
-.blog-content {
+.single-journal-content {
     display: grid;
     grid-column-start: 1;
     font-family: Merriweather Web, serif;
+    font-size: 1rem;
+
+    p+p {
+        // This allows you to keep paragraphs flush with the top/bottom of your container while still having space between them.
+        margin-top: 10px;
+    }
+
+}
+
+.single-category-tag {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+
+    .single-category {
+        font-family: Novecento Sans Web, sans-serif;
+        margin-right: 10px;
+    }
+
+    .single-tag {
+        // background-color: red;
+        font-family: Novecento Sans Web, sans-serif;
+
+    }
 }
 
 .sidebar-journal {
     display: grid;
     grid-column-start: 2;
     grid-row-start: 1;
-}
-
-.blog-content-bottom-links {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 20px;
-}
-
-.blog-content-cat {
-    font-family: Novecento Sans Web, sans-serif;
-
-    margin-right: 10px;
-}
-
-.journal-button {
-    font-family: Novecento Sans Web, sans-serif;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    margin-top: 20px;
-    margin-bottom: 40px;
-
-    a {
-        color: $brand-grey-medium;
-        background-color: white;
-        border: 1px solid $brand-grey-medium;
-        color: $brand-grey-medium;
-        padding: 10px 30px;
-
-        &:hover {
-            background-color: $brand-green;
-            border: 1px solid $brand-green;
-            color: #fff;
-        }
-    }
 }

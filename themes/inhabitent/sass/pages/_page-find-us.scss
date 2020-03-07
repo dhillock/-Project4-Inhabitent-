@@ -1,0 +1,64 @@
+.send-us {
+  // background-color: green;
+  font-family: Novecento Sans Web, sans-serif;
+  font-weight: bold;
+
+  p {
+    font-family: Merriweather Web, serif;
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: $base-line-height;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  .wpcf7-email {
+    background-color: red;
+    width: 414px;
+  }
+
+  .wpcf7-form-control {
+    background-color: yellowgreen;
+    width: 414px;
+  }
+
+  .wpcf7-text {
+    background-color: blue;
+    height: 40px;
+  }
+
+  .wpcf7-textarea {
+    background-color: orange;
+    height: 300;
+  }
+}
+
+.wpcf7-submit {
+  // background-color: $brand-green;
+  background: red;
+  width: 100px;
+  border: none;
+  border-radius: 0;
+  color: white;
+  cursor: pointer;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 19.2px;
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+
+  &:hover {
+    background-color: $brand-green;
+    border: $border-solid-type;
+    color: $brand-purple;
+  }
+}

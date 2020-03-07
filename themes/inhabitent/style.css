@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 Theme Name: Inhabitant
 Author: David Hillock
@@ -430,11 +429,27 @@ footer {
   font-family: 'Novecento-Sans-Web-Bold'; }
 
 .sidebar {
-  background-color: green; }
-  .sidebar aside p {
-    border: thick solid cornflowerblue; }
-  .sidebar #nav_menu-2 :nth-child(1) {
-    background-color: yellow; }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  line-height: 40px;
+  padding: 75px 0px 0px 50px;
+  margin: 0 auto; }
+  .sidebar h2 {
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 1.5em;
+    color: #2f1339;
+    font-weight: 700;
+    margin-bottom: 15px; }
+  .sidebar p {
+    color: #808080;
+    margin-bottom: 15px;
+    font-family: Merriweather Web, serif; }
+  .sidebar a {
+    color: #248a83; }
+    .sidebar a:hover {
+      color: #2f1339; }
 
 .container {
   font-family: "Novecento-Sans-Web";
@@ -463,61 +478,50 @@ footer {
     margin-top: 16px;
     margin-bottom: 24px; }
 
-.contactForm {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  grid-area: form; }
+.send-us {
+  font-family: Novecento Sans Web, sans-serif;
+  font-weight: bold; }
+  .send-us p {
+    font-family: Merriweather Web, serif;
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75; }
+  .send-us h1 {
+    font-size: 2.4rem; }
+  .send-us h2 {
+    font-size: 2.1rem; }
+  .send-us .wpcf7-email {
+    background-color: red;
+    width: 414px; }
+  .send-us .wpcf7-form-control {
+    background-color: yellowgreen;
+    width: 414px; }
+  .send-us .wpcf7-text {
+    background-color: blue;
+    height: 40px; }
+  .send-us .wpcf7-textarea {
+    background-color: orange;
+    height: 300; }
 
-.info h2 {
-  font-family: Novecento-Sans-Web-Bold;
-  margin-bottom: 30px; }
-
-.info h3 {
-  font-family: Novecento-Sans-Web-Bold;
-  margin-top: 30px;
-  margin-bottom: 30px; }
-
-.info label {
-  font-family: Novecento-Sans-Web; }
-
-section.contact {
-  border: 1px solid #a1a1a1; }
-
-.input-field {
-  background-color: #a1a1a1;
-  width: 350px;
-  height: 40px;
-  border: none;
-  -webkit-filter: brightness(150%);
-          filter: brightness(150%); }
-
-.input-message {
-  background-color: #a1a1a1;
-  width: 600px;
-  height: 300px;
-  border: none;
-  margin-top: 15px;
-  -webkit-filter: brightness(150%);
-          filter: brightness(150%); }
-
-.contact-button {
-  background-color: #248a83;
-  color: white;
-  font-family: Novecento-Sans-Web;
+.wpcf7-submit {
+  background: red;
   width: 100px;
-  height: 40px;
-  font-size: 18px; }
-
-input {
-  margin-top: 15px;
-  margin-bottom: 30px; }
-
-.red {
-  color: #d99054; }
-
-.info {
-  padding: 70px; }
+  border: none;
+  border-radius: 0;
+  color: white;
+  cursor: pointer;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 19.2px;
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  margin-bottom: 1.5rem; }
+  .wpcf7-submit:hover {
+    background-color: #248a83;
+    border: 1px solid #e1e1e1;
+    color: #2f1339; }
 
 .arc-journal {
   width: 1120px;
@@ -937,53 +941,50 @@ body {
 .latest-adventures2 {
   background-color: green; }
 
-journal {
-  width: 1170px;
+.single-journal {
+  width: 1120px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 75% 20%; }
-  journal a {
+  .single-journal a {
     color: #248a83; }
-    journal a:visited {
+    .single-journal a:visited {
       color: #248a83; }
 
-.blog-banner-container {
-  margin-top: 200px;
-  display: grid;
-  grid-column-start: 1;
-  height: 560px;
+.single-journal-container {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  height: 550px;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 40påx;
-  text-transform: uppercase; }
+  justify-content: space-between; }
 
-.blog-title {
-  margin-top: 50%;
+.single-journal-title {
+  margin-top: 2.25rem;
   background-color: #248a83;
   width: 60%;
   padding: 10px 0px 10px 50px; }
-  .blog-title a {
+  .single-journal-title a {
     color: white; }
-    .blog-title a:visited {
+    .single-journal-title a:visited {
       color: white; }
-  .blog-title h2 {
+  .single-journal-title h2 {
     font-weight: 700;
     font-size: 2em;
     font-family: Novecento Sans Web, sans-serif; }
-  .blog-title a {
+  .single-journal-title a {
     color: white;
     text-decoration: none; }
 
-.blog-bottom-text {
+.single-date-author {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-content: flex-end;
   font-family: Merriweather Web, serif; }
-  .blog-bottom-text p {
+  .single-date-author p {
     display: flex;
     justify-content: space-around;
     font-size: 1em;
@@ -991,41 +992,28 @@ journal {
     color: white;
     padding: 2px 30px; }
 
-.blog-content {
+.single-journal-content {
   display: grid;
   grid-column-start: 1;
-  font-family: Merriweather Web, serif; }
+  font-family: Merriweather Web, serif;
+  font-size: 1rem; }
+  .single-journal-content p + p {
+    margin-top: 10px; }
+
+.single-category-tag {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px; }
+  .single-category-tag .single-category {
+    font-family: Novecento Sans Web, sans-serif;
+    margin-right: 10px; }
+  .single-category-tag .single-tag {
+    font-family: Novecento Sans Web, sans-serif; }
 
 .sidebar-journal {
   display: grid;
   grid-column-start: 2;
   grid-row-start: 1; }
-
-.blog-content-bottom-links {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 20px; }
-
-.blog-content-cat {
-  font-family: Novecento Sans Web, sans-serif;
-  margin-right: 10px; }
-
-.journal-button {
-  font-family: Novecento Sans Web, sans-serif;
-  text-transform: uppercase;
-  font-size: 0.9em;
-  margin-top: 20px;
-  margin-bottom: 40px; }
-  .journal-button a {
-    color: #808080;
-    background-color: white;
-    border: 1px solid #808080;
-    color: #808080;
-    padding: 10px 30px; }
-    .journal-button a:hover {
-      background-color: #248a83;
-      border: 1px solid #248a83;
-      color: #fff; }
 
 .single-adventure {
   font-family: "Merriweather"; }

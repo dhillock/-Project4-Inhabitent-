@@ -114,9 +114,6 @@ foreach ($postslist as $post): setup_postdata($post);?>
 
 
 </section>
-			<!-- take the hard-codded reference from here. This displayes all the adventures -->
-			<!-- <a href="http://localhost:3000/Inhabitent2/adventure/"><button class="adv-btn">MORE ADVENTURES</button></a> -->
-
 			<?php else:  ?>
 
 	<p>'Sorry, no posts matched your criteria.' </p>

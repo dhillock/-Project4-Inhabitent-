@@ -1,11 +1,32 @@
 //
 .sidebar {
-  background-color: green;
-  aside p {
-    border: thick solid cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  line-height: 40px;
+  padding: 75px 0px 0px 50px;
+  margin: 0 auto;
+
+  h2 {
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 1.5em;
+    color: #2f1339;
+    font-weight: 700;
+    margin-bottom: 15px;
   }
 
-  #nav_menu-2 :nth-child(1) {
-    background-color: yellow;
+  p {
+    color: $brand-grey-medium;
+    margin-bottom: 15px;
+    font-family: Merriweather Web, serif;
+  }
+
+  a {
+    color: $brand-green;
+
+    &:hover {
+      color: #2f1339;
+    }
   }
 }

@@ -1,10 +1,7 @@
+
 <div class = "sidebar">
 
-<!-- <i class="fas fa-heart"></i> -->
-
-
-<?php dynamic_sidebar('sidebar-info'); // This is what actually calls the sidebar to be displayed
-?>
-
+    <!-- // This is what calls the sidebar to be displayed -->
+    <?php dynamic_sidebar('sidebar-info'); ?>
 
 </div>

@@ -11,8 +11,7 @@ $postslist = get_posts($args);
 
         <!-- Loop -->
         <?php if( have_posts() )  
-            while( have_posts() ) :
-                the_post(); ?>
+            while( have_posts() ) : the_post(); ?>
 
         <!-- Blog Banner -->
         <div class="j-container" 

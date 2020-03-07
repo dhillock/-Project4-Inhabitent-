@@ -4,8 +4,8 @@
 
 <!-- Rather than taking this approach, I would use the pre_get_posts in my functions template -->
 <!-- But i like this approach better, because it isolates the "filter." -->
-<?php $products = new WP_Query(array(  
-	'post_type' => array( 'product', ),
+<?php $adventure = new WP_Query(array(  
+	'post_type' => array( 'adventure', ),
 	'orderby' => 'title',
 	'order' => 'ASC',
     'posts_per_page' => 4, 
@@ -13,27 +13,27 @@
 ?>
 
 
-<div class="tax-product-heading" >
+<div class="tax-adventure-heading" >
     <h1><?php echo single_term_title( '', false ) ;?></h1>
     <?php echo category_description();?>
 </div>
 
 <hr style="border-top: dashed 1px; color: #a1a1a1" />
 
-<section class="tax-product-grid">
+<section class="tax-adventure-grid">
 
     <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
-		while( $products -> have_posts() ) : $products -> the_post(); ?>
+		while( $adventure -> have_posts() ) : $adventure -> the_post(); ?>
 
-    <section class="tax-product-single-item-section">
+    <section class="tax-adventure-single-item-section">
         <a href="<?php echo get_permalink() ;?>">
-        <div class="tax-product-item-image">
+        <div class="tax-adventure-item-image">
             <?php the_post_thumbnail('large');?>
         </div>
         
-        <div class="tax-product-single-item-info">
+        <div class="tax-adventure-single-item-info">
             <p><?php the_title(); ?></p>
             <p class="merriweather" style="text-decoration: none;" ><?php echo "$" . get_field('price');?></p> 
         </div>

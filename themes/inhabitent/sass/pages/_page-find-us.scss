@@ -1,4 +1,12 @@
-.send-us {
+.find-us {
+  width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 75% 20%;
+  color: green;
+
+
+
   // background-color: green;
   font-family: Novecento Sans Web, sans-serif;
   font-weight: bold;
@@ -60,5 +68,18 @@
     background-color: $brand-green;
     border: $border-solid-type;
     color: $brand-purple;
+  }
+
+}
+
+.map-email {
+  // background-color: yellowgreen;
+
+  .cont {
+    color: blue;
+  }
+
+  .dh1 {
+    color: green;
   }
 }

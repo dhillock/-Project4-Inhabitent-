@@ -1,0 +1,87 @@
+//
+// styling for archive-adventure-type.php
+//
+
+.arc-adv-title {
+    // background-color: darkcyan;
+    font-family: Novecento-Sans-Web-Bold;
+    font-size: 2.4rem;
+    height: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.arc-adventure-place-holder {
+    color: white;
+    height: 75px;
+    width: 100%;
+}
+
+.arc-adventure-categories {
+    // background-color: yellowgreen;
+    font-family: $font-accent;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+// .product-type-link a {
+//     font-family: $font-accent;
+// }
+
+.arc-adventure-content-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 320px;
+    gap: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 1.5;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.arc-adventure-content-grid a {
+    text-decoration: none;
+
+    figure {
+        // background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // border: 1px solid $brand-grey-light;
+        width: 100%;
+        height: 100%;
+
+        img.attachment-large {
+            width: 260px;
+            height: 250px;
+            object-fit: cover;
+        }
+    }
+
+    figcaption {
+        // background-color: red;
+        font-family: Merriweather Web, serif;
+        font-size: $base-font-size;
+        color: $base-font-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        border: 1px solid $brand-grey-light;
+        border-top-width: 5px;
+        border-inline-color: $border-solid-color;
+    }
+
+    .arc-adventure-type-link {
+        font-family: $font-accent;
+        color: $brand-green;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}

@@ -8,7 +8,7 @@
     ));
 ?>
 
-<h1 class="arc-shop-title">SHOP STUFF</h1>
+<h1 class="arc-product-title">SHOP STUFF</h1>
 
 <!-- Add the Product Categories -->
 <section class = "arc-product-categories">
@@ -31,7 +31,7 @@
  <hr style="border-top: dashed 1px; color: $brand-grey-light" />
  
  <!--  Add the shop grid -->
-<section class="arc-shop-content-grid">
+<section class="arc-product-content-grid">
 
 	<?php if( have_posts() ) :
 
@@ -58,8 +58,8 @@
         <p>No posts found</p>
 	<?php endif;?>
    
-<div class = 'arc-place-holder'
-	<h1> </h1>
+<div class = 'arc-product-place-holder'
+	<h1> This is a place holder</h1>
 </div>
 
 <?php wp_reset_postdata();?>

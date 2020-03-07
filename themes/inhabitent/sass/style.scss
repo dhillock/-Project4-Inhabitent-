@@ -27,21 +27,22 @@ Text Domain: inhabitant
 @import 'layout/sidebar';
 @import 'layout/forms';
 
-@import 'pages/about';
+@import 'pages/page-about';
 @import 'pages/page-find-us';
-@import 'pages/home';
-@import 'pages/shop';
 
-@import 'pages/front-page';
-@import 'pages/single';
+@import 'pages/front-page'; // This is for the...front-page! :-)
 
-// David added these
-// @import 'pages/journal';
-// @import 'pages/archive-adventure';
-// @import 'pages/find-us';
-@import 'pages/single-adventure';
+@import 'pages/home'; //////// This is for the archive blogs 
+@import 'pages/single'; /////  This is for a single blog
+
+@import 'pages/archive-product';
+@import 'pages/archive-adventure';
+
+@import 'pages/taxonomy-product-type';
+@import 'pages/taxonomy-adventure-type';
+
 @import 'pages/single-product';
-
+@import 'pages/single-adventure';
 
 @import 'themes/theme';
 @import 'themes/admin';

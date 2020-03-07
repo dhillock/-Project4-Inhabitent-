@@ -8,6 +8,7 @@
 
 
 <section class="single-journal">
+    <div class = 'left-side'>
 
         <?php if( have_posts() )  
             while( have_posts() ) :
@@ -48,7 +49,7 @@
         
     <?php endwhile;?>
         <?php the_posts_navigation();?>
-
+    </div>
     <?php get_sidebar();?>
 
 </section>

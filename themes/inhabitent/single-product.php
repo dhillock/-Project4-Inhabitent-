@@ -1,45 +1,33 @@
 <?php get_header(); ?>
 
-<section class="sp-container">
+<?php if( have_posts() ) :
 
-    <!-- <div class="sp-XXX"> -->
+//The WordPress Loop: loads post content 
+    while( have_posts() ) :
+        the_post(); ?>
 
-         <?php if( have_posts() ) :
+<div class="single-product-container">
 
-            //The WordPress Loop: loads post content 
+    <div 
+        class="single-image"><?php the_post_thumbnail();?>
+    </div>
 
-            while( have_posts() ) :
-            the_post(); ?>
-            
-                <div class = 'sp-img'>
-                    <?php the_post_thumbnail('large');?>
-                </div>
+    <div class="single-product-info">
+        <h2><?php the_title(); ?></h2>
+        <h3><?php echo '$'.get_field('price');?></h3>
+        <p><?php the_content(); ?><p>
+    </div>
+    
+</div>
+    <!-- Loop ends -->
+    <?php endwhile;?>
 
-                <div class="sp-title">
-                    <h2><?php the_title(); ?></h2>
-                </div>
+    <?php the_posts_navigation();?>
+    
 
-                <h2 class="sp-price" ><?php echo "$" . get_field('price');?></h2> 
+<?php else : ?>
+        <p>No posts found</p>
+<?php endif;?>
 
-                <p><?php the_content(); ?> </p>
-
-            <?php endwhile;?>
-
-            <?php the_posts_navigation();?>
-
-        <?php else : ?>
-            <p>No posts found</p>
-        <?php endif;?>
-
-        <div class = 'social-icons-body'>
-            <button  class="social-button-f"><i class="fab fa-facebook-f"></i> LIKE </button>
-            <button  class="social-button-t"><i class="fab fa-twitter"></i> TWEET </button>
-            <button  class="social-button-p"><i class="fab fa-pinterest"></i> PIN </button>
-
-        </div>
-
-    <!-- </div> -->
-   
-</section>
-
+    
 <?php get_footer();?>

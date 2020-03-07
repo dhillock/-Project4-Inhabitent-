@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <?php
+// this is not working...yet
 $args = array('numberposts' => 2, 'order' => "ASC", 'orderby' => 'date');
 $postslist = get_posts($args);
 ?>

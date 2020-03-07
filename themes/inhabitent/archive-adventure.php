@@ -1,48 +1,68 @@
-<!-- Load Latest Adventures start-->
-<h1 class="landing-title2" >LATEST ADVENTURESZZZ</h1>
-<h1 class="landing-title2" >LATEST ADVENTURESZZZ</h1>
-<h1 class="landing-title2" >LATEST ADVENTURESZZZ</h1>
-<h1 class="landing-title2" >LATEST ADVENTURESCZZ</h1>
+<?php get_header(); ?>
 
-<?php 
-	$args = array( 'post_type' => 'adventure', 
-	'posts_per_page' => 4, 'order' => "ASC", 'orderby' => 'date');
-	$the_query = new WP_Query( $args ); 
+<?php $adventures = new WP_Query(array(  
+	'post_type' => array( 'adventure', ),
+	'orderby' => 'title',
+	'order' => 'ASC',
+    'posts_per_page' => 4, 
+    ));
 ?>
 
-<?php if ( $the_query->have_posts() ) : ?>
+<h1 class="arc-adv-title">LATEST ADVENTURES</h1>
 
-<section class = 'latest-adventures2'>
+<!-- Add the Adventure Categories -->
+<section class = "arc-adventure-categories">
 
-<?php $counter = 0;?>
+    <?php $terms = get_terms( array(
+    'taxonomy' => 'adventure-type',
+    'hide-empty' => false,
+	))?>
+	
+    <?php foreach($terms as $term):?>
 
-		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
-			$counter++;
-			$dynClass = "adventure2-". $counter;?>
-			<figure class = 'adventure2-figure <?php echo $dynClass?>'>
-				<h1 class="adventure2-title"><?php the_title(); ?></h1>
-				  
+		<section class="arc-adventure-categories">
+			<a class="arc-adventure-type-link" href="<?php echo get_home_url() . "/product-type/" . $term->slug;?>"> <?php echo $term->name ;?></a>
+		</section>
+
+	<?php endforeach;?>
+	
+</section>
+
+ <hr style="border-top: dashed 1px; color: $brand-grey-light" />
+ 
+ <!--  Add the adventure grid -->
+<section class="arc-adventure-content-grid">
+
+	<?php if( have_posts() ) :
+
+	//The WordPress Loop: loads post content 
+		while( $adventures -> have_posts() ) : $adventures -> the_post(); ?>
+			
+			<a href="<?php echo get_permalink() ;?>">
+				<figure>
 					<?php the_post_thumbnail('large');?>
-
-				<a href="<?php echo get_permalink(); ?>"><button class="read-more-button2">READ MORE</button></a>
-			</figure>
-
+						<figcaption>
+							<p><?php the_title(); ?></p>
+							<?php echo "x.....x$" . get_field('price');?>
+						</figcaption>
+				</figure>
+			</a>
+		<!-- Loop ends -->
 		<?php endwhile;?>
 
 </section>
 
-<?php else:  ?>
+		<!-- <?php the_posts_navigation();?> -->
 
-	<p>Sorry, no posts matched your criteria.</p>
-
-<?php endif; ?>
-
-<!-- Load Latest Adventures end-->
-
-<!-- Load Latest Adventures2 start-->
+	<?php else : ?>
+        <p>No posts found</p>
+	<?php endif;?>
+   
+<div class = 'arc-adventure-place-holder'
+	<h1> This is a place holder</h1>
+</div>
 
 <?php wp_reset_postdata();?>
 <!-- Always good to use the above function to clear our posts -->
 
-<!-- Load the footer  -->
 <?php get_footer();?>

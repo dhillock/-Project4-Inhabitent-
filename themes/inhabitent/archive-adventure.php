@@ -43,7 +43,7 @@
 					<?php the_post_thumbnail('large');?>
 						<figcaption>
 							<p><?php the_title(); ?></p>
-							<?php echo "x.....x$" . get_field('price');?>
+							<?php echo ", $" . get_field('price');?>
 						</figcaption>
 				</figure>
 			</a>
@@ -59,7 +59,7 @@
 	<?php endif;?>
    
 <div class = 'arc-adventure-place-holder'
-	<h1> This is a place holder</h1>
+	<h1> This is a place holder: archive-adventure.php</h1>
 </div>
 
 <?php wp_reset_postdata();?>

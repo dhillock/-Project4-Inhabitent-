@@ -23,7 +23,7 @@
             'order' => 'ASC',
             'numberposts' => 5
             );
-        $product_posts = get_posts( $args ); // returns an array of posts
+        $product_posts = get_posts( $args ); 
         ?>
 
         <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>

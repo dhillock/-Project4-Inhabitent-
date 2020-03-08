@@ -16,6 +16,12 @@
         <h2><?php the_title(); ?></h2>
         <h3><?php echo '$'.get_field('price');?></h3>
         <p><?php the_content(); ?><p>
+
+        <div class = 'social-icons-body'>
+            <button  class="social-button-f"><i class="fab fa-facebook-f"></i> LIKE </button>
+            <button  class="social-button-t"><i class="fab fa-twitter"></i> TWEET </button>
+            <button  class="social-button-p"><i class="fab fa-pinterest"></i> PIN </button>
+        </div>
     </div>
     
 </div>

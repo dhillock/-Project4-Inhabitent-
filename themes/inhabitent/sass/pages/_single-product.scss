@@ -2,16 +2,18 @@
 // styling for taxonomy-product-type.php
 //
 .single-product-container {
+  // background-color: red;
   display: flex;
+
 }
 
 .single-product-info {
   margin-left: 50px;
-  margin-right: 300px;
+  // margin-right: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-top: 70px;
+  margin-top: 80px;
 
   h2 {
     font-family: $font-accent;
@@ -27,16 +29,24 @@
 
   p {
     font-family: Merriweather Web, serif;
-    font-size: 12px;
-    line-height: 2;
+    font-size: 1.2rem;
+    line-height: $base-line-height;
+    // margin-bottom: 1.5rem;
   }
+
+  .social-icons.body {
+    background-color: red;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
 }
 
 .single-image img {
   filter: brightness(100%);
-  width: 600px;
-  height: 400px;
+  width: 537px;
+  height: auto;
   object-fit: cover;
-  margin-left: 70px;
+  margin-left: 20px;
   margin-top: 100px;
 }

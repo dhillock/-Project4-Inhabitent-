@@ -33,7 +33,7 @@
 					<?php the_post_thumbnail('large');?>
 						<figcaption>
 							<p><?php the_title(); ?></p>
-							<?php echo ".....$" . get_field('price');?>
+							<?php echo ".........$" . get_field('price');?>
 						</figcaption>
 				</figure>
 			</a>
@@ -49,7 +49,7 @@
 	<?php endif;?>
    
 <div class = 'tax-product-place-holder'
-	<h1> This is a place holder: archive-product.php</h1>
+	<h1> This is a place holder: taxonomy-product-type.php</h1>
 </div>
 
 <?php wp_reset_postdata();?>

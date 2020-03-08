@@ -49,7 +49,7 @@
 	<?php endif;?>
    
 <div class = 'tax-adventure-place-holder'
-	<h1> This is a place holder: archive-adventure.php</h1>
+	<h1> This is a place holder: taxonomy-adventure-type.php</h1>
 </div>
 
 <?php wp_reset_postdata();?>

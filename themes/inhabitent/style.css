@@ -264,7 +264,6 @@ p span {
 .social-icons-body {
   font-size: 2rem;
   margin-top: 1rem;
-  margin-left: 10rem;
   height: 7rem;
   width: 20rem;
   display: flex;
@@ -876,6 +875,8 @@ body {
   font-size: 1rem; }
   .single-journal-content p + p {
     margin-top: 10px; }
+  .single-journal-content .social-icons-body {
+    margin-left: 0; }
 
 .single-category-tag {
   display: flex;
@@ -909,6 +910,10 @@ body {
   padding-bottom: 20px;
   display: flex;
   justify-content: center; }
+  .arc-product-categories a {
+    text-decoration: none;
+    font-family: "Novecento-Sans-Web";
+    color: #248a83; }
 
 .arc-product-place-holder {
   color: white;
@@ -977,6 +982,10 @@ body {
   padding-bottom: 20px;
   display: flex;
   justify-content: center; }
+  .arc-adventure-categories a {
+    text-decoration: none;
+    font-family: "Novecento-Sans-Web";
+    color: #248a83; }
 
 .arc-adventure-content-grid {
   display: grid;
@@ -1012,6 +1021,8 @@ body {
     border: 1px solid #a1a1a1;
     border-top-width: 5px;
     border-inline-color: #e1e1e1; }
+    .arc-adventure-content-grid a figcaption p {
+      font-size: .7rem; }
   .arc-adventure-content-grid a .arc-adventure-type-link {
     font-family: "Novecento-Sans-Web";
     color: #248a83;
@@ -1019,7 +1030,6 @@ body {
     font-size: 18px; }
 
 .tax-product-heading {
-  background-color: green;
   margin-top: 80px;
   margin-bottom: 80px;
   font-family: Novecento-Sans-Web-Bold;
@@ -1028,7 +1038,15 @@ body {
   justify-content: center;
   align-items: center; }
   .tax-product-heading h1 {
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    font-size: 2.4rem;
+    font-family: "Novecento-Sans-Web";
+    font-weight: bold; }
+
+.tax-product-place-holder {
+  color: white;
+  height: 75px;
+  width: 100%; }
 
 .tax-product-content-grid {
   display: grid;
@@ -1127,11 +1145,10 @@ body {
 
 .single-product-info {
   margin-left: 50px;
-  margin-right: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-top: 70px; }
+  margin-top: 80px; }
   .single-product-info h2 {
     font-family: "Novecento-Sans-Web";
     font-size: 2.4rem;
@@ -1142,17 +1159,21 @@ body {
     font-size: 25px; }
   .single-product-info p {
     font-family: Merriweather Web, serif;
-    font-size: 12px;
-    line-height: 2; }
+    font-size: 1.2rem;
+    line-height: 1.75; }
+  .single-product-info .social-icons.body {
+    background-color: red;
+    margin-top: 0;
+    margin-left: 0; }
 
 .single-image img {
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
-  width: 600px;
-  height: 400px;
+  width: 537px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-left: 70px;
+  margin-left: 20px;
   margin-top: 100px; }
 
 .single-adventure {

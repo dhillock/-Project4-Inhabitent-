@@ -22,6 +22,12 @@
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
+
+  a {
+    text-decoration: none;
+    font-family: $font-accent;
+    color: $brand-green;
+  }
 }
 
 .arc-product-place-holder {
@@ -29,12 +35,6 @@
   height: 75px;
   width: 100%;
 }
-
-
-
-// .product-type-link a {
-//     font-family: $font-accent;
-// }
 
 .arc-product-content-grid {
   display: grid;

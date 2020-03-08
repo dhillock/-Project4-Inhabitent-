@@ -432,19 +432,17 @@ footer {
   flex-direction: column;
   flex-wrap: nowrap;
   width: 100%;
-  line-height: 40px;
+  line-height: 1.75;
   padding: 75px 0px 0px 50px;
   margin: 0 auto; }
-  .sidebar .widget-title {
-    background-color: red; }
   .sidebar h2 {
     font-family: Novecento Sans Web, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3rem;
     color: #2f1339;
     font-weight: 700;
     margin-bottom: 15px; }
   .sidebar p {
-    color: #808080;
+    color: #404040;
     margin-bottom: 15px;
     font-family: Merriweather Web, serif; }
   .sidebar a {
@@ -483,32 +481,31 @@ footer {
   width: 1120px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 75% 20%;
-  color: green;
-  font-family: Novecento Sans Web, sans-serif;
-  font-weight: bold; }
-  .find-us p {
+  grid-template-columns: 70% 25%;
+  color: green; }
+  .find-us .left-side p {
     font-family: Merriweather Web, serif;
     text-transform: none;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.75; }
-  .find-us h1 {
+  .find-us .left-side h1 {
     font-size: 2.4rem; }
-  .find-us h2 {
+  .find-us .left-side h2 {
     font-size: 2.1rem; }
-  .find-us .wpcf7-email {
+  .find-us .left-side .wpcf7-email {
     background-color: red;
     width: 414px; }
-  .find-us .wpcf7-form-control {
+  .find-us .left-side .wpcf7-form-control {
     background-color: yellowgreen;
     width: 414px; }
-  .find-us .wpcf7-text {
+  .find-us .left-side .wpcf7-text {
     background-color: blue;
     height: 40px; }
-  .find-us .wpcf7-textarea {
+  .find-us .left-side .wpcf7-textarea {
     background-color: orange;
-    height: 300; }
+    width: 100%;
+    height: 300px; }
 
 .wpcf7-submit {
   background: red;
@@ -528,12 +525,6 @@ footer {
     background-color: #248a83;
     border: 1px solid #e1e1e1;
     color: #2f1339; }
-
-.map-email .cont {
-  color: blue; }
-
-.map-email .dh1 {
-  color: green; }
 
 body {
   background: #ffffff;

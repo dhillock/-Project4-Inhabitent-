@@ -4,24 +4,21 @@
   flex-direction: column;
   flex-wrap: nowrap;
   width: 100%;
-  line-height: 40px;
+  line-height: $base-line-height;
   padding: 75px 0px 0px 50px;
   margin: 0 auto;
 
-  .widget-title {
-    background-color: red;
-  }
 
   h2 {
     font-family: Novecento Sans Web, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3rem;
     color: $brand-purple;
     font-weight: 700;
     margin-bottom: 15px;
   }
 
   p {
-    color: $brand-grey-medium;
+    color: $brand-grey-text;
     margin-bottom: 15px;
     font-family: Merriweather Web, serif;
   }
@@ -33,17 +30,9 @@
       color: $brand-purple;
     }
   }
+
+  .business-info {
+    // background-color: red;
+  }
+
 }
-
-// .contact-info {
-//   background-color: green;
-// }
-
-// aside {
-//   background-color: blue;
-// }
-
-// aside ul {
-//   background-color: red;
-//   margin-top: 5rem;
-// }

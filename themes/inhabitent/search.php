@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<h1> Your Search Results:</h1>?
-
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 

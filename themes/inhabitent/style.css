@@ -436,6 +436,8 @@ footer {
   line-height: 40px;
   padding: 75px 0px 0px 50px;
   margin: 0 auto; }
+  .sidebar .widget-title {
+    background-color: red; }
   .sidebar h2 {
     font-family: Novecento Sans Web, sans-serif;
     font-size: 1.5em;
@@ -1175,3 +1177,54 @@ body {
     margin-bottom: base-spacing; }
   .single-adventure p + p {
     margin-top: 1rem; }
+
+.page-not-found {
+  width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 75% 20%; }
+  .page-not-found .content-area {
+    margin-top: 70px; }
+  .page-not-found fieldset {
+    padding: 25px 0; }
+  .page-not-found a {
+    color: #248a83;
+    text-decoration: none; }
+  .page-not-found h1 {
+    font-size: 2rem;
+    font-family: Novecento Sans Web, sans-serif;
+    color: #808080;
+    text-transform: uppercase;
+    padding: 20px 0; }
+  .page-not-found h2 {
+    font-size: 1.5em;
+    color: #2f1339;
+    text-transform: uppercase;
+    font-family: Novecento Sans Web, sans-serif;
+    font-weight: 700;
+    padding: 20px 0; }
+  .page-not-found h3 {
+    color: #808080; }
+  .page-not-found p {
+    font-size: 1em;
+    color: #808080;
+    font-family: Merriweather Web, serif; }
+  .page-not-found select {
+    margin-bottom: 50px; }
+  .page-not-found li {
+    list-style-type: none; }
+
+.page-search i {
+  display: none; }
+
+.page-search label {
+  display: block; }
+
+.page-search input {
+  color: #808080;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+  font-family: Merriweather Web, serif;
+  font-size: 1rem;
+  padding: 5px; }

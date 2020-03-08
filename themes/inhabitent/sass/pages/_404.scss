@@ -1,0 +1,75 @@
+.page-not-found {
+    width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 75% 20%;
+
+    .content-area {
+        margin-top: 70px;
+    }
+
+    fieldset {
+        padding: 25px 0;
+    }
+
+    a {
+        color: $brand-green;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-family: Novecento Sans Web, sans-serif;
+        color: $brand-grey-medium;
+        text-transform: uppercase;
+        padding: 20px 0;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        color: $brand-purple;
+        text-transform: uppercase;
+        font-family: Novecento Sans Web, sans-serif;
+        font-weight: 700;
+        padding: 20px 0;
+    }
+
+    h3 {
+        color: $brand-grey-medium;
+    }
+
+    p {
+        font-size: 1em;
+        color: $brand-grey-medium;
+        font-family: Merriweather Web, serif;
+    }
+
+    select {
+        margin-bottom: 50px;
+    }
+
+    li {
+        // background-color: blue;
+        list-style-type: none;
+    }
+}
+
+.page-search {
+    i {
+        display: none;
+    }
+
+    label {
+        display: block;
+    }
+
+    input {
+        color: $brand-grey-medium;
+        background-color: #f4f4f4;
+        border: $border-solid-type;
+        border-radius: 0;
+        font-family: Merriweather Web, serif;
+        font-size: 1rem;
+        padding: 5px;
+    }
+}

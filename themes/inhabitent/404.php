@@ -1,52 +1,79 @@
-<?php get_header(); ?>
-<div style="float: right; top: 500px;" ><?php get_sidebar();?></div> 
-<h1>Oops that page cannot be found</h1>
-<br>
-<p>It looks like nothing was found at this location. Maybe try one of the links below or search</p>
-<br>
+<?php get_header();?>
 
- <div class="error-search" ><?php echo get_search_form();?></div> 
-<br>
-<h2 class="novecento-web" >RECENT POSTS</h2>
-<?php
-$args = array('numberposts' => 3, 'order' => "ASC", 'orderby' => 'title');
-$postslist = get_posts($args);
-foreach($postslist as $post) : setup_postdata($post); ?>
-        <p><a class="brand-green merriweather" style="text-decoration: none;" href="<?php echo get_permalink() ;?>"><?php the_title(); ?></a></p><br>
-    </div>
+<section class="page-not-found">
 
-<?php endforeach;?>
-<br>
-<h2 class="novecento-web" >MOST USED CATEGORIES</h2>
-    <?php $terms = get_terms( array(
-    'taxonomy' => 'product-type',
-    'hide-empty' => false,
-));
+    <div class="content-area">
 
-foreach($terms as $term):?>
+    <!-- <div class = 'page-title'> -->
+        <h1> OOPS! That page can't be found. </h1>
+    <!-- </div? -->
 
-<a class="brand-green merriweather" style="font-size: 18px; text-decoration: none;" href="<?php echo "product-type/" . $term->slug ;?>"><?php echo $term->name;?></a><br>
+        <p>It looks like nothing can be found at this location. Maybe try one of the links below or search again.<p>
 
-<?php endforeach;?>
-<br>
-<h2 class="novecento-web" >ARCHIVES</h2>
-<p>Try looking in the monthly archives</p>
+        <div class="page-search">
+            <?php get_search_form();?>
+        </div>
 
-<select>
+        <h2> Recent Posts </h2>
 
-<?php $args = array('numberposts' => 3, 'order' => "ASC", 'orderby' => 'title');
-$postslist = get_posts($args);
-foreach($postslist as $post) : setup_postdata($post); ?>
+         <!-- Recent Posts Loop -->
+         <?php
+        $args = array( 
+            'post_type' => 'post', 
+            'order' => 'ASC',
+            'numberposts' => 5
+            );
+        $product_posts = get_posts( $args ); // returns an array of posts
+        ?>
 
-    <option><a href="<?php echo get_permalink() ;?>"><?php the_title(); ?></a></option>
+        <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
 
-<?php endforeach;?>
+            <h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
 
-</select>
+        <?php endforeach; wp_reset_postdata(); ?>
 
-<br>
+        <h2>Most Used Categories</h2>
 
+        <?php echo wp_list_categories(array (
+            'order'=>'DSC',
+            'orderby'=>'count',
+            'show_count'=> true,
+            'title_li' => ''
+        )); ?>
 
+        <h2>Archives</h2>
 
+         <!-- Recent Posts Loop -->
+         <?php
+        $args = array( 
+            'post_type' => 'post', 
+            'order' => 'ASC',
+            'numberposts' => 5
+            );
+        $product_posts = get_posts( $args ); 
+        ?>
+
+        <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+
+            <h3><?php  ?></h3>
+        <?php endforeach; wp_reset_postdata(); ?>
+
+        <p>Try looking in the monthly archives.</p>
+
+        <select name="\"archive-dropdown\"" onchange="document.location.href=this.options[this.selectedIndex].value;">
+
+            <option disabled selection>Select Month</option>
+
+            <?php wp_get_archives('type=monthly&format=option'); ?>
+
+        </select>
+
+    </div> 
+
+ <!-- Sidebar -->
+    <?php get_sidebar();?>
+
+</section> 
+<!-- Footer -->
 <?php get_footer();?>
 

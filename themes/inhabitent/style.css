@@ -1263,6 +1263,8 @@ body {
     margin-bottom: base-spacing; }
   .single-adventure p + p {
     margin-top: 1rem; }
+  .single-adventure .social-icons-body {
+    margin-left: 160px; }
 
 .page-not-found {
   width: 1120px;

@@ -26,9 +26,11 @@ Text Domain: inhabitant
 @import 'layout/footer';
 @import 'layout/sidebar';
 @import 'layout/forms';
+@import 'layout/searchform';
 
 @import 'pages/page-about';
 @import 'pages/page-find-us';
+@import 'pages/page-search';
 
 @import 'pages/front-page'; // This is for the...front-page! :-)
 

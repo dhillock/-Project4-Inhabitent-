@@ -27,7 +27,8 @@ header {
   }
 
   a {
-    font-family: $font-accent;
+    // font-family: $font-accent;
+    font-family: Novecento Sans Web, sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
     color: white;
@@ -76,19 +77,32 @@ header {
 
     .menu-white {
       color: white;
-      margin-top: 3px;
 
       & * {
         color: white;
       }
+
+      .search-toggle {
+        .fas.fa-search.fa-1x {
+          color: white !important;
+        }
+      }
+
     }
 
     .menu-green {
-      margin-top: 3px;
+      color: $brand-green;
 
       & * {
         color: $brand-green;
       }
+
+      .search-toggle {
+        .fas.fa-search.fa-1x {
+          color: red !important;
+        }
+      }
+
     }
   }
 

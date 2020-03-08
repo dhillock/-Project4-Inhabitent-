@@ -28,7 +28,7 @@
 	
 </section>
 
- <hr style="border-top: dashed 1px; color: $brand-grey-light" />
+ <hr style="border-top: dashed 1px; color: #c8c8c8" >
  
  <!--  Add the archive product grid -->
 <section class="arc-product-content-grid">

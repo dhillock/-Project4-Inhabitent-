@@ -53,23 +53,3 @@
         list-style-type: none;
     }
 }
-
-.page-search {
-    i {
-        display: none;
-    }
-
-    label {
-        display: block;
-    }
-
-    input {
-        color: $brand-grey-medium;
-        background-color: #f4f4f4;
-        border: $border-solid-type;
-        border-radius: 0;
-        font-family: Merriweather Web, serif;
-        font-size: 1rem;
-        padding: 5px;
-    }
-}

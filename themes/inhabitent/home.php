@@ -28,17 +28,18 @@ $postslist = get_posts($args);
         </div>
         <!-- Blog Content -->
         <div class="j-content">
-            <p><?php echo wp_trim_words( get_the_content(), 40, '...' );?></p>
+            <p><?php echo wp_trim_words( get_the_content(), 40, ' [...]' );?></p>
             <div class="j-btn">
             <a href="<?php the_permalink();?>">Read more →</a>
             </div>
         </div>
         
-    <!-- Loop ends -->
-    <?php endwhile;?>
+        <!-- Loop ends -->
+        <?php endwhile;?>
+
         <?php the_posts_navigation();?>
     
-        </div>
+    </div>
 
         <?php get_sidebar();?>
 </section>

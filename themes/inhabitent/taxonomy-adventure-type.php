@@ -18,7 +18,7 @@
     <?php echo category_description();?>
 </div>
 
-<hr style="border-top: dashed 1px; color: #a1a1a1" />
+<hr style="border-top: dashed 1px; color: #a1a1a1">
 
  <!--  Add the taxonomy adventure grid -->
 <section class="tax-adventure-content-grid">

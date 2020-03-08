@@ -1,0 +1,74 @@
+.search-title {
+    background-color: orange;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: .5rem;
+    border-bottom: $border-solid-type;
+}
+
+.search-page {
+    // background-color: red;
+    width: 1120px;
+    // margin: 0 auto;
+    display: grid;
+    grid-template-columns: 75% 20%;
+
+    .search-button {
+        font-family: Novecento Sans Web, sans-serif;
+        font-size: .9rem;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        text-decoration: none;
+        padding: .75rem 1.5rem;
+
+        a {
+            color: $brand-grey-medium;
+            background-color: white;
+            border: 1px solid $brand-grey-medium;
+            color: $brand-grey-medium;
+            padding: 10px 30px;
+            text-decoration: none;
+
+
+            &:hover {
+                background-color: $brand-green;
+                border: $border-solid-type;
+                color: #fff;
+            }
+
+            // &:visited {
+            //     color: $brand-green;
+            // }
+        }
+    }
+
+    p {
+        font-family: Merriweather Web, serif;
+        font-size: 1rem;
+        line-height: $base-line-height;
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+
+.content-area-search {
+    // background-color: blue;
+
+    // a {
+    //     font-family: Novecento Sans Web, sans-serif;
+    //     font-size: 2.1rem;
+    //     text-transform: uppercase;
+    //     color: brand-green;
+    // }
+
+    .blog-title {
+        // background-color: red;
+        font-family: Novecento Sans Web, sans-serif;
+        font-size: 2.1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: brand-green;
+    }
+
+}

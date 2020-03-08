@@ -3,6 +3,7 @@ footer {
   // background-color: hotpink;
   display: grid;
   grid-template-columns: 25% 25% 50%;
+  // grid-template-columns: 280px 280px 560px;
   // grid-template-rows: 280px 75px;
   // grid-template-rows: 280px;
   font-size: 1rem;
@@ -29,6 +30,7 @@ footer {
   display: flex;
   justify-content: end;
   align-items: flex-start;
+
   // align-content: flex-end;
   // align-self: flex-end;
   img {
@@ -37,6 +39,7 @@ footer {
     margin-right: $base-spacing;
   }
 }
+
 .widget-title {
   display: none;
 }

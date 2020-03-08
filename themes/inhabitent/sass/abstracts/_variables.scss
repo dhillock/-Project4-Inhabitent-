@@ -6,10 +6,15 @@
 $color-main-background: #ffffff;
 
 $font-main: 'Merriweather';
-$font-accent: 'Novecento-Sans-Web';
-// $font-accent: 'Novecento-Sans-Web, sans-serif';
+// $font-accent: 'Novecento-Sans-Web';
+$font-accent: 'Novecento-Sans-Web, sans-serif';
 $font-weight: normal;
 $font-styleTemp: italics;
+
+$font-title: 'Novecento Sans Web Bold';
+$font-accent: 'Novecento Sans Web';
+$font-description: 'Merriweather Web';
+$font-description-bold: 'Merriweather Web bold';
 
 $base-font-size: 16px;
 $base-font-color: #404040;
@@ -38,9 +43,3 @@ $brand-yellow: #f0e4d1;
 $brand-grey-light: #a1a1a1;
 $brand-grey-medium: #808080;
 $brand-grey-text: #404040;
-
-//VARIABLES
-$title_font: 'Novecento Sans Web Bold';
-$title_font_sub: 'Novecento Sans Web';
-$description_font: 'Merriweather Web';
-$description_font_bold: 'Merriweather Web bold';

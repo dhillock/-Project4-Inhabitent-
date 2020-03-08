@@ -27,8 +27,7 @@
 	<?php endforeach;?>
 	
 </section>
-
- <hr style="border-top: dashed 1px; color: $brand-grey-light" />
+ <hr style="border-top: dashed 1px; color: #c8c8c8" >
  
  <!--  Add the adventure grid -->
 <section class="arc-adventure-content-grid">

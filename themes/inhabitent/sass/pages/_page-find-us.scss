@@ -2,7 +2,7 @@
   width: 1120px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 70% 25%;
+  grid-template-columns: 80% 20%;
   color: green;
 
   // background-color: green;
@@ -10,6 +10,10 @@
   // font-weight: bold;
 
   .left-side {
+    margin-top: 3rem;
+    margin-left: 3rem;
+
+
     p {
       font-family: Merriweather Web, serif;
       text-transform: none;
@@ -26,50 +30,84 @@
       font-size: 2.1rem;
     }
 
-    .wpcf7-email {
-      background-color: red;
-      width: 414px;
+    input {
+      border: none;
+      // background-color: #f4f4f4;
+
+      // height: 40px;
+      // width: 415px;
+
     }
 
-    .wpcf7-form-control {
-      background-color: yellowgreen;
-      width: 414px;
-    }
-
-    .wpcf7-text {
-      background-color: blue;
-      height: 40px;
-    }
-
-    .wpcf7-textarea {
-      background-color: orange;
-      width: 100%;
-      height: 300px;
+    label {
+      color: #2f1339;
+      display: block;
+      font-family: Novecento Sans Web, sans-serif;
+      font-weight: bold;
+      font-size: 17.6px;
+      font-size: 1.1rem;
+      margin-bottom: .5rem;
+      text-transform: uppercase;
     }
   }
 
-}
 
-.wpcf7-submit {
-  // background-color: $brand-green;
-  background: red;
-  width: 100px;
-  border: none;
-  border-radius: 0;
-  color: white;
-  cursor: pointer;
-  font-family: Novecento Sans Web, sans-serif;
-  font-size: 19.2px;
-  font-size: 0.9rem;
-  line-height: 1;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  margin-bottom: 1.5rem;
+  .wpcf7-email {
+    // background-color: red;
+    background-color: #f4f4f4;
 
-  &:hover {
+    height: 40px;
+    width: 414px;
+  }
+
+  .wpcf7-form-control {
+    background-color: #f4f4f4;
+
+    height: 40px;
+    width: 414px;
+  }
+
+  .wpcf7-text {
+    // background-color: blue;
+    background-color: #f4f4f4;
+
+    height: 40px;
+    width: 414px;
+  }
+
+  .wpcf7-textarea {
+    // email content area
+    // background-color: orange;
+    background-color: #f4f4f4;
+    width: 760px;
+    height: 300px;
+    border: none;
+  }
+
+  .wpcf7-submit {
+    margin-top: 1.5rem;
+    margin-bottom: 3.5rem;
     background-color: $brand-green;
-    border: $border-solid-type;
-    color: $brand-purple;
+    // background: red;
+    width: 100px;
+    border: none;
+    border-radius: 0;
+    color: white;
+    cursor: pointer;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 19.2px;
+    font-size: 0.9rem;
+    line-height: 1;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+
+
+    &:hover {
+      background-color: $brand-green;
+      border: $border-solid-type;
+      color: $brand-purple;
+    }
+
   }
 
 }

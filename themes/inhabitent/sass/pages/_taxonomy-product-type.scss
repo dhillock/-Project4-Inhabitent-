@@ -11,15 +11,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  h1 {
+    margin-bottom: 80px;
+  }
+
 }
 
-.tax-product-heading h1 {
-  margin-bottom: 80px;
-}
-
-.tax-product-grid {
+.tax-product-content-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 320px;
   gap: 1.5rem;
   margin-top: 40px;
   margin-bottom: 1.5;
@@ -27,25 +29,44 @@
   line-height: 1.75;
 }
 
-.tax-product-single-item-section {
-  height: 300px;
-  // border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-}
-
-.tax-product-item-image img {
-  filter: brightness(100%);
-}
-
-
-.tax-product-single-item-info {
+.tax-product-content-grid a {
   text-decoration: none;
-}
 
-.tax-single-item-info h2 {
-  font-family: $font-accent;
-  padding-left: 40px;
-  color: $brand-orange;
-  font-size: 4rem;
+  figure {
+    // background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // border: 1px solid $brand-grey-light;
+    width: 100%;
+    height: 100%;
+
+    img.attachment-large {
+      width: 260px;
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+
+  figcaption {
+    // background-color: red;
+    font-family: Merriweather Web, serif;
+    font-size: $base-font-size;
+    color: $base-font-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    border: 1px solid $brand-grey-light;
+    border-top-width: 5px;
+    border-inline-color: $border-solid-color;
+  }
+
+  .arc-product-type-link {
+    font-family: $font-accent;
+    color: $brand-green;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
 }

@@ -30,12 +30,12 @@
 
  <hr style="border-top: dashed 1px; color: $brand-grey-light" />
  
- <!--  Add the shop grid -->
+ <!--  Add the archive product grid -->
 <section class="arc-product-content-grid">
 
 	<?php if( have_posts() ) :
 
-	//The WordPress Loop: loads post content 
+	//The WordPress Loop: loads post content
 		while( $products -> have_posts() ) : $products -> the_post(); ?>
 			
 			<a href="<?php echo get_permalink() ;?>">
@@ -59,7 +59,7 @@
 	<?php endif;?>
    
 <div class = 'arc-product-place-holder'
-	<h1> This is a place holder</h1>
+	<h1> This is a place holder: archive-product.php</h1>
 </div>
 
 <?php wp_reset_postdata();?>

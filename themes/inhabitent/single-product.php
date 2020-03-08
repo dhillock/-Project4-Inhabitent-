@@ -8,8 +8,8 @@
 
 <div class="single-product-container">
 
-    <div 
-        class="single-image"><?php the_post_thumbnail();?>
+    <div class="single-image">
+        <?php the_post_thumbnail();?>
     </div>
 
     <div class="single-product-info">
@@ -24,7 +24,6 @@
 
     <?php the_posts_navigation();?>
     
-
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>

@@ -3,9 +3,9 @@
 //
 
 .tax-adventure-heading {
-  background-color: green;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  // background-color: green;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
   font-family: Novecento-Sans-Web-Bold;
   display: flex;
   flex-direction: column;
@@ -13,9 +13,18 @@
   align-items: center;
 
   h1 {
-    margin-bottom: 80px;
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    font-family: $font-accent;
+    font-weight: bold;
   }
 
+}
+
+.tax-adventure-place-holder {
+  color: white;
+  height: 4.5rem;
+  width: 100%;
 }
 
 .tax-adventure-content-grid {

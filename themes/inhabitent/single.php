@@ -8,7 +8,8 @@
 
 
 <section class="single-journal">
-    <div class = 'left-side'>
+
+    <div class = 'single-content-area'>
 
         <?php if( have_posts() )  
             while( have_posts() ) :

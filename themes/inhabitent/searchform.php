@@ -5,15 +5,10 @@
 
         <a href="#" class="search-toggle">
 
-
-
-
-            <i style = 'color: $brand-green;'
+        
+            <i style = 'color:<?php echo is_page(array('Home', 'About')) ? "#ffffff" : "#248a83"  ; ?>;'
             
-            
-            class="fas fa-search fa-1x" > </i>
-
-
+                class="fas fa-search fa-1x" > </i>
 
         </a>
 
@@ -29,4 +24,4 @@
 
 
             
- <!-- <?php echo is_page(array('Home', 'About')) ? "do-home-and-about" : "do-something-else"  ; ?> -->
+ <!-- `<?php echo is_page(array('Home', 'About')) ? "do-something" : "do-something-else"  ; ?>` -->

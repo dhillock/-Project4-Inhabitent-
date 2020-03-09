@@ -21,7 +21,7 @@
     <?php foreach($terms as $term):?>
 
 		<section class="arc-adventure-categories">
-			<a class="arc-adventure-type-link" href="<?php echo get_home_url() . "/product-type/" . $term->slug;?>"> <?php echo $term->name ;?></a>
+			<a class="arc-adventure-type-link" href="<?php echo get_home_url() . "/adventure-type/" . $term->slug;?>"> <?php echo $term->name ;?></a>
 		</section>
 
 	<?php endforeach;?>

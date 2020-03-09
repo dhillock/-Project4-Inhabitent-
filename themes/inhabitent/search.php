@@ -8,7 +8,7 @@
 
 <secton class = 'search-page' >
 
-    <div class = 'content-area-search'
+    <div class = 'search-content-area'
 
     <?php if( have_posts() ) :
 
@@ -30,7 +30,7 @@
             <!-- Loop ends -->
             <?php endwhile;?>
 
-            <?php the_posts_navigation();?>
+            <!-- <?php the_posts_navigation();?> -->
 
         <?php else : ?>
             <p>No posts found</p>

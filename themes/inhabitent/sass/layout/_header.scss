@@ -3,6 +3,7 @@
 header {
   // background-color: green;
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   height: 35px;
@@ -87,7 +88,6 @@ header {
           color: white !important;
         }
       }
-
     }
 
     .menu-green {
@@ -97,13 +97,11 @@ header {
         color: $brand-green;
       }
 
-      .search-toggle {
-        .fas.fa-search.fa-1x {
-          color: red !important;
-        }
-      }
-
+      // .search-toggle {
+      //   .fas.fa-search.fa-1x {
+      //     color: red !important;
+      //   }
+      // }
     }
   }
-
 }

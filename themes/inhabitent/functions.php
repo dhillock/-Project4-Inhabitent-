@@ -1,6 +1,6 @@
 <?php
 
-show_admin_bar(true);
+show_admin_bar(false);
 
 //Adds script and stylesheets
 function inhabitant_files() {

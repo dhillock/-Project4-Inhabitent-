@@ -1,14 +1,12 @@
 <?php get_header(); ?>
 
-<div class = 'search-title' >
-    <br/>
-    <br/>
-    <h1>SEARCH RESULTS FOR: <?php echo esc_html( get_search_query( false ) ); ?> </h1>
-</div>
+<section class = 'search-page' >
 
-<secton class = 'search-page' >
+    <div class = 'search-content-area'>
 
-    <div class = 'search-content-area'
+    <div class = 'search-title' >
+        <h1>SEARCH RESULTS FOR: <?php echo esc_html( get_search_query( false ) ); ?> </h1>
+    </div>
 
     <?php if( have_posts() ) :
 

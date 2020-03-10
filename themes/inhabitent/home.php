@@ -1,9 +1,11 @@
 <?php get_header(); ?>
 
-<?php
-// this is not working...yet
-$args = array('numberposts' => 2, 'order' => "ASC", 'orderby' => 'date');
-$postslist = get_posts($args);
+<?php $postlist = new WP_Query(array(  
+	'post_type' => array( 'post', ),
+	'orderby' => 'title',
+	'order' => 'DSC',
+    'posts_per_page' => 99, // change to 99 after 
+    ));
 ?>
 
 <section class="arc-journal">
@@ -12,7 +14,9 @@ $postslist = get_posts($args);
 
         <!-- Loop -->
         <?php if( have_posts() )  
-            while( have_posts() ) : the_post(); ?>
+
+       
+            while( $postlist -> have_posts() ) : $postlist -> the_post(); ?> 
 
         <!-- Blog Banner -->
         <div class="j-container" 

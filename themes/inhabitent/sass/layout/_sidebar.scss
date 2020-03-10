@@ -1,13 +1,14 @@
 //
 .sidebar {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   width: 100%;
   line-height: $base-line-height;
-  padding: 75px 0px 0px 50px;
-  margin: 0 auto;
-
+  padding: 0px 0px 0px 50px;
+  grid-column: 2 / 3;
+  grid-row: 1 / span 1;
 
   h2 {
     font-family: Novecento Sans Web, sans-serif;
@@ -31,8 +32,7 @@
     }
   }
 
-  .business-info {
-    // background-color: red;
-  }
-
+  // .business-info {
+  //   // background-color: red;
+  // }
 }

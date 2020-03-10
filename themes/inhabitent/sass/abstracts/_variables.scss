@@ -4,6 +4,14 @@
 
 // $template-folder: "echo get_stylesheet_directory_uri(); ."
 
+// Merriweather
+// Merriweather-Web
+// Merriweather-Web-Bold
+// Merriweather-Web-Bold-Italic
+
+// Novecento-Sans-Web
+// Novecento-Sans-Web-Bold
+
 $color-main-background: #ffffff;
 
 $font-main: 'Merriweather';
@@ -12,12 +20,12 @@ $font-accent: 'Novecento-Sans-Web, sans-serif';
 $font-weight: normal;
 $font-styleTemp: italics;
 
-$font-title: 'Novecento Sans Web';
-$font-accent: 'Novecento Sans Web';
+$font-title: 'Novecento-Sans-Web';
+$font-accent: 'Novecento-Sans-Web';
 
 $font-title-bold: 'Novecento-Sans-Web-Bold';
-$font-accent-bold: 'Novecento Sans Web Bold';
-$font-description-bold: 'Merriweather Web bold';
+$font-accent-bold: 'Novecento-Sans-Web-Bold';
+$font-description-bold: 'Merriweather-Web-Bold';
 
 $base-font-size: 1rem;
 $base-font-color: #404040;
@@ -30,6 +38,7 @@ $width-tablet: 600px;
 $width-max: 1120px;
 
 $border-solid-width: 1px;
+
 $border-solid-type: 1px solid #e1e1e1;
 $border-dashed-type: 1px dashed #e1e1e1;
 

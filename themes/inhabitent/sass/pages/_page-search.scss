@@ -5,11 +5,15 @@
   display: grid;
   grid-template-columns: 75% 20%;
 
+  .sidebar {
+    margin-top: 3rem;
+  }
+
   .search-title {
     height: 4rem;
     grid-column: 1 / 2;
     margin-top: $base-spacing;
-    background-color: orange;
+    // background-color: orange;
     font-family: Novecento Sans Web, sans-serif;
     font-size: 2.4rem;
     margin-bottom: 0.5rem;

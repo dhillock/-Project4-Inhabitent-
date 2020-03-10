@@ -206,7 +206,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: "Novecento Sans Web";
+  font-family: "Novecento-Sans-Web";
   letter-spacing: 2px;
   text-transform: uppercase; }
 
@@ -216,13 +216,14 @@ h2 {
   font-weight: 400; }
 
 p {
+  font-size: 1rem;
   font-family: "Merriweather"; }
 
 .journal-post {
   background-color: lightblue; }
 
 .journal-post h2 {
-  font-family: "Novecento Sans Web"; }
+  font-family: "Novecento-Sans-Web"; }
 
 .white-font {
   color: white; }
@@ -246,7 +247,7 @@ p {
   color: #808080; }
 
 .novecento-web {
-  font-family: "Novecento Sans Web"; }
+  font-family: "Novecento-Sans-Web"; }
 
 .merriweather {
   font-family: "Merriweather"; }
@@ -572,7 +573,7 @@ footer {
   color: red !important; }
 
 .container {
-  font-family: "Novecento Sans Web";
+  font-family: "Novecento-Sans-Web";
   line-height: 1.75;
   font-size: 1rem; }
   .container .about-image {
@@ -603,7 +604,7 @@ footer {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 80% 20%;
-  font-family: "Novecento Sans Web";
+  font-family: "Novecento-Sans-Web";
   font-weight: bold; }
   .find-us .findus-content-area {
     grid-column: 1 / 2;
@@ -675,11 +676,12 @@ footer {
   margin-top: 3rem;
   display: grid;
   grid-template-columns: 75% 20%; }
+  .search-page .sidebar {
+    margin-top: 3rem; }
   .search-page .search-title {
     height: 4rem;
     grid-column: 1 / 2;
     margin-top: 1.5rem;
-    background-color: orange;
     font-family: Novecento Sans Web, sans-serif;
     font-size: 2.4rem;
     margin-bottom: 0.5rem;
@@ -721,7 +723,7 @@ footer {
 body {
   background: #ffffff;
   color: #404040;
-  font-family: "Novecento Sans Web";
+  font-family: "Novecento-Sans-Web";
   font-size: 1rem;
   line-height: 1.75;
   width: 1120px; }
@@ -730,7 +732,7 @@ body {
   width: 100%; }
 
 .landing-title {
-  font-family: "Novecento Sans Web";
+  font-family: "Novecento-Sans-Web";
   font-weight: 400;
   color: #404040;
   font-size: 2.4rem;
@@ -773,7 +775,7 @@ body {
 
 .front-page-product-sections-btn {
   width: 100px;
-  font-family: "Novecento Sans Web";
+  font-family: "Novecento-Sans-Web";
   color: white;
   background: #248a83;
   margin-bottom: 20px;
@@ -869,7 +871,7 @@ body {
       height: 43px;
       padding: 12px 14px;
       color: white;
-      font-family: "Novecento Sans Web";
+      font-family: "Novecento-Sans-Web";
       font-size: 0.9rem;
       line-height: 1;
       margin-left: 1.5rem; }
@@ -1090,7 +1092,7 @@ body {
   align-items: flex-end; }
 
 .arc-product-categories {
-  font-family: "Novecento Sans Web";
+  font-family: "Novecento-Sans-Web";
   font-size: 1.2rem;
   text-transform: uppercase;
   padding: 25px;
@@ -1100,7 +1102,7 @@ body {
   justify-content: center; }
   .arc-product-categories a {
     text-decoration: none;
-    font-family: "Novecento Sans Web";
+    font-family: "Novecento-Sans-Web";
     color: #248a83; }
 
 .arc-product-place-holder {
@@ -1143,7 +1145,7 @@ body {
     border-top-width: 5px;
     border-inline-color: #e1e1e1; }
   .arc-product-content-grid a .arc-product-type-link {
-    font-family: "Novecento Sans Web";
+    font-family: "Novecento-Sans-Web";
     color: #248a83;
     text-decoration: none;
     font-size: 18px; }
@@ -1162,7 +1164,7 @@ body {
   width: 100%; }
 
 .arc-adventure-categories {
-  font-family: "Novecento Sans Web";
+  font-family: "Novecento-Sans-Web";
   font-size: 1.2rem;
   text-transform: uppercase;
   padding: 25px;
@@ -1172,7 +1174,7 @@ body {
   justify-content: center; }
   .arc-adventure-categories a {
     text-decoration: none;
-    font-family: "Novecento Sans Web";
+    font-family: "Novecento-Sans-Web";
     color: #248a83; }
 
 .arc-adventure-content-grid {
@@ -1212,7 +1214,7 @@ body {
     .arc-adventure-content-grid a figcaption p {
       font-size: .7rem; }
   .arc-adventure-content-grid a .arc-adventure-type-link {
-    font-family: "Novecento Sans Web";
+    font-family: "Novecento-Sans-Web";
     color: #248a83;
     text-decoration: none;
     font-size: 18px; }
@@ -1228,7 +1230,7 @@ body {
   .tax-product-heading h1 {
     margin-bottom: 1rem;
     font-size: 2.4rem;
-    font-family: "Novecento Sans Web";
+    font-family: "Novecento-Sans-Web";
     font-weight: bold; }
 
 .tax-product-place-holder {
@@ -1270,7 +1272,7 @@ body {
     border-top-width: 5px;
     border-inline-color: #e1e1e1; }
   .tax-product-content-grid a .arc-product-type-link {
-    font-family: "Novecento Sans Web";
+    font-family: "Novecento-Sans-Web";
     color: #248a83;
     text-decoration: none;
     font-size: 18px; }
@@ -1286,7 +1288,7 @@ body {
   .tax-adventure-heading h1 {
     margin-bottom: 1rem;
     font-size: 2.4rem;
-    font-family: "Novecento Sans Web";
+    font-family: "Novecento-Sans-Web";
     font-weight: bold; }
 
 .tax-adventure-place-holder {
@@ -1330,11 +1332,11 @@ body {
       font-size: 1rem;
       font-size: 0.7rem;
       color: #404040; }
-  .tax-adventure-content-grid a .arc-adventure-type-link {
-    font-family: "Novecento Sans Web";
-    color: #248a83;
-    text-decoration: none;
-    font-size: 18px; }
+    .tax-adventure-content-grid a figcaption .arc-adventure-type-link {
+      font-family: "Novecento-Sans-Web";
+      color: #248a83;
+      text-decoration: none;
+      font-size: 18px; }
 
 .single-product-container {
   display: flex; }
@@ -1346,7 +1348,7 @@ body {
   justify-content: space-evenly;
   margin-top: 80px; }
   .single-product-info h2 {
-    font-family: "Novecento Sans Web";
+    font-family: "Novecento-Sans-Web";
     font-size: 2.4rem;
     text-transform: uppercase;
     color: #d99054; }
@@ -1378,7 +1380,7 @@ body {
     width: 1120px;
     height: auto; }
   .single-adventure h1 {
-    font-family: "Novecento Sans Web";
+    font-family: "Novecento-Sans-Web";
     font-weight: bold;
     font-size: 2rem;
     margin-left: 160px; }

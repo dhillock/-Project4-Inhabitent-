@@ -46,7 +46,7 @@ $file_name = $term->name . '.svg';
 
 
         </section>
-	        <?php endforeach;?>
+<?php endforeach;?>
 
 </section>
 <!-- Load the terms (categories) for Shop Stuff, end -->

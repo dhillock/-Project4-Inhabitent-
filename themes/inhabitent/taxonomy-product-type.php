@@ -1,13 +1,17 @@
-<?php get_header(); ?>
+<?php get_header(); 
+
+
+?>
 
 <hr>
 
 <!-- Rather than taking this approach, I would use the pre_get_posts in my functions template -->
 <!-- But i like this approach better, because it isolates the "filter." -->
-<?php $products = new WP_Query(array(  
+<?php $product = new WP_Query(array(  
 	'post_type' => array( 'product', ),
+	'category_name' => 'Sleep',
 	'orderby' => 'title',
-	'order' => 'ASC',
+	'order' => 'DSC',
     'posts_per_page' => 4, 
     ));
 ?>
@@ -23,10 +27,10 @@
  <!--  Add the taxonomy product grid -->
 <section class="tax-product-content-grid">
 
-	<?php if( have_posts() ) :
+	<?php if( $product -> have_posts() ) :
 
 	//The WordPress Loop: loads post content
-		while( $products -> have_posts() ) : $products -> the_post(); ?>
+		while($product -> have_posts() ) : $product -> the_post(); ?>
 			
 			<a href="<?php echo get_permalink() ;?>">
 				<figure>

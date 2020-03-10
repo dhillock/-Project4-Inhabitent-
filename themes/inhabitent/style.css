@@ -1404,6 +1404,8 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 75% 20%; }
+  .page-not-found input {
+    background-color: #a1a1a1; }
   .page-not-found .content-area {
     margin-top: 70px; }
   .page-not-found fieldset {

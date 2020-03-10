@@ -4,7 +4,7 @@
 
     <div class = 'search-content-area'>
 
-    <div class = 'search-title' >
+    <div class = 'search-title' 
         <h1>SEARCH RESULTS FOR: <?php echo esc_html( get_search_query( false ) ); ?> </h1>
     </div>
 

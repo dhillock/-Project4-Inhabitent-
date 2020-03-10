@@ -1,12 +1,6 @@
 <?php get_header(); ?>
 
 
-		<h1> Xxxxxx </h1>
-		<h1> Xxxxxx </h1>
-		<h1> Xxxxxx </h1>
-		<h1> Single Journal (blog) </h1>
-
-
 <section class="single-journal">
 
     <div class = 'single-content-area'>

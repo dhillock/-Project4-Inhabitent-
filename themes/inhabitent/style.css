@@ -216,7 +216,6 @@ h2 {
   font-weight: 400; }
 
 p {
-  font-size: 1rem;
   font-family: "Merriweather"; }
 
 .journal-post {
@@ -363,7 +362,7 @@ a img.aligncenter {
   background-color: white; }
 
 .gallery-caption {
-  color: #D70807; }
+  color: #d70807; }
 
 .bypostauthor {
   font-weight: 600; }
@@ -603,8 +602,11 @@ footer {
   width: 1120px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 80% 20%; }
+  grid-template-columns: 80% 20%;
+  font-family: "Novecento Sans Web";
+  font-weight: bold; }
   .find-us .findus-content-area {
+    grid-column: 1 / 2;
     margin-top: 4rem;
     margin-left: 3rem; }
     .find-us .findus-content-area p {
@@ -627,8 +629,10 @@ footer {
       font-weight: bold;
       font-size: 17.6px;
       font-size: 1.1rem;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       text-transform: uppercase; }
+  .find-us .sidebar {
+    margin-top: 5rem; }
   .find-us .wpcf7-email {
     background-color: #f4f4f4;
     height: 40px;
@@ -912,6 +916,9 @@ body {
     .arc-journal a:visited {
       color: #248a83; }
 
+.sidebar {
+  margin-top: 5rem; }
+
 .j-container {
   margin-top: 10px;
   margin-bottom: 40px;
@@ -1001,6 +1008,8 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 75% 20%; }
+  .single-journal .single-content-area {
+    margin-top: 3rem; }
   .single-journal a {
     color: #248a83; }
     .single-journal a:visited {
@@ -1309,10 +1318,6 @@ body {
       -o-object-fit: cover;
          object-fit: cover; }
   .tax-adventure-content-grid a figcaption {
-    font-family: Merriweather Web, serif;
-    font-size: 1rem;
-    font-size: 0.7rem;
-    color: #404040;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1320,6 +1325,11 @@ body {
     border: 1px solid #a1a1a1;
     border-top-width: 5px;
     border-inline-color: #e1e1e1; }
+    .tax-adventure-content-grid a figcaption p {
+      font-family: Merriweather Web, serif;
+      font-size: 1rem;
+      font-size: 0.7rem;
+      color: #404040; }
   .tax-adventure-content-grid a .arc-adventure-type-link {
     font-family: "Novecento Sans Web";
     color: #248a83;

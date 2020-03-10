@@ -1,124 +1,125 @@
 .arc-journal {
-    width: 1120px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 75% 20%;
+  width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 75% 20%;
 
-    a {
-        color: $brand-green;
+  a {
+    color: $brand-green;
 
-        &:visited {
-            color: $brand-green;
-        }
+    &:visited {
+      color: $brand-green;
     }
+  }
+}
+.sidebar {
+  margin-top: 5rem;
 }
 
 .j-container {
-    margin-top: 10px;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    height: 560px;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  height: 560px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .j-title {
-    margin-top: 5%;
-    background-color: #248a83;
-    width: 60%;
-    padding: 10px 0px 10px 50px;
+  margin-top: 5%;
+  background-color: #248a83;
+  width: 60%;
+  padding: 10px 0px 10px 50px;
 
-    a {
-        color: white;
+  a {
+    color: white;
 
-        &:visited {
-            color: white;
-        }
+    &:visited {
+      color: white;
     }
+  }
 
-    h2 {
-        font-weight: 700;
-        font-size: 2em;
-        font-family: Novecento Sans Web, sans-serif;
-    }
+  h2 {
+    font-weight: 700;
+    font-size: 2em;
+    font-family: Novecento Sans Web, sans-serif;
+  }
 
-    a {
-        // font-size: 2.5em;
-        color: white;
-        text-decoration: none;
-    }
+  a {
+    // font-size: 2.5em;
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .j-date-author {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: flex-end;
-    font-family: Merriweather Web, serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+  font-family: Merriweather Web, serif;
 
-    p {
-        display: flex;
-        justify-content: space-around;
-        font-size: 1em;
-        background-color: #248a83;
-        color: white;
-        padding: 2px 30px;
-    }
+  p {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1em;
+    background-color: #248a83;
+    color: white;
+    padding: 2px 30px;
+  }
 }
 
 .j-content {
-    display: grid;
-    grid-column-start: 1;
-    font-family: Merriweather Web, serif;
+  display: grid;
+  grid-column-start: 1;
+  font-family: Merriweather Web, serif;
 }
 
 .sidebar-journal {
-    display: grid;
-    grid-column-start: 2;
-    grid-row-start: 1;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
 }
 
 .blog-content-bottom-links {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
 }
 
 .blog-content-cat {
-    font-family: Novecento Sans Web, sans-serif;
-    margin-right: 10px;
+  font-family: Novecento Sans Web, sans-serif;
+  margin-right: 10px;
 }
 
 .j-btn {
-    font-family: Novecento Sans Web, sans-serif;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    margin-top: 20px;
-    margin-bottom: 40px;
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-decoration: none;
+
+  a {
+    color: $brand-grey-medium;
+    background-color: white;
+    border: 1px solid $brand-grey-medium;
+    color: $brand-grey-medium;
+    padding: 10px 30px;
     text-decoration: none;
 
-    a {
-        color: $brand-grey-medium;
-        background-color: white;
-        border: 1px solid $brand-grey-medium;
-        color: $brand-grey-medium;
-        padding: 10px 30px;
-        text-decoration: none;
-
-
-        &:hover {
-            background-color: $brand-green;
-            border: 1px solid $brand-green;
-            color: #fff;
-        }
+    &:hover {
+      background-color: $brand-green;
+      border: 1px solid $brand-green;
+      color: #fff;
     }
+  }
 }
 
 .j-content {
-    border-right: $border-solid-type;
-    padding-top: 50px;
-    padding-right: 50px;
+  border-right: $border-solid-type;
+  padding-top: 50px;
+  padding-right: 50px;
 }

@@ -6,13 +6,13 @@
   // color: green;
 
   // background-color: green;
-  // font-family: Novecento Sans Web, sans-serif;
-  // font-weight: bold;
+  font-family: $font-accent;
+  font-weight: bold;
 
   .findus-content-area {
+    grid-column: 1 / 2;
     margin-top: 4rem;
     margin-left: 3rem;
-
 
     p {
       font-family: Merriweather Web, serif;
@@ -37,7 +37,6 @@
 
       // height: 40px;
       // width: 415px;
-
     }
 
     label {
@@ -47,11 +46,14 @@
       font-weight: bold;
       font-size: 17.6px;
       font-size: 1.1rem;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       text-transform: uppercase;
     }
   }
 
+  .sidebar {
+    margin-top: 5rem;
+  }
 
   .wpcf7-email {
     // background-color: red;
@@ -102,13 +104,10 @@
     padding: 0.75rem 1.5rem;
     text-decoration: none;
 
-
     &:hover {
       background-color: $brand-green;
       border: none;
       color: $brand-purple;
     }
-
   }
-
 }

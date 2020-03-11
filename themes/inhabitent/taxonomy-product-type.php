@@ -1,21 +1,24 @@
-<?php get_header(); 
-
-
-?>
-
-<hr>
+<?php get_header(); ?>
 
 <!-- Rather than taking this approach, I would use the pre_get_posts in my functions template -->
 <!-- But i like this approach better, because it isolates the "filter." -->
-<?php $product = new WP_Query(array(  
+<!-- Note too that for a custom-post-type and custom-taxonomy, you cannot use category_name with WP_Query -->
+<!-- Instead, you need to use tax_query -->
+<?php 
+$product = new WP_Query(array(  
 	'post_type' => array( 'product', ),
-	'category_name' => 'Sleep',
+	'tax_query' => array(
+        array(
+            'taxonomy' => 'product-type',
+            'field'    => 'slug',
+            'terms'    => single_term_title( '', false ),
+        ),
+    ),
 	'orderby' => 'title',
-	'order' => 'DSC',
+	'order' => 'ASC',
     'posts_per_page' => 4, 
     ));
 ?>
-
 
 <div class="tax-product-heading" >
     <h1><?php echo single_term_title( '', false ) ;?></h1>

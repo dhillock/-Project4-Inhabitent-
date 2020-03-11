@@ -1,17 +1,24 @@
 <?php get_header(); ?>
 
-<hr>
-
 <!-- Rather than taking this approach, I would use the pre_get_posts in my functions template -->
 <!-- But i like this approach better, because it isolates the "filter." -->
-<?php $adventure = new WP_Query(array(  
+<!-- Note too that for a custom-post-type and custom-taxonomy, you cannot use category_name with WP_Query -->
+<!-- Instead, you need to use tax_query -->
+<?php 
+$adventure = new WP_Query(array(  
 	'post_type' => array( 'adventure', ),
+	'tax_query' => array(
+        array(
+            'taxonomy' => 'adventure-type',
+            'field'    => 'slug',
+            'terms'    => single_term_title( '', false ),
+        ),
+    ),
 	'orderby' => 'title',
 	'order' => 'ASC',
     'posts_per_page' => 4, 
     ));
 ?>
-
 
 <div class="tax-adventure-heading" >
     <h1><?php echo single_term_title( '', false ) ;?></h1>
@@ -23,7 +30,7 @@
  <!--  Add the taxonomy adventure grid -->
 <section class="tax-adventure-content-grid">
 
-	<?php if( have_posts() ) :
+	<?php if( $adventure -> have_posts() ) :
 
 	//The WordPress Loop: loads post content
 		while( $adventure -> have_posts() ) : $adventure -> the_post(); ?>

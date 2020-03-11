@@ -16,22 +16,21 @@
   margin-top: 80px;
 
   h2 {
-    font-family: $font-accent;
+    font-family: $font-accent-bold;
     font-size: 2.4rem;
     text-transform: uppercase;
     color: #d99054;
   }
 
   h3 {
-    font-family: Novecento Sans Web, sans-serif;
-    font-size: 25px;
+    font-family: $font-accent;
+    font-size: 1.8rem;
   }
 
   p {
-    font-family: Merriweather Web, serif;
-    font-size: 1.2rem;
+    font-family: $font-description;
+    font-size: 1rem;
     line-height: $base-line-height;
-    // margin-bottom: 1.5rem;
   }
 
   .social-icons.body {

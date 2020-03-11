@@ -185,9 +185,8 @@ html {
 
 body {
   background: #ffffff;
-  font-family: "Merriweather";
+  font-family: Merriweather-Web, serif;
   font-weight: normal;
-  font-style: italics;
   font-size: 1rem;
   margin: 0 auto;
   line-height: 1.75;
@@ -206,7 +205,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: "Novecento-Sans-Web";
+  font-family: Novecento-Sans-Web, sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase; }
 
@@ -217,13 +216,13 @@ h2 {
 
 p {
   font-size: 1rem;
-  font-family: "Merriweather"; }
+  font-family: Merriweather-Web, serif; }
 
 .journal-post {
   background-color: lightblue; }
 
 .journal-post h2 {
-  font-family: "Novecento-Sans-Web"; }
+  font-family: Novecento-Sans-Web, sans-serif; }
 
 .white-font {
   color: white; }
@@ -247,16 +246,16 @@ p {
   color: #808080; }
 
 .novecento-web {
-  font-family: "Novecento-Sans-Web"; }
+  font-family: Novecento-Sans-Web, sans-serif; }
 
 .merriweather {
-  font-family: "Merriweather"; }
+  font-family: Merriweather-Web, serif; }
 
 .merriweather-bold {
-  font-family: Merriweather-Web-Bold; }
+  font-family: Merriweather-Web-Bold, serif; }
 
 .Novacento-bold {
-  font-family: Novecento-Sans-Web-Bold; }
+  font-family: Novecento-Sans-Web-Bold, serif; }
 
 p span {
   font-weight: bold; }
@@ -443,7 +442,7 @@ header {
       height: 2rem;
       margin-bottom: 10px; }
   header a {
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: Novecento-Sans-Web, sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
     color: white;
@@ -534,7 +533,7 @@ footer {
 
 .orange-brand {
   color: #d99054;
-  font-family: 'Novecento-Sans-Web-Bold'; }
+  font-family: Novecento-Sans-Web-Bold, sans-serif; }
 
 .sidebar {
   margin-top: 2rem;
@@ -547,7 +546,7 @@ footer {
   grid-column: 2 / 3;
   grid-row: 1 / span 1; }
   .sidebar h2 {
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: Novecento-Sans-Web, sans-serif;
     font-size: 1.3rem;
     color: #2f1339;
     font-weight: 700;
@@ -555,7 +554,7 @@ footer {
   .sidebar p {
     color: #404040;
     margin-bottom: 15px;
-    font-family: Merriweather Web, serif; }
+    font-family: Merriweather-Web, sans-serif; }
   .sidebar a {
     color: #248a83; }
     .sidebar a:hover {
@@ -564,7 +563,7 @@ footer {
 .search-form input {
   background-color: transparent;
   text-transform: uppercase;
-  color: white;
+  color: black;
   font-size: 1rem;
   text-decoration: none;
   border: none; }
@@ -573,26 +572,29 @@ footer {
   color: red !important; }
 
 .container {
-  font-family: "Novecento-Sans-Web";
+  font-family: Novecento-Sans-Web, sans-serif;
   line-height: 1.75;
   font-size: 1rem; }
   .container .about-image {
-    background-size: cover;
+    background-size: cover, cover;
     background-repeat: no-repeat;
     background-position: bottom;
     width: 100%;
     height: 500px;
     z-index: -1; }
   .container .has-text-align-center.has-large-font-size {
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: Novecento-Sans-Web-Bold, sans-serif;
+    letter-spacing: 2px;
     font-weight: bold;
     font-size: 3rem; }
   .container h2 {
+    font-family: Novecento-Sans-Web-Bold, serif;
     text-align: center;
     margin-top: 27px;
     margin-bottom: 24px;
     font-weight: bold; }
   .container p {
+    font-family: Merriweather-Web, serif;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -604,29 +606,31 @@ footer {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 80% 20%;
-  font-family: "Novecento-Sans-Web";
+  font-family: Novecento-Sans-Web, sans-serif;
   font-weight: bold; }
   .find-us .findus-content-area {
     grid-column: 1 / 2;
     margin-top: 4rem;
     margin-left: 3rem; }
     .find-us .findus-content-area p {
+      font-family: Merriweather-Web, serif;
       font-family: Merriweather Web, serif;
       text-transform: none;
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.75; }
     .find-us .findus-content-area h1 {
-      font-family: "Novecento-Sans-Web-Bold";
+      font-family: Novecento-Sans-Web-Bold, serif;
       font-size: 2.4rem; }
     .find-us .findus-content-area h2 {
+      font-family: Novecento-Sans-Web-Bold, serif;
       font-size: 2.1rem; }
     .find-us .findus-content-area input {
       border: none; }
     .find-us .findus-content-area label {
       color: #2f1339;
       display: block;
-      font-family: Novecento Sans Web, sans-serif;
+      font-family: Novecento-Sans-Web, sans-serif;
       font-weight: bold;
       font-size: 17.6px;
       font-size: 1.1rem;
@@ -660,7 +664,7 @@ footer {
     border-radius: 0;
     color: white;
     cursor: pointer;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: Novecento-Sans-Web, sans-serif;
     font-size: 19.2px;
     font-size: 0.9rem;
     line-height: 1;
@@ -682,17 +686,16 @@ footer {
     height: 4rem;
     grid-column: 1 / 2;
     margin-top: 1.5rem;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: Novecento-Sans-Web, sans-serif;
     font-size: 2.4rem;
     margin-bottom: 0.5rem;
     border-bottom: 1px solid #e1e1e1; }
   .search-page .search-button {
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: Novecento-Sans-Web, sans-serif;
     font-size: 0.9rem;
     margin-top: 20px;
     margin-bottom: 40px;
-    text-decoration: none;
-    padding: 0.75rem 1.5rem; }
+    text-decoration: none; }
     .search-page .search-button a {
       color: #808080;
       background-color: white;
@@ -705,7 +708,7 @@ footer {
         border: 1px solid #e1e1e1;
         color: #fff; }
   .search-page p {
-    font-family: Merriweather Web, serif;
+    font-family: Merriweather-Web, serif;
     font-size: 1rem;
     line-height: 1.75;
     margin-bottom: 1.5rem; }
@@ -714,8 +717,8 @@ footer {
   grid-column: 1 / 2;
   grid-row: 1 / 2; }
   .search-content-area .blog-title {
-    font-family: Novecento Sans Web, sans-serif;
-    font-size: 2.1rem;
+    font-family: Novecento-Sans-Web-Bold, serif;
+    font-size: 2rem;
     text-transform: uppercase;
     text-decoration: none;
     color: brand-green; }
@@ -723,7 +726,7 @@ footer {
 body {
   background: #ffffff;
   color: #404040;
-  font-family: "Novecento-Sans-Web";
+  font-family: Novecento-Sans-Web, sans-serif;
   font-size: 1rem;
   line-height: 1.75;
   width: 1120px; }
@@ -732,7 +735,7 @@ body {
   width: 100%; }
 
 .landing-title {
-  font-family: "Novecento-Sans-Web";
+  font-family: Novecento-Sans-Web, sans-serif;
   font-weight: 400;
   color: #404040;
   font-size: 2.4rem;
@@ -775,7 +778,7 @@ body {
 
 .front-page-product-sections-btn {
   width: 100px;
-  font-family: "Novecento-Sans-Web";
+  font-family: Novecento-Sans-Web, sans-serif;
   color: white;
   background: #248a83;
   margin-bottom: 20px;
@@ -843,13 +846,13 @@ body {
     line-height: 1.75;
     line-height: 1.25; }
   .latest-adventures figure {
-    font-family: "Merriweather";
+    font-family: Merriweather-Web, serif;
     color: white;
     position: relative;
     display: flex;
     flex-direction: column; }
     .latest-adventures figure h1 {
-      font-family: "Merriweather";
+      font-family: Merriweather-Web, serif;
       text-transform: none;
       margin-top: 1rem;
       margin-left: 1.5rem;
@@ -871,7 +874,7 @@ body {
       height: 43px;
       padding: 12px 14px;
       color: white;
-      font-family: "Novecento-Sans-Web";
+      font-family: Novecento-Sans-Web, sans-serif;
       font-size: 0.9rem;
       line-height: 1;
       margin-left: 1.5rem; }
@@ -896,7 +899,7 @@ body {
     border-radius: 0;
     color: white;
     cursor: pointer;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: Novecento-Sans-Web, sans-serif;
     font-size: 19.2px;
     font-size: 0.9rem;
     line-height: 1;
@@ -905,7 +908,7 @@ body {
     margin-bottom: 1.5rem; }
     .latest-adventures .adv-btn:hover {
       background-color: #248a83;
-      border: 1px solid #e1e1e1;
+      border: none;
       color: #2f1339; }
 
 .arc-journal {
@@ -923,7 +926,6 @@ body {
 
 .j-container {
   margin-top: 10px;
-  margin-bottom: 40px;
   text-transform: uppercase;
   height: 560px;
   background-size: cover;
@@ -932,18 +934,22 @@ body {
   justify-content: space-between; }
 
 .j-title {
+  font-family: Novecento-Sans-Web-Bold, sans-serif;
   margin-top: 5%;
   background-color: #248a83;
   width: 60%;
-  padding: 10px 0px 10px 50px; }
+  padding: 10px 0px 10px 50px;
+  line-height: 1.75; }
   .j-title a {
-    color: white; }
+    color: white;
+    line-height: 1px; }
     .j-title a:visited {
       color: white; }
   .j-title h2 {
+    line-height: 1.25;
     font-weight: 700;
     font-size: 2em;
-    font-family: Novecento Sans Web, sans-serif; }
+    font-family: Novecento-Sans-Web, sans-serif; }
   .j-title a {
     color: white;
     text-decoration: none; }
@@ -953,7 +959,7 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   align-content: flex-end;
-  font-family: Merriweather Web, serif; }
+  font-family: Merriweather-Web, serif; }
   .j-date-author p {
     display: flex;
     justify-content: space-around;
@@ -965,7 +971,7 @@ body {
 .j-content {
   display: grid;
   grid-column-start: 1;
-  font-family: Merriweather Web, serif; }
+  font-family: Merriweather-Web, serif; }
 
 .sidebar-journal {
   display: grid;
@@ -978,11 +984,11 @@ body {
   margin-top: 20px; }
 
 .blog-content-cat {
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: Novecento-Sans-Web, sans-serif;
   margin-right: 10px; }
 
 .j-btn {
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: Novecento-Sans-Web-Bold, sans-serif;
   text-transform: uppercase;
   font-size: 0.9em;
   margin-top: 20px;
@@ -1031,7 +1037,8 @@ body {
   margin-top: 2.25rem;
   background-color: #248a83;
   width: 60%;
-  padding: 10px 0px 10px 50px; }
+  padding: 10px 0px 10px 50px;
+  line-height: 1.2; }
   .single-journal-title a {
     color: white; }
     .single-journal-title a:visited {
@@ -1039,7 +1046,7 @@ body {
   .single-journal-title h2 {
     font-weight: 700;
     font-size: 2em;
-    font-family: Novecento Sans Web, sans-serif; }
+    font-family: Novecento-Sans-Web, sans-serif; }
   .single-journal-title a {
     color: white;
     text-decoration: none; }
@@ -1049,7 +1056,7 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   align-content: flex-end;
-  font-family: Merriweather Web, serif; }
+  font-family: Merriweather-Web, serif; }
   .single-date-author p {
     display: flex;
     justify-content: space-around;
@@ -1061,7 +1068,7 @@ body {
 .single-journal-content {
   display: grid;
   grid-column-start: 1;
-  font-family: Merriweather Web, serif;
+  font-family: Merriweather-Web, serif;
   font-size: 1rem; }
   .single-journal-content p + p {
     margin-top: 10px; }
@@ -1073,10 +1080,10 @@ body {
   justify-content: flex-start;
   margin-top: 20px; }
   .single-category-tag .single-category {
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: Novecento-Sans-Web, sans-serif;
     margin-right: 10px; }
   .single-category-tag .single-tag {
-    font-family: Novecento Sans Web, sans-serif; }
+    font-family: Novecento-Sans-Web, sans-serif; }
 
 .sidebar-journal {
   display: grid;
@@ -1084,7 +1091,7 @@ body {
   grid-row-start: 1; }
 
 .arc-product-title {
-  font-family: Novecento-Sans-Web-Bold;
+  font-family: N Novecento-Sans-Web-Bold, sans-serif;
   font-size: 2.4rem;
   height: 155px;
   display: flex;
@@ -1092,7 +1099,7 @@ body {
   align-items: flex-end; }
 
 .arc-product-categories {
-  font-family: "Novecento-Sans-Web";
+  font-family: Novecento-Sans-Web, sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
   padding: 25px;
@@ -1102,7 +1109,7 @@ body {
   justify-content: center; }
   .arc-product-categories a {
     text-decoration: none;
-    font-family: "Novecento-Sans-Web";
+    font-family: Novecento-Sans-Web, sans-serif;
     color: #248a83; }
 
 .arc-product-place-holder {
@@ -1134,7 +1141,7 @@ body {
       -o-object-fit: cover;
          object-fit: cover; }
   .arc-product-content-grid a figcaption {
-    font-family: Merriweather Web, serif;
+    font-family: Merriweather-Web, serif;
     font-size: 1rem;
     color: #404040;
     display: flex;
@@ -1145,13 +1152,13 @@ body {
     border-top-width: 5px;
     border-inline-color: #e1e1e1; }
   .arc-product-content-grid a .arc-product-type-link {
-    font-family: "Novecento-Sans-Web";
+    font-family: Novecento-Sans-Web, sans-serif;
     color: #248a83;
     text-decoration: none;
     font-size: 18px; }
 
 .arc-adv-title {
-  font-family: Novecento-Sans-Web-Bold;
+  font-family: Novecento-Sans-Web-Bold, sans-serif;
   font-size: 2.4rem;
   height: 155px;
   display: flex;
@@ -1164,7 +1171,7 @@ body {
   width: 100%; }
 
 .arc-adventure-categories {
-  font-family: "Novecento-Sans-Web";
+  font-family: Novecento-Sans-Web, sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
   padding: 25px;
@@ -1174,7 +1181,7 @@ body {
   justify-content: center; }
   .arc-adventure-categories a {
     text-decoration: none;
-    font-family: "Novecento-Sans-Web";
+    font-family: Novecento-Sans-Web, sans-serif;
     color: #248a83; }
 
 .arc-adventure-content-grid {
@@ -1201,7 +1208,7 @@ body {
       -o-object-fit: cover;
          object-fit: cover; }
   .arc-adventure-content-grid a figcaption {
-    font-family: Merriweather Web, serif;
+    font-family: Merriweather-Web, serif;
     font-size: 1rem;
     color: #404040;
     display: flex;
@@ -1214,7 +1221,7 @@ body {
     .arc-adventure-content-grid a figcaption p {
       font-size: .7rem; }
   .arc-adventure-content-grid a .arc-adventure-type-link {
-    font-family: "Novecento-Sans-Web";
+    font-family: Novecento-Sans-Web, sans-serif;
     color: #248a83;
     text-decoration: none;
     font-size: 18px; }
@@ -1222,7 +1229,7 @@ body {
 .tax-product-heading {
   margin-top: 5rem;
   margin-bottom: 2.5rem;
-  font-family: Novecento-Sans-Web-Bold;
+  font-family: Novecento-Sans-Web-Bold, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1230,7 +1237,7 @@ body {
   .tax-product-heading h1 {
     margin-bottom: 1rem;
     font-size: 2.4rem;
-    font-family: "Novecento-Sans-Web";
+    font-family: Novecento-Sans-Web, sans-serif;
     font-weight: bold; }
 
 .tax-product-place-holder {
@@ -1262,7 +1269,7 @@ body {
       -o-object-fit: cover;
          object-fit: cover; }
   .tax-product-content-grid a figcaption {
-    font-family: Merriweather Web, serif;
+    font-family: Merriweather-Web, serif;
     font-size: 1rem;
     display: flex;
     align-items: center;
@@ -1272,7 +1279,7 @@ body {
     border-top-width: 5px;
     border-inline-color: #e1e1e1; }
   .tax-product-content-grid a .arc-product-type-link {
-    font-family: "Novecento-Sans-Web";
+    font-family: Novecento-Sans-Web, sans-serif;
     color: #248a83;
     text-decoration: none;
     font-size: 18px; }
@@ -1280,7 +1287,7 @@ body {
 .tax-adventure-heading {
   margin-top: 5rem;
   margin-bottom: 2.5rem;
-  font-family: Novecento-Sans-Web-Bold;
+  font-family: Novecento-Sans-Web-Bold, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1288,7 +1295,7 @@ body {
   .tax-adventure-heading h1 {
     margin-bottom: 1rem;
     font-size: 2.4rem;
-    font-family: "Novecento-Sans-Web";
+    font-family: Novecento-Sans-Web, sans-serif;
     font-weight: bold; }
 
 .tax-adventure-place-holder {
@@ -1328,12 +1335,12 @@ body {
     border-top-width: 5px;
     border-inline-color: #e1e1e1; }
     .tax-adventure-content-grid a figcaption p {
-      font-family: Merriweather Web, serif;
+      font-family: Merriweather-Web, serif;
       font-size: 1rem;
       font-size: 0.7rem;
       color: #404040; }
     .tax-adventure-content-grid a figcaption .arc-adventure-type-link {
-      font-family: "Novecento-Sans-Web";
+      font-family: Novecento-Sans-Web, sans-serif;
       color: #248a83;
       text-decoration: none;
       font-size: 18px; }
@@ -1348,16 +1355,16 @@ body {
   justify-content: space-evenly;
   margin-top: 80px; }
   .single-product-info h2 {
-    font-family: "Novecento-Sans-Web";
+    font-family: Novecento-Sans-Web-Bold, sans-serif;
     font-size: 2.4rem;
     text-transform: uppercase;
     color: #d99054; }
   .single-product-info h3 {
-    font-family: Novecento Sans Web, sans-serif;
-    font-size: 25px; }
+    font-family: Novecento-Sans-Web, sans-serif;
+    font-size: 1.8rem; }
   .single-product-info p {
-    font-family: Merriweather Web, serif;
-    font-size: 1.2rem;
+    font-family: Merriweather-Web, sans-serif;
+    font-size: 1rem;
     line-height: 1.75; }
   .single-product-info .social-icons.body {
     background-color: red;
@@ -1375,29 +1382,25 @@ body {
   margin-top: 100px; }
 
 .single-adventure {
-  font-family: "Merriweather"; }
+  font-family: Merriweather-Web, serif; }
   .single-adventure img {
-    width: 1120px;
-    height: auto; }
+    width: 100%; }
   .single-adventure h1 {
-    font-family: "Novecento-Sans-Web";
+    font-family: Novecento-Sans-Web, sans-serif;
     font-weight: bold;
-    font-size: 2rem;
-    margin-left: 160px; }
+    font-size: 2rem; }
   .single-adventure .author {
     text-transform: uppercase;
     font-size: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 160px; }
-  .single-adventure p {
+    margin-bottom: 1rem; }
+  .single-adventure .single-adv-content {
+    font-family: Merriweather-Web, serif;
     width: 800px;
     margin-left: 160px;
     line-height: 1.75;
     margin-bottom: base-spacing; }
   .single-adventure p + p {
     margin-top: 1rem; }
-  .single-adventure .social-icons-body {
-    margin-left: 160px; }
 
 .page-not-found {
   width: 1120px;
@@ -1415,7 +1418,7 @@ body {
     text-decoration: none; }
   .page-not-found h1 {
     font-size: 2rem;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: Novecento-Sans-Web, sans-serif;
     color: #808080;
     text-transform: uppercase;
     padding: 20px 0; }
@@ -1423,7 +1426,7 @@ body {
     font-size: 1.5em;
     color: #2f1339;
     text-transform: uppercase;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: Novecento-Sans-Web, sans-serif;
     font-weight: 700;
     padding: 20px 0; }
   .page-not-found h3 {
@@ -1431,7 +1434,7 @@ body {
   .page-not-found p {
     font-size: 1em;
     color: #808080;
-    font-family: Merriweather Web, serif; }
+    font-family: Merriweather-Web, serif; }
   .page-not-found select {
     margin-bottom: 50px; }
   .page-not-found li {

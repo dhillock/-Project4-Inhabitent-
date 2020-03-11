@@ -15,7 +15,9 @@
     margin-left: 3rem;
 
     p {
+      font-family: $font-main;
       font-family: Merriweather Web, serif;
+
       text-transform: none;
       font-size: 1rem;
       font-weight: 400;
@@ -23,11 +25,14 @@
     }
 
     h1 {
+      // Find Us
       font-family: $font-title-bold;
       font-size: 2.4rem;
     }
 
     h2 {
+      // We take camping...and Send us Email
+      font-family: $font-title-bold;
       font-size: 2.1rem;
     }
 
@@ -42,7 +47,7 @@
     label {
       color: #2f1339;
       display: block;
-      font-family: Novecento Sans Web, sans-serif;
+      font-family: $font-accent;
       font-weight: bold;
       font-size: 17.6px;
       font-size: 1.1rem;
@@ -97,7 +102,7 @@
     border-radius: 0;
     color: white;
     cursor: pointer;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font-accent;
     font-size: 19.2px;
     font-size: 0.9rem;
     line-height: 1;

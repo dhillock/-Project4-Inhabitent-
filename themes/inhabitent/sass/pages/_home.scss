@@ -12,13 +12,14 @@
     }
   }
 }
+
 .sidebar {
   margin-top: 5rem;
 }
 
 .j-container {
   margin-top: 10px;
-  margin-bottom: 40px;
+  // margin-bottom: 50px;
   text-transform: uppercase;
   height: 560px;
   background-size: cover;
@@ -28,13 +29,16 @@
 }
 
 .j-title {
+  font-family: $font-accent-bold;
   margin-top: 5%;
   background-color: #248a83;
   width: 60%;
   padding: 10px 0px 10px 50px;
+  line-height: $base-line-height;
 
   a {
     color: white;
+    line-height: 1px;
 
     &:visited {
       color: white;
@@ -42,13 +46,13 @@
   }
 
   h2 {
+    line-height: 1.25;
     font-weight: 700;
     font-size: 2em;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font-accent;
   }
 
   a {
-    // font-size: 2.5em;
     color: white;
     text-decoration: none;
   }
@@ -59,7 +63,7 @@
   flex-direction: row;
   justify-content: flex-end;
   align-content: flex-end;
-  font-family: Merriweather Web, serif;
+  font-family: $font-main;
 
   p {
     display: flex;
@@ -74,7 +78,7 @@
 .j-content {
   display: grid;
   grid-column-start: 1;
-  font-family: Merriweather Web, serif;
+  font-family: $font-main;
 }
 
 .sidebar-journal {
@@ -90,12 +94,12 @@
 }
 
 .blog-content-cat {
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: $font-accent;
   margin-right: 10px;
 }
 
 .j-btn {
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: $font-accent-bold;
   text-transform: uppercase;
   font-size: 0.9em;
   margin-top: 20px;

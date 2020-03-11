@@ -1,6 +1,6 @@
 <?php
 
-show_admin_bar(true);
+show_admin_bar(false);
 
 //Adds script and stylesheets
 function inhabitant_files() {
@@ -22,8 +22,6 @@ function inhabitant_features() {
     register_nav_menus(array(
         'main' => 'Main Menu'
     ));
-
-
 
 }
 // the first parameter is the WP hook, and the second parameter is the name of our function.

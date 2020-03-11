@@ -6,7 +6,7 @@
   // background-color: green;
   margin-top: 5rem;
   margin-bottom: 2.5rem;
-  font-family: Novecento-Sans-Web-Bold;
+  font-family: $font-accent-bold;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,7 +68,7 @@
     border-inline-color: $border-solid-color;
 
     p {
-      font-family: Merriweather Web, serif;
+      font-family: $font-main;
       font-size: $base-font-size;
       font-size: 0.7rem;
       color: $base-font-color;

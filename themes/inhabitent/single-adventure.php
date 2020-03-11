@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <section class="single-adventure">
+
          <?php if( have_posts() ) :
         //The WordPress Loop: loads post content 
         while( have_posts() ) :
@@ -12,11 +13,11 @@
 
 			<h1> <?php the_title(); ?> </h1>
 
-
-
-			<p class ="author"> BY <?php the_author(); ?></p>
-
-			<?php the_content(); ?>
+            <p class ="author"> BY <?php the_author(); ?></p>
+            
+            <div single-adv-content >
+                <?php the_content(); ?>
+            </div>
 
         <?php endwhile;?>
 

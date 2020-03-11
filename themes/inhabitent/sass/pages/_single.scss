@@ -33,6 +33,7 @@
   background-color: #248a83;
   width: 60%;
   padding: 10px 0px 10px 50px;
+  line-height: 1.2;
 
   a {
     color: white;
@@ -45,7 +46,7 @@
   h2 {
     font-weight: 700;
     font-size: 2em;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font-accent;
   }
 
   a {
@@ -60,7 +61,7 @@
   flex-direction: row;
   justify-content: flex-end;
   align-content: flex-end;
-  font-family: Merriweather Web, serif;
+  font-family: $font-main;
 
   p {
     display: flex;
@@ -75,10 +76,10 @@
 .single-journal-content {
   display: grid;
   grid-column-start: 1;
-  font-family: Merriweather Web, serif;
+  font-family: $font-main;
   font-size: 1rem;
 
-  p + p {
+  p+p {
     // This allows you to keep paragraphs flush with the top/bottom of your container while still having space between them.
     margin-top: 10px;
   }
@@ -94,13 +95,13 @@
   margin-top: 20px;
 
   .single-category {
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font-accent;
     margin-right: 10px;
   }
 
   .single-tag {
     // background-color: red;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font-accent;
   }
 }
 

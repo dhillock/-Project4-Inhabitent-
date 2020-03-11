@@ -14,19 +14,18 @@
     grid-column: 1 / 2;
     margin-top: $base-spacing;
     // background-color: orange;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font-accent;
     font-size: 2.4rem;
     margin-bottom: 0.5rem;
     border-bottom: $border-solid-type;
   }
 
   .search-button {
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font-accent;
     font-size: 0.9rem;
     margin-top: 20px;
     margin-bottom: 40px;
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
 
     a {
       color: $brand-grey-medium;
@@ -49,7 +48,7 @@
   }
 
   p {
-    font-family: Merriweather Web, serif;
+    font-family: $font-main;
     font-size: 1rem;
     line-height: $base-line-height;
     margin-bottom: 1.5rem;
@@ -57,22 +56,14 @@
 }
 
 .search-content-area {
-  // background-color: blue;
-
-  // a {
-  //     font-family: Novecento Sans Web, sans-serif;
-  //     font-size: 2.1rem;
-  //     text-transform: uppercase;
-  //     color: brand-green;
-  // }
 
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 
   .blog-title {
     // background-color: red;
-    font-family: Novecento Sans Web, sans-serif;
-    font-size: 2.1rem;
+    font-family: $font-title-bold;
+    font-size: 2rem;
     text-transform: uppercase;
     text-decoration: none;
     color: brand-green;

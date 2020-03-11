@@ -10,7 +10,7 @@ body {
 
   font-family: $font-main;
   font-weight: $font-weight;
-  font-style: $font-styleTemp;
+  // font-style: $font-styleTemp;
   font-size: $base-font-size;
 
   margin: $base-margin;
@@ -95,19 +95,19 @@ p {
 }
 
 .merriweather-bold {
-  font-family: Merriweather-Web-Bold;
+  font-family: $font-description-bold;
 }
 
 .Novacento-bold {
-  font-family: Novecento-Sans-Web-Bold;
+  font-family: $font-title-bold;
 }
 
 p span {
   font-weight: bold;
 }
 
-////////////// WordPress Theme Requirement
-
+////////////// WordPress Theme Requirement ////////////////
+////////////// See Theme Check Plugin ////////////////////
 /* =WordPress Core
 -------------------------------------------------------------- */
 .alignnone {

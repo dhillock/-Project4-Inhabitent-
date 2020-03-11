@@ -2,17 +2,15 @@
     // background-color: red;
     font-family: $font-main;
 
-
     img {
-        width: 1120px;
-        height: auto;
+        width: 100%;
     }
 
     h1 {
         font-family: $font-accent;
         font-weight: bold;
         font-size: 2rem;
-        margin-left: 160px;
+        // margin-left: 160px;
     }
 
     .author {
@@ -20,10 +18,11 @@
 
         font-size: 1rem;
         margin-bottom: 1rem;
-        margin-left: 160px;
+        // margin-left: 160px;
     }
 
-    p {
+    .single-adv-content {
+        font-family: $font-main;
         width: 800px;
         margin-left: 160px;
         line-height: $base-line-height;
@@ -33,10 +32,6 @@
     p+p {
         // This allows you to keep paragraphs flush with the top/bottom of your container while still having space between them.
         margin-top: 1rem;
-    }
-
-    .social-icons-body {
-        margin-left: 160px;
     }
 
 

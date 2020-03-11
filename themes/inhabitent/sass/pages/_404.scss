@@ -23,7 +23,7 @@
 
   h1 {
     font-size: 2rem;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font-accent;
     color: $brand-grey-medium;
     text-transform: uppercase;
     padding: 20px 0;
@@ -33,7 +33,7 @@
     font-size: 1.5em;
     color: $brand-purple;
     text-transform: uppercase;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font-accent;
     font-weight: 700;
     padding: 20px 0;
   }
@@ -45,7 +45,7 @@
   p {
     font-size: 1em;
     color: $brand-grey-medium;
-    font-family: Merriweather Web, serif;
+    font-family: $font-main;
   }
 
   select {

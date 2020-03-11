@@ -4,7 +4,7 @@
 
 .arc-adv-title {
     // background-color: darkcyan;
-    font-family: Novecento-Sans-Web-Bold;
+    font-family: $font-accent-bold;
     font-size: 2.4rem;
     height: 155px;
     display: flex;
@@ -69,7 +69,7 @@
 
     figcaption {
         // background-color: red;
-        font-family: Merriweather Web, serif;
+        font-family: $font-main;
         font-size: $base-font-size;
         color: $base-font-color;
         display: flex;
